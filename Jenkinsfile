@@ -3,7 +3,7 @@ pipeline {
     imageRepo = 'oval/website'
     commitSha = sh(returnStdout: true, script: "git log -1 --pretty=format:'%h'").trim()
     imageName = "${imageRepo}:${commitSha}"
-    buildArgs = sh(returnStdout: true, script: "grep -v '^#' ~/env/core-ui.env | xargs").trim()
+    buildArgs = sh(returnStdout: true, script: "grep -v '^#' ~/env/oval-ui.env | xargs").trim()
   }
 
   agent any
