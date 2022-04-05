@@ -62,7 +62,7 @@ export default function Home() {
             onClick={focusOnInput}
             className="rounded-lg py-2 px-3 text-darkGray bg-blue-ocean border border-gray-100"
           >
-            Contact us
+            Get Early Access
           </button>
         </div>
       </nav>
@@ -130,9 +130,9 @@ export default function Home() {
             </div>
           </div>
           <div className="col-span-1 mx-auto max-w-md">
-            <h2 className="mb-4">Put USDC to work across multiple blockchains</h2>
+            <h2 className="mb-4">Put stablecoins to work across multiple blockchains</h2>
             <p className="text-blue-bodyLighter text-lg">
-              Wallet developers, exchanges and custodians can now take advantage of USDC’s availability on a growing roster of public blockchains.
+              Wallet developers, exchanges and custodians can now take advantage of stablecoins availability on a growing roster of public blockchains.
             </p>
           </div>
         </div>
@@ -182,66 +182,6 @@ export default function Home() {
               </div>
             </div>
           </div>
-        </div>
-
-        <div className="w-full flex flex-col items-center my-16">
-          <div className="mb-16 text-center">
-            <h2 className="mb-2">Questions? Look here.</h2>
-            <p className="text-blue-bodyLighter">
-              Cant find an answer? email us at{' '}
-              <a className="font-semibold" href="mailto:info@useoval.com">
-                {' '}
-                info@useoval.com{' '}
-              </a>
-            </p>
-          </div>
-          {questions.map((question) => (
-            <div
-              key={question.question}
-              className="w-full max-w-3xl p-2 mx-auto bg-white"
-            >
-              <Disclosure>
-                {({ open }) => (
-                  <>
-                    <Disclosure.Button
-                      className={`w-full p-4 rounded-md font-semibold text-darkGray flex justify-between text-left ${
-                        open ? 'bg-blue-ocean' : 'bg-white'
-                      }`}
-                    >
-                      <span>{question.question}</span>
-
-                      {open ? (
-                        <div className="w-5">
-                          <Image src={minus} />
-                        </div>
-                      ) : (
-                        <div className="w-5">
-                          <Image src={add} />
-                        </div>
-                      )}
-                    </Disclosure.Button>
-                    <Transition
-                      show={open}
-                      enter="transition duration-100 ease-out"
-                      enterFrom="transform scale-95 opacity-0"
-                      enterTo="transform scale-100 opacity-100"
-                      leave="transition duration-75 ease-out"
-                      leaveFrom="transform scale-100 opacity-100"
-                      leaveTo="transform scale-95 opacity-0"
-                    >
-                      <Disclosure.Panel
-                        className={`p-4 text-xs text-darkGray ${
-                          open ? 'bg-blue-ocean' : 'bg-white'
-                        }`}
-                      >
-                        {question.answer}
-                      </Disclosure.Panel>
-                    </Transition>
-                  </>
-                )}
-              </Disclosure>
-            </div>
-          ))}
         </div>
       </main>
       <nav className="w-full bg-white px-12">
