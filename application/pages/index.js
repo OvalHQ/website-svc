@@ -27,10 +27,14 @@ export default function Home() {
   const handleWaitingList = async () => {
     setLoading(true);
     try {
-      if (!!email) {
-        const res = await earlyAccess(email);
 
-        if (res.type === 'success') setModalStatus(true);
+      if (!!email) {
+        window.location.href = 'mailto:info@useoval.com?subject=Oval Early Access!&body=I am interested in Oval and would very much like to try it out when it launches'
+        // const res = await earlyAccess(email);
+
+        // if (res.type === 'success') 
+
+        setModalStatus(true);
         setEmail('');
       }
     } catch (error) {
@@ -77,7 +81,7 @@ export default function Home() {
               We help businesses, DeFi projects and Enterprises accept payments with crypto and send payouts globally in one unified platform. Take your business global in a scalable and efficient way through blockchain infrastructure.
             </p>
 
-        {/*    <div className=" gap-4 my-6 w-full">
+            <div className=" gap-4 my-6 w-full">
               <div className="col-span-2 my-2">
                 <TextInput
                   label="Email Address"
@@ -98,7 +102,7 @@ export default function Home() {
                   )}
                 </button>
               </div>
-            </div>*/}
+            </div>
           </div>
           <div className="col-span-1 ">
             <div className="max-w-md mx-auto">
