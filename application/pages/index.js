@@ -184,32 +184,14 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="grid md:grid-cols-2 content-center items-center my-16">
-          <div className="col-span-1 mx-auto max-w-md">
-            <h2 className="mb-4">Freedom Without Borders </h2>
-            <p className="text-blue-bodyLighter text-lg">
-              We design our products and services to be fully manageable online
-              and on mobile, providing access to global financial payment
-              markets wherever our clients maybe.
-            </p>
-          </div>
-
-          <div className="col-span-1 md:rounded-tl-[127px] md:rounded-bl-[127px] bg-grey-another py-16">
-            {/* <SendMoney status={true} toggleModal={() => {}} /> */}
-            <div className="max-w-sm mx-auto rounded-2xl bg-white p-4">
-              <StepOne toggleModal={() => {}} updateStep={() => {}} />
-            </div>
-          </div>
-        </div>
-
         <div className="w-full flex flex-col items-center my-16">
           <div className="mb-16 text-center">
             <h2 className="mb-2">Questions? Look here.</h2>
             <p className="text-blue-bodyLighter">
               Cant find an answer? email us at{' '}
-              <a className="font-semibold" href="mailto:info@rapipday.africa">
+              <a className="font-semibold" href="mailto:info@useoval.com">
                 {' '}
-                info@rapidpay.africa{' '}
+                info@useoval.com{' '}
               </a>
             </p>
           </div>
@@ -265,7 +247,10 @@ export default function Home() {
       <nav className="w-full bg-white px-12">
         <div className="border-t py-7 md:px-24 md:flex justify-between items-center">
           <p className="text-blue-bodyLighter">
-            © 2021 Oval.io All rights reserved.
+            © 2021 Oval.io All rights reserved. <a href="mailto:info@useoval.com">
+                {' '}
+                info@useoval.com{' '}
+              </a>
           </p>
         </div>
       </nav>
