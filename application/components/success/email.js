@@ -42,7 +42,7 @@ export default function EmailSuccessModal({ status, closeModal }) {
             </p>
             <p className="leading-7 mb-3 text-grey-title">
               Now you are equiped with all you need, but if you need help
-              getting started, contact info@rapidpay.africa and you'll be up and
+              getting started, contact info@useoval.com and you'll be up and
               running in no time.
             </p>
 
