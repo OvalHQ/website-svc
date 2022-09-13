@@ -45,7 +45,7 @@ export const questions = [
   {
     question: 'I am experiencing delays during transfers',
     answer:
-      'If you’re experiencing delays in transfers you can contact us via email info@rapidpay.africa',
+      'If you’re experiencing delays in transfers you can contact us via email info@useoval.com',
   },
   {
     question: 'How secure is oval',
