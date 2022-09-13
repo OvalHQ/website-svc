@@ -26,10 +26,10 @@ export const flags = {
 };
 
 export const million_things = [
-  { name: 'Payment', icon: payment },
-  { name: 'Receive money', icon: receive },
-  { name: 'Cross border payment', icon: europe },
-  { name: 'Retail payments', icon: retail },
+  { name: 'Global Payment', icon: payment },
+  { name: 'Receive Money', icon: receive },
+  { name: 'Cross Border Payout', icon: europe },
+  { name: 'Retail Payments', icon: retail },
 ];
 
 export const questions = [

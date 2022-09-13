@@ -75,11 +75,10 @@ export default function Home() {
         <div className="grid md:grid-cols-2 content-center items-center my-8">
           <div className="col-span-1 mx-auto max-w-md">
             <h2 className="mb-4">
-              Payments & Blockchain Infrastructure for Global Businesses
+            Make Swift Global Payouts in Dollars 
             </h2>
             <p className="text-blue-bodyLighter text-lg">
-              We help businesses, DeFi projects and Enterprises accept payments with crypto and send payouts globally in one unified platform. Take your business global in a scalable and efficient way through blockchain infrastructure.
-            </p>
+            Transact and make easy global payout with Oval, a digital dollar wallet for contractors, freelancers and business payroll.             </p>
 
             <div className=" gap-4 my-6 w-full">
               <div className="col-span-2 my-2">
@@ -134,9 +133,9 @@ export default function Home() {
             </div>
           </div>
           <div className="col-span-1 mx-auto max-w-md">
-            <h2 className="mb-4">Put stablecoins to work across multiple blockchains</h2>
+            <h2 className="mb-4">Payment without stress, Oval does the work!</h2>
             <p className="text-blue-bodyLighter text-lg">
-              Wallet developers, exchanges and custodians can now take advantage of stablecoins availability on a growing roster of public blockchains.
+            Adopting payments with Oval is choosing a stress-free payment process. We have put in the work to help small businesses and individuals send and receive USD payments around the globe. 
             </p>
           </div>
         </div>
@@ -144,9 +143,9 @@ export default function Home() {
         <div className="grid md:grid-cols-2 content-center items-center my-8">
           <div className="relative col-span-1 max-w-md mx-auto bg-white shadow-card rounded-3xl pt-14 flex flex-col justify-between">
             <div className="mb-16 px-5 md:px-11">
-              <h3 className="mb-4">Payments, but without the stress.</h3>
+              <h3 className="mb-4">Transact with Digital Currencies for Global Payouts</h3>
               <p className="text-blue-bodyLighter">
-                Focus on building customer and product experiences with our production-ready tools. Integrating with Oval is not another legacy payment integration to your codebase, its reimagined payments processing with developers first in mind.
+              Send and received payments with stablecoins in your digital dollar wallet.
               </p>
             </div>
             <div className="w-3/4 border-t-8 border-r-8 border-grey-another rounded-lg bottom-0 left-0 text-grey-title">
