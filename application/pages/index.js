@@ -145,7 +145,7 @@ export default function Home() {
             <div className="mb-16 px-5 md:px-11">
               <h3 className="mb-4">Transact with Digital Currencies for Global Payouts</h3>
               <p className="text-blue-bodyLighter">
-              Send and received payments with stablecoins in your digital dollar wallet.
+              Send and receive payments with stablecoins in your digital dollar wallet.
               </p>
             </div>
             <div className="w-3/4 border-t-8 border-r-8 border-grey-another rounded-lg bottom-0 left-0 text-grey-title">
