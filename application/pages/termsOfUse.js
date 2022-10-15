@@ -158,4 +158,4 @@ export default function TermsOfUsePage() {
   );
 }
 
-Home.getInitialProps = publicRoute;
+TermsOfUsePage.getInitialProps = publicRoute;

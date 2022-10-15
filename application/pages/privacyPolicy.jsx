@@ -125,9 +125,9 @@ export default function PrivacyPolicyPage() {
               When you use any of our products or services we collect;
             </p>
 
-            <h5 className="mb-2">Biodata</h5>
+            <h5 className="mb-2 font-bold">Biodata</h5>
 
-            <ul className="list-none">
+            <ul className="list-disc mb-4">
             {infoCollectedList.map((text, index) => (
                 <li key={`infoCollected-${index}`} className="font-normal mb-1">
                   {text}
@@ -135,8 +135,8 @@ export default function PrivacyPolicyPage() {
               ))}
             </ul>
 
-            <h5 className="mb-2">Transaction Information</h5>
-            <ul className="list-none">
+            <h5 className="mb-2 mt-4 font-bold">Transaction Information</h5>
+            <ul className="list-disc">
             {transactionInformationList.map((text, index) => (
                 <li key={`transactionInfoCollected-${index}`} className="font-normal mb-1">
                   {text}
@@ -162,4 +162,4 @@ export default function PrivacyPolicyPage() {
   );
 }
 
-Home.getInitialProps = publicRoute;
+PrivacyPolicyPage.getInitialProps = publicRoute;
