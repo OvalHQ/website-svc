@@ -18,6 +18,7 @@ import axios from 'axios';
 import { CgSpinner } from 'react-icons/cg';
 import EmailSuccessModal from '../components/success/email';
 import { earlyAccess } from '../server/api';
+import Footer from '../components/footer';
 
 export default function Home() {
   const [email, setEmail] = useState('');
@@ -187,7 +188,8 @@ export default function Home() {
           </div>
         </div>
       </main>
-      <nav className="w-full bg-white px-12">
+      <Footer />
+      {/* <nav className="w-full bg-white px-12">
         <div className="border-t py-7 md:px-24 md:flex justify-between items-center">
           <p className="text-blue-bodyLighter">
             © 2021 Oval.io All rights reserved. <a href="mailto:info@useoval.com">
@@ -196,7 +198,7 @@ export default function Home() {
               </a>
           </p>
         </div>
-      </nav>
+      </nav> */}
       <EmailSuccessModal status={modalStatus} closeModal={handleModalStatus} />
     </>
   );
