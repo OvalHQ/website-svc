@@ -2,19 +2,6 @@ import { publicRoute } from "../middleware/authentication";
 import Head from "next/head";
 import Image from "next/image";
 import Link from "next/link";
-
-import { Disclosure, Transition } from "@headlessui/react";
-import oval from "../assets/png/mondu.png";
-import toggle from "../assets/svg/home/toggle.svg";
-import add from "../assets/svg/home/add.svg";
-import minus from "../assets/svg/home/minus.svg";
-import usa from "../assets/svg/home/usa-card.svg";
-import naija from "../assets/svg/home/naija-card.svg";
-import canada from "../assets/svg/home/canada-card.svg";
-import server from "../server";
-import { million_things, questions } from "../helpers/constants";
-import StepOne from "../components/transactions/sendmoney/stepone";
-import TextInput from "../components/inputs/text-input";
 import { useState, useEffect } from "react";
 import axios from "axios";
 import { CgSpinner } from "react-icons/cg";
@@ -58,7 +45,7 @@ export default function TermsOfUsePage() {
     const fetch = async () => {
       setLoading(true);
       try {
-        const response = await server.get("/terms.json");
+        const response = await axios.get("/terms.json");
 
         console.log(response.data);
         setSections(response.data);
