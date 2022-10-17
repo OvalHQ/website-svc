@@ -136,7 +136,7 @@ export default function PrivacyPolicyPage() {
           <div className="mb-4">
             <ol className="list-decimal">
               {questionsList.map((item, index) => (
-                <a key={`questions-${index}`} href={item.link}>
+                <a className="underline" key={`questions-${index}`} href={item.link}>
                   <li className="font-normal mb-2">{item.text}</li>
                 </a>
               ))}
@@ -376,8 +376,9 @@ export default function PrivacyPolicyPage() {
               settings. Oval does not currently alter our practices when we
               receive "Do Not Track" signals, however users with certain modern
               browsers or software have the ability to activate a "Do Not Track"
-              Signal. You can learn more about "Do Not Track" signals at [
-              https://allaboutdnt.com/ ].
+              Signal. You can learn more about "Do Not Track" signals at <a href="https://allaboutdnt.com/" className="underline link">
+              allaboutdnt.com
+              </a>.
             </p>
 
             <h5 className="mb-2 font-semibold">
@@ -419,7 +420,7 @@ export default function PrivacyPolicyPage() {
               questions, or if you would like to make a complaint or express any
               concerns you may have regarding compliance with our privacy
               policy, please contact us by e-mail at{" "}
-              <a href="mailto://info@useoval.com" className="link">
+              <a href="mailto://info@useoval.com" className="underline link">
                 info@useoval.com
               </a>
               .
