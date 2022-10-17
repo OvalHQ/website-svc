@@ -28,7 +28,7 @@ const SectionItem = ({ section, sectionIndex }) => {
   const childrenList = (
     <div className={childClassName}>
       {children.map((child, i) => (
-        <p className="mb-4" key={`${sectionIndex}-child-${i}`}>
+        <p className="mb-4" key={`${sectionIndex}-child-${i}`} >
           {child}
         </p>
       ))}
@@ -38,7 +38,7 @@ const SectionItem = ({ section, sectionIndex }) => {
     <div className="flex mb-8" id={`section-${index.replace(".", "_")}`}>
       <p className="w-8">{index}</p>
       <div className={"flex-1"}>
-        <p className={isTitle ? "font-bold" : "font-normal"}>{text}</p>
+        <p className={isTitle ? "font-bold" : "font-normal"} dangerouslySetInnerHTML={{__html:text}} />
         {children.length > 0 && childrenList}
       </div>
     </div>
