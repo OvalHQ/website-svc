@@ -14,6 +14,9 @@ const Footer = () => {
              <Link href="privacyPolicy" prefetch={false} shallow={false}> 
              <li className="font-normal cursor-pointer mb-2">Data Privacy Policy</li>
              </Link>
+             <Link href="aml" prefetch={false} shallow={false}> 
+             <li className="font-normal cursor-pointer mb-2">Anti Money Laundering Policy</li>
+             </Link>
              <Link href="termsOfUse" prefetch={false} shallow={false}> 
               <li className="font-normal cursor-pointer mb-2">Terms and Conditions</li>
               </Link>
