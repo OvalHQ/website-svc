@@ -88,7 +88,7 @@ export default function AMLPage() {
         </div>
       </nav>
       <main className="pt-8 px-12 bg-white min-h-screen md:overflow-x-hidden">
-        <div className="w-4/5 mx-auto my-0 max-w-[700px] min-w-[200px]" style={{}}>
+        <div className="w-4/5 mx-auto my-0 max-w-[700px] min-w-[300px]" style={{}}>
           <h3 className="mb-4 text-center">ANTI MONEY LAUNDERING POLICY</h3>
 
           <div className="mb-4">

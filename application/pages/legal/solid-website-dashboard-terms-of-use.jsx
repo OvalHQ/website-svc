@@ -1,13 +1,9 @@
-import { publicRoute } from "../middleware/authentication";
 import Head from "next/head";
-import Image from "next/image";
 import Link from "next/link";
-import { useState, useEffect } from "react";
-import axios from "axios";
-import { CgSpinner } from "react-icons/cg";
-import EmailSuccessModal from "../components/success/email";
-import { earlyAccess } from "../server/api";
-import Footer from "../components/footer";
+import { useState } from "react";
+
+import Footer from "../../components/footer";
+import Legal from "../../components/Legal";
 
 export default function SolidTermsOfUsePage() {
     const [modalStatus, setModalStatus] = useState(false);
@@ -37,8 +33,9 @@ export default function SolidTermsOfUsePage() {
 
       <main className="pt-8 px-12 bg-white min-h-screen md:overflow-x-hidden">
         <div
-          className="w-4/5 mx-auto my-0 max-w-[700px] min-w-[200px]"
+          className="w-4/5 mx-auto my-0 max-w-[700px] min-w-[300px]"
         >
+          <Legal active="solid-website-dashboard-terms-of-use" />
           <h3 className="mb-4 text-center">Solid TERMS OF USE</h3>
 
           <p className="mb-4">Last updated: 05/01/21</p>
@@ -385,7 +382,6 @@ THE FOREGOING DOES NOT AFFECT ANY LIABILITY THAT CANNOT BE EXCLUDED OR LIMITED U
       </main>
       <Footer />
 
-      <EmailSuccessModal status={modalStatus} closeModal={handleModalStatus} />
     </>
   );
 }

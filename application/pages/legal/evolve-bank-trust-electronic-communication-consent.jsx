@@ -1,13 +1,9 @@
-import { publicRoute } from "../middleware/authentication";
 import Head from "next/head";
-import Image from "next/image";
 import Link from "next/link";
-import { useState, useEffect } from "react";
-import axios from "axios";
-import { CgSpinner } from "react-icons/cg";
-import EmailSuccessModal from "../components/success/email";
-import { earlyAccess } from "../server/api";
-import Footer from "../components/footer";
+import { useState } from "react";
+
+import Footer from "../../components/footer";
+import Legal from "../../components/Legal";
 
 export default function OvalPrivacyPolicy() {
   const [modalStatus, setModalStatus] = useState(false);
@@ -37,7 +33,8 @@ export default function OvalPrivacyPolicy() {
       </nav>
 
       <main className="pt-8 px-12 bg-white min-h-screen md:overflow-x-hidden">
-        <div className="w-4/5 mx-auto my-0 max-w-[700px] min-w-[200px]">
+        <div className="w-4/5 mx-auto my-0 max-w-[700px] min-w-[300px]">
+          <Legal active="evolve-bank-trust-electronic-communication-consent"/>
           <h3 className="mb-4 text-center">
             Evolve Bank & Trust Electronic Communication Consent{" "}
           </h3>
@@ -242,6 +239,7 @@ export default function OvalPrivacyPolicy() {
           </p>
         </div>
       </main>
+      <Footer/>
     </>
   );
 }

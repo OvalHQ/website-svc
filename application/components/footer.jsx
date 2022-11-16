@@ -11,8 +11,8 @@ const Footer = () => {
           <div className="mb-4 flex-1" id="contact-tab">
             <h3 className="mb-4">About</h3>
             <ul className="list-none text-sm">
-             <Link href="privacyPolicy" prefetch={false} shallow={false}> 
-             <li className="font-normal cursor-pointer mb-2">Data Privacy Policy</li>
+             <Link href="legal" prefetch={false} shallow={false}> 
+             <li className="font-normal cursor-pointer mb-2">Legal</li>
              </Link>
              <Link href="aml" prefetch={false} shallow={false}> 
              <li className="font-normal cursor-pointer mb-2">Anti Money Laundering Policy</li>

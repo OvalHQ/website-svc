@@ -1,13 +1,9 @@
-import { publicRoute } from "../middleware/authentication";
 import Head from "next/head";
-import Image from "next/image";
 import Link from "next/link";
-import { useState, useEffect } from "react";
-import axios from "axios";
-import { CgSpinner } from "react-icons/cg";
-import EmailSuccessModal from "../components/success/email";
-import { earlyAccess } from "../server/api";
-import Footer from "../components/footer";
+import { useState } from "react";
+
+import Footer from "../../components/footer";
+import Legal from "../../components/Legal";
 
 export default function OvalPrivacyPolicy() {
   const [modalStatus, setModalStatus] = useState(false);
@@ -35,7 +31,9 @@ export default function OvalPrivacyPolicy() {
       </nav>
 
       <main className="pt-8 px-12 bg-white min-h-screen md:overflow-x-hidden">
-        <div className="w-4/5 mx-auto my-0 max-w-[700px] min-w-[200px]">
+        
+        <div className="w-4/5 mx-auto my-0 max-w-[700px] min-w-[300px]">
+        <Legal active="oval-account-agreement" />
           <h3 className="mb-4 text-center">Oval Account Agreement</h3>
           <p className="mb-4">Effective September 1, 2021</p>
           <p className="mb-4">
@@ -2089,6 +2087,7 @@ export default function OvalPrivacyPolicy() {
 </p><p className="mb-4">Termination. We reserve the right to terminate your use of any or all of our EFT services for any reason and at any time without notifying you. You also have the right to terminate your use of the EFT services described in this Agreement at any time by calling us or writing to us. If you call, we may require you to put your request in writing and get it to us within 10 Business Days after you call. (Please note that e-mail, SMS/text or online notification will not meet the notice requirements of this section.) If you terminate your use of our EFT services and you have arranged for automatic (regular) transfers involving third parties, you are required to inform any third parties that the transfers will cease. Any termination of your use of our EFT services, whether initiated by you or us, will not affect any of your or our rights and obligations under this Agreement that have arisen before the effective date of such termination.</p>
         </div>
       </main>
+      <Footer />
     </>
   );
 }

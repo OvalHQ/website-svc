@@ -1,13 +1,9 @@
-import { publicRoute } from "../middleware/authentication";
 import Head from "next/head";
-import Image from "next/image";
 import Link from "next/link";
-import { useState, useEffect } from "react";
-import axios from "axios";
-import { CgSpinner } from "react-icons/cg";
-import EmailSuccessModal from "../components/success/email";
-import { earlyAccess } from "../server/api";
-import Footer from "../components/footer";
+import { useState } from "react";
+
+import Footer from "../../components/footer";
+import Legal from "../../components/Legal";
 
 export default function OvalPrivacyPolicy() {
   const [modalStatus, setModalStatus] = useState(false);
@@ -37,7 +33,9 @@ export default function OvalPrivacyPolicy() {
       </nav>
 
       <main className="pt-8 px-12 bg-white min-h-screen md:overflow-x-hidden">
-        <div className="w-4/5 mx-auto my-0 max-w-[700px] min-w-[200px]">
+        <div className="w-4/5 mx-auto my-0 max-w-[700px] min-w-[300px]">
+        <Legal active="e-sign-consent-and-electronic-ommunications-agreement" />
+
           <h3 className="mb-4 text-center">
             E-Sign Consent and Electronic Communications Agreement
           </h3>
@@ -122,6 +120,7 @@ If you seek to obtain a new product, service or account with us, we may remind y
 <p className="mb-4 font-bold">You have the right to withdraw this consent at any time. Withdrawing consent may terminate your access to certain electronic services. You may also no longer be able to use certain Oval products. After we have processed your withdrawal, future Communications required to be in writing will be delivered to you on paper, subject to applicable fees. To withdraw your consent to receiving electronic Communications, you may contact us via email at <a href="mailto:info@useoval.com">info@useoval.com</a> Your withdrawal of consent will become effective only after we have had a reasonable opportunity to act upon it.</p>
   </div>
       </main>
+      <Footer />
     </>
   );
 }
