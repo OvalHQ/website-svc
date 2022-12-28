@@ -76,13 +76,13 @@ export default function Home() {
         <div className="grid md:grid-cols-2 content-center items-center my-8">
           <div className="col-span-1 mx-auto max-w-md">
             <h2 className="mb-4">
-              Payments & Blockchain Infrastructure for Global Businesses
+              Payments Infrastructure for Global Businesses
             </h2>
             <p className="text-blue-bodyLighter text-lg">
               We help businesses, DeFi projects and Enterprises accept payments
               with crypto and send payouts globally in one unified platform.
-              Take your business global in a scalable and efficient way through
-              blockchain infrastructure.
+              Take your business global in a scalable and efficient way with
+              payments infrastructure.
             </p>
 
             <div className=" gap-4 my-6 w-full">
