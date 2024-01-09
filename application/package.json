@@ -1,38 +1,27 @@
 {
+  "name": "oval-web",
+  "version": "0.1.0-alpha1",
   "private": true,
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start"
-  },
-  "engines": {
-    "node": "14.17.0",
-    "yarn": "1.17.3"
+    "start": "next start",
+    "lint": "next lint"
   },
   "dependencies": {
-    "@headlessui/react": "^1.4.0",
-    "@icons-pack/react-simple-icons": "^5.9.0",
-    "axios": "^0.21.4",
-    "boring-avatars": "^1.5.8",
-    "classnames": "^2.3.1",
-    "google-auth-library": "^7.10.1",
-    "google-spreadsheet": "^3.1.15",
-    "js-cookie": "^3.0.1",
-    "libphonenumber-js": "^1.9.43",
-    "next": "11.1.0",
-    "numeral": "^2.0.6",
-    "react": "^17.0.2",
-    "react-circular-progressbar": "^2.0.4",
-    "react-dom": "^17.0.2",
-    "react-hook-form": "^7.15.3",
-    "react-icons": "^4.2.0"
+    "react": "^18",
+    "react-dom": "^18",
+    "next": "13.5.6"
   },
   "devDependencies": {
-    "autoprefixer": "^10.2.6",
-    "postcss": "^8.3.5",
-    "tailwindcss": "^2.2.4"
-  },
-  "browser": {
-    "child_process": false
+    "typescript": "^5",
+    "@types/node": "^20",
+    "@types/react": "^18",
+    "@types/react-dom": "^18",
+    "autoprefixer": "^10",
+    "postcss": "^8",
+    "tailwindcss": "^3",
+    "eslint": "^8",
+    "eslint-config-next": "13.5.6"
   }
 }
