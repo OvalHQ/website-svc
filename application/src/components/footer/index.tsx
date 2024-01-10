@@ -29,7 +29,7 @@ const Footer = () => {
               Products
             </Paragraph>
             <Link
-              href=""
+              href="/cards"
               style={{
                 textDecoration: "none",
               }}
@@ -98,7 +98,7 @@ const Footer = () => {
             <Text color="white">legal@usegraph.co</Text>
           </Link>
           <Link
-            href="#faqs"
+            href="/#faqs"
             style={{
               textDecoration: "none",
             }}
