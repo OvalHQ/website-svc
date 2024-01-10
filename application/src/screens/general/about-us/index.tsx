@@ -1,5 +1,6 @@
 "use client";
 
+import SimplifyOperations from "@/components/home/simplify-operations";
 import MainLayout from "@/components/layout/main";
 import { Heading, Pane, Text } from "evergreen-ui";
 
@@ -35,6 +36,9 @@ const AboutUsScreen = () => {
             </p>
           </Pane>
         </Pane>
+      </Pane>
+      <Pane className="md:w-[95%] mx-auto md:mb-28">
+        <SimplifyOperations/>
       </Pane>
     </MainLayout>
   )
