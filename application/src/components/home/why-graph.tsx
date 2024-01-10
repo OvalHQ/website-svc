@@ -8,7 +8,7 @@ const WhyGraph = () => {
       <Heading
         fontSize="2.5rem"
         lineHeight={"40px"}
-        fontWeight={700}
+        fontWeight={600}
         textAlign="center"
         color="black"
         maxWidth={"800px"}
@@ -18,7 +18,7 @@ const WhyGraph = () => {
       <Heading
         fontSize="2.5rem"
         lineHeight={"40px"}
-        fontWeight={700}
+        fontWeight={600}
         textAlign="center"
         color="black"
         maxWidth={"800px"}

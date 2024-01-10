@@ -26,7 +26,7 @@ const Faqs = () => {
   };
 
   return (
-    <Pane className="faqs">
+    <Pane className="faqs" id="faqs">
       <Heading
         marginBottom={50}
         fontSize="2.5rem"
@@ -57,9 +57,17 @@ const Faqs = () => {
                   {faq.question}
                 </Paragraph>
                 {openedId === index ? (
-                  <MinusIcon color={Colors.dark.primary} />
+                  <MinusIcon
+                    color={Colors.dark.primary}
+                    size={25}
+                    fontWeight={200}
+                  />
                 ) : (
-                  <PlusIcon color={Colors.dark.primary} />
+                  <PlusIcon
+                    color={Colors.dark.primary}
+                    size={25}
+                    fontWeight={200}
+                  />
                 )}
               </Pane>
 

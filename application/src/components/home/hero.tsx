@@ -42,6 +42,9 @@ const Hero = () => {
                 borderRadius={10}
                 fontSize={13}
                 fontWeight={400}
+                height={"auto"}
+                paddingY={5}
+                paddingX={35}
               >
                 Get Started
               </Button>
@@ -56,6 +59,9 @@ const Hero = () => {
                 borderRadius={10}
                 fontSize={13}
                 fontWeight={400}
+                height={"auto"}
+                paddingY={5}
+                paddingX={35}
               >
                 Contact Sales
               </Button>

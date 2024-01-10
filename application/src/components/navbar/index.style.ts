@@ -23,7 +23,7 @@ const NavbarWrapper = styled(Pane)`
     flex-direction: column;
     align-items: self-start;
     justify-content: start;
-    box-shadow: 0px 2px 5px 0px #ebebeb;
+    // box-shadow: 0px 2px 5px 0px #ebebeb;
     border-radius: 10px;
     background: white;
 

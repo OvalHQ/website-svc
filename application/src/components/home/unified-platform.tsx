@@ -9,7 +9,7 @@ const UnifiedPlatform = () => {
         // marginBottom={50}
         fontSize="2.5rem"
         lineHeight={"40px"}
-        fontWeight={700}
+        fontWeight={600}
         textAlign="center"
         color="white"
       >
@@ -45,7 +45,7 @@ const UnifiedPlatform = () => {
             />
           </Pane>
           <Pane>
-            <Heading size={800} fontWeight={700} marginY={20} color="white">
+            <Heading size={800} fontWeight={600} marginY={20} color="white">
               All-in-One Finance Platform
             </Heading>
             <Text lineHeight="24px" color="white">

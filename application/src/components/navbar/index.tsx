@@ -8,6 +8,7 @@ import { AnimatePresence, motion } from "framer-motion";
 import Colors from "@/theme/Colors";
 import { LogoWithText } from "../primitives/logo";
 import Link from "next/link";
+import Image from "next/image";
 
 const Navbar = () => {
   const [openedId, setOpenedId] = useState(-1);
@@ -29,7 +30,7 @@ const Navbar = () => {
           display="flex"
           justifyContent="center"
           alignItems="center"
-          gap="15px"
+          gap="35px"
         >
           <Pane
             position="relative"
@@ -64,13 +65,28 @@ const Navbar = () => {
                   transition={{ duration: 0.2 }}
                   className="navbar-item-submenu"
                 >
-                  <Paragraph fontWeight="bold">Business Banking</Paragraph>
+                  <Paragraph
+                    fontWeight="bold"
+                    marginBottom={30}
+                    fontSize={"14px"}
+                  >
+                    Business Banking
+                  </Paragraph>
                   <Link
                     href=""
                     style={{
                       textDecoration: "none",
+                      display: "flex",
+                      justifyContent: "center",
+                      gap: "15px",
                     }}
                   >
+                    <Image
+                      width={20}
+                      height={20}
+                      alt="card icon"
+                      src={"/images/general/card-icon.svg"}
+                    />
                     <Text>Cards</Text>
                   </Link>
 
@@ -78,8 +94,17 @@ const Navbar = () => {
                     href=""
                     style={{
                       textDecoration: "none",
+                      display: "flex",
+                      justifyContent: "center",
+                      gap: "15px",
                     }}
                   >
+                    <Image
+                      width={20}
+                      height={20}
+                      alt="card icon"
+                      src={"/images/general/multi-currency-icon.svg"}
+                    />
                     <Text>Multi-currency Accounts</Text>
                   </Link>
                 </motion.div>
@@ -177,7 +202,7 @@ const Navbar = () => {
                   </Link>
 
                   <Link
-                    href=""
+                    href="/#faqs"
                     style={{
                       textDecoration: "none",
                     }}
@@ -189,7 +214,7 @@ const Navbar = () => {
             </AnimatePresence>
           </Pane>
         </Pane>
-        <Pane>
+        <Pane display="flex" alignItems="center" gap="15px">
           <Text marginRight={10}>Log In</Text>
           <Button
             type="submit"
