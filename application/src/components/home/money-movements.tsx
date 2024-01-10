@@ -81,7 +81,7 @@ const MoneyMovement = () => {
                   size={900}
                   fontSize={"45px"}
                   lineHeight="50px"
-                  fontWeight={700}
+                  fontWeight={600}
                   marginY={20}
                   color="black"
                 >
@@ -92,7 +92,7 @@ const MoneyMovement = () => {
                   size={900}
                   fontSize={"45px"}
                   lineHeight="50px"
-                  fontWeight={700}
+                  fontWeight={600}
                   marginY={20}
                   color="white"
                 >
@@ -211,6 +211,9 @@ const MoneyMovement = () => {
                 border="none"
                 fontSize={13}
                 fontWeight={400}
+                height={"auto"}
+                paddingY={5}
+                paddingX={35}
               >
                 Learn more
               </Button>

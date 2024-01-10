@@ -8,7 +8,13 @@ const Footer = () => {
   return (
     <FooterWrapper>
       <Pane className="footer-top">
-        <Pane display="flex" flexDirection="column" gap={5} flex={2}>
+        <Pane
+          display="flex"
+          flexDirection="column"
+          gap={5}
+          flex={2}
+          flexWrap="wrap"
+        >
           <Image
             alt="graph-logo"
             src={require("../../../public/images/graph-logo-full-white.png")}
@@ -68,7 +74,7 @@ const Footer = () => {
           </Paragraph>
 
           <Link
-            href=""
+            href="mailto:info@usegraph.co"
             style={{
               textDecoration: "none",
             }}
@@ -76,7 +82,7 @@ const Footer = () => {
             <Text color="white">info@usegraph.co</Text>
           </Link>
           <Link
-            href=""
+            href="mailto:support@usegraph.co"
             style={{
               textDecoration: "none",
             }}
@@ -84,7 +90,7 @@ const Footer = () => {
             <Text color="white">support@usegraph.co</Text>
           </Link>
           <Link
-            href=""
+            href="mailto:legal@usegraph.co"
             style={{
               textDecoration: "none",
             }}
@@ -92,7 +98,7 @@ const Footer = () => {
             <Text color="white">legal@usegraph.co</Text>
           </Link>
           <Link
-            href=""
+            href="#faqs"
             style={{
               textDecoration: "none",
             }}

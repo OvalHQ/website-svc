@@ -1,6 +1,13 @@
-import { Button, Heading, Pane, Paragraph, TextInput, TextInputField } from 'evergreen-ui';
-import Image from 'next/image';
-import React from 'react';
+import {
+  Button,
+  Heading,
+  Pane,
+  Paragraph,
+  TextInput,
+  TextInputField,
+} from "evergreen-ui";
+import Image from "next/image";
+import React from "react";
 
 const SimplifyOperations = () => {
   return (
@@ -13,13 +20,13 @@ const SimplifyOperations = () => {
         justifyContent="center"
         alignItems="center"
         padding={50}
-        width={'100%'}
-        height={'580px'}
+        width={"100%"}
+        height={"580px"}
       >
         <Pane zIndex={5}>
           <Heading
             fontSize="3.5rem"
-            lineHeight={'70px'}
+            lineHeight={"70px"}
             fontWeight={700}
             textAlign="center"
             color="black"
@@ -27,7 +34,12 @@ const SimplifyOperations = () => {
           >
             Ready to simplify your financial operations?
           </Heading>
-          <Paragraph marginY={10} textAlign="center" fontSize="18px" color="black">
+          <Paragraph
+            marginY={10}
+            textAlign="center"
+            fontSize="18px"
+            color="black"
+          >
             Open an account today.
           </Paragraph>
           <Pane
@@ -40,7 +52,12 @@ const SimplifyOperations = () => {
             justifyContent="center"
             alignItems="center"
           >
-            <TextInput flex={1} border="none" placeholder="Enter your work mail" />
+            <TextInput
+              flex={1}
+              border="none !important"
+              paddingY={8}
+              placeholder="Enter your work mail"
+            />
             <Button
               className="cta-primary"
               type="submit"
@@ -49,7 +66,10 @@ const SimplifyOperations = () => {
               background="black"
               borderRadius={10}
               fontSize={13}
+              height={"auto"}
               fontWeight={400}
+              paddingY={5}
+              paddingX={35}
             >
               Get Started for free
             </Button>
@@ -58,11 +78,11 @@ const SimplifyOperations = () => {
         <Pane position="absolute" left={0} zIndex={1}>
           <Image
             style={{
-              transform: 'rotate(180deg)',
+              transform: "rotate(180deg)",
               opacity: 0.2,
             }}
             alt="background-layer"
-            src={require('../../../public/images/general/pattern-bg-1.png')}
+            src={require("../../../public/images/general/pattern-bg-1.png")}
           />
         </Pane>
         <Pane position="absolute" right={0} zIndex={1}>
@@ -71,7 +91,7 @@ const SimplifyOperations = () => {
               opacity: 0.2,
             }}
             alt="background-layer"
-            src={require('../../../public/images/general/pattern-bg-1.png')}
+            src={require("../../../public/images/general/pattern-bg-1.png")}
           />
         </Pane>
       </Pane>

@@ -9,7 +9,7 @@ const TrustedBy = () => {
         marginBottom={"80px"}
         fontSize="2.5rem"
         lineHeight={"30px"}
-        fontWeight={700}
+        fontWeight={600}
         textAlign="center"
       >
         Trusted by innovative businesses
