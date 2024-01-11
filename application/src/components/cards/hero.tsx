@@ -66,6 +66,7 @@ const Hero = () => {
                   href={
                     "https://airtable.com/appoAvLm7YJjEJveN/shrScB7fxfi4fRMu6"
                   }
+                  target="_blank"
                 >
                   Get Started
                 </Link>

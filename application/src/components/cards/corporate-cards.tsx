@@ -137,13 +137,14 @@ const CorporateCards = () => {
                 paddingY={5}
                 paddingX={35}
               >
-              <Link
-                href={
-                  "https://airtable.com/appoAvLm7YJjEJveN/shrScB7fxfi4fRMu6"
-                }
-              >
-                Get Started
-              </Link>
+                <Link
+                  href={
+                    "https://airtable.com/appoAvLm7YJjEJveN/shrScB7fxfi4fRMu6"
+                  }
+                  target="_blank"
+                >
+                  Get Started
+                </Link>
               </Button>
             </Pane>
             <Pane marginTop="auto" flex={1} paddingRight="35px">

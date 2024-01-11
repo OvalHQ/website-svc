@@ -147,7 +147,7 @@ const Footer = () => {
                 height={25}
               />
             </Link>
-            <Link href="" target="_blank">
+            <Link href="https://twitter.com/usegraph" target="_blank">
               <Image
                 alt="linkedin"
                 src={"/images/general/x.svg"}
