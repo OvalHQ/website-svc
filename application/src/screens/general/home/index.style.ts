@@ -22,7 +22,6 @@ const HomePageScreenWrapper = styled(Pane)`
       opacity: 0.8;
       color: white;
       background: black;
-      // border: none;
     }
   }
 
