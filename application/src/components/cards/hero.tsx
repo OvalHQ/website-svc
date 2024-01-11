@@ -7,6 +7,7 @@ import {
   TickCircleIcon,
 } from "evergreen-ui";
 import Image from "next/image";
+import Link from "next/link";
 import React from "react";
 
 const Hero = () => {
@@ -61,7 +62,13 @@ const Hero = () => {
                 paddingY={5}
                 paddingX={35}
               >
-                Get Started
+                <Link
+                  href={
+                    "https://airtable.com/appoAvLm7YJjEJveN/shrScB7fxfi4fRMu6"
+                  }
+                >
+                  Get Started
+                </Link>
               </Button>
               <Button
                 className="cta-secondary"

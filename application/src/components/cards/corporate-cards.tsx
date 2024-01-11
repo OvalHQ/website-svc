@@ -1,6 +1,7 @@
 import Colors from "@/theme/Colors";
 import { Button, Heading, Pane, Paragraph, Text, TickIcon } from "evergreen-ui";
 import Image from "next/image";
+import Link from "next/link";
 import React from "react";
 
 const CorporateCards = () => {
@@ -136,7 +137,13 @@ const CorporateCards = () => {
                 paddingY={5}
                 paddingX={35}
               >
-                Get started
+              <Link
+                href={
+                  "https://airtable.com/appoAvLm7YJjEJveN/shrScB7fxfi4fRMu6"
+                }
+              >
+                Get Started
+              </Link>
               </Button>
             </Pane>
             <Pane marginTop="auto" flex={1} paddingRight="35px">

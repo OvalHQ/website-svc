@@ -24,7 +24,9 @@ const Navbar = () => {
         alignItems="center"
         justifyContent="space-between"
       >
-        <LogoWithText alt="Graph logo" height={24} />
+        <Link href={"/"}>
+          <LogoWithText alt="Graph logo" height={24} />
+        </Link>
 
         <Pane
           display="flex"
@@ -91,7 +93,7 @@ const Navbar = () => {
                   </Link>
 
                   <Link
-                    href=""
+                    href="/multi-currency-accounts"
                     style={{
                       textDecoration: "none",
                       display: "flex",
