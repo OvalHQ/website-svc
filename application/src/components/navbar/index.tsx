@@ -73,7 +73,7 @@ const Navbar = () => {
                     Business Banking
                   </Paragraph>
                   <Link
-                    href=""
+                    href="/cards"
                     style={{
                       textDecoration: "none",
                       display: "flex",
