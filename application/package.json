@@ -1,6 +1,6 @@
 {
   "name": "oval-web",
-  "version": "0.1.0-alpha03",
+  "version": "0.1.0-alpha04",
   "private": true,
   "scripts": {
     "dev": "next dev",
