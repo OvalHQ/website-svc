@@ -4,15 +4,14 @@ import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 
-const CorporateCards = () => {
+const SolidFoundation = () => {
   return (
-    <Pane className="corporate-cards">
+    <Pane className="solid-foundation">
       <Pane display="flex" gap="30px" width="100%">
         <Pane
           flex={1}
           borderRadius={15}
-          background={"#D1F89840"}
-          // transition="all 1s cubic-bezier(0.58, 0.05, 0.08, 1.04)"
+          background={"white"}
           paddingY={60}
           paddingLeft={"4rem"}
         >
@@ -27,7 +26,7 @@ const CorporateCards = () => {
                 color="black"
                 maxWidth="500px"
               >
-                Save more with the all-in-one corporate card
+                Launch with a solid financial foundation
               </Heading>
               <Paragraph
                 fontSize={"16px"}
@@ -36,9 +35,8 @@ const CorporateCards = () => {
                 maxWidth="500px"
                 color={"black"}
               >
-                Easily make payment for travel, online ads , and more with
-                International and local card’s acceptance in 20 currencies or
-                more.
+                Open a flexible account that lets you manage, spend, and grow
+                your cash — all in a single dashboard
               </Paragraph>
               <Pane
                 display="flex"
@@ -67,12 +65,9 @@ const CorporateCards = () => {
                   >
                     <TickIcon color={Colors.dark.primary} />
                   </Pane>
-                  <Text
-                    transition="all 1s cubic-bezier(0.58, 0.05, 0.08, 1.04)"
-                    color={"black"}
-                    fontWeight={400}
-                  >
-                    Issue unlimited cards to your employees
+                  <Text color={"black"} fontWeight={400}>
+                    Apply for an account in minutes with no minimum balance or
+                    personal guarantee.
                   </Text>
                 </Pane>
                 <Pane
@@ -91,12 +86,9 @@ const CorporateCards = () => {
                   >
                     <TickIcon color={Colors.dark.primary} />
                   </Pane>
-                  <Text
-                    transition="all 1s cubic-bezier(0.58, 0.05, 0.08, 1.04)"
-                    color={"black"}
-                    fontWeight={400}
-                  >
-                    Manage all expense in one place
+                  <Text color={"black"} fontWeight={400}>
+                    Easily receive and make payments by instant bank transfers
+                    and multiple payment methods
                   </Text>
                 </Pane>
                 <Pane
@@ -115,12 +107,9 @@ const CorporateCards = () => {
                   >
                     <TickIcon color={Colors.dark.primary} />
                   </Pane>
-                  <Text
-                    transition="all 1s cubic-bezier(0.58, 0.05, 0.08, 1.04)"
-                    color={"black"}
-                    fontWeight={400}
-                  >
-                    Make unlimted purchases and ads for your business
+                  <Text color={"black"} fontWeight={400}>
+                    Graph partners banks are regulated and funds are FDIC
+                    Insured
                   </Text>
                 </Pane>
               </Pane>
@@ -147,18 +136,16 @@ const CorporateCards = () => {
                 </Link>
               </Button>
             </Pane>
-            <Pane marginTop="auto" flex={1} paddingRight="35px">
+            <Pane marginTop="auto" flex={1} paddingRight="25px">
               <Pane position="relative">
-                {/* <Pane position="absolute" right="0" bottom="0"> */}
                 <Image
                   style={{
                     maxWidth: "700px",
                     marginLeft: "auto",
                   }}
                   alt="hero image"
-                  src={require("../../../public/images/general/corporate-card-img.png")}
+                  src={require("../../../public/images/general/solid-foundation-img.png")}
                 />
-                {/* </Pane> */}
               </Pane>
             </Pane>
           </Pane>
@@ -168,4 +155,4 @@ const CorporateCards = () => {
   );
 };
 
-export default CorporateCards;
+export default SolidFoundation;

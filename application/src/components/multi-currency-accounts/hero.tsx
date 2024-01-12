@@ -15,11 +15,11 @@ const Hero = () => {
               fontSize="60px"
               lineHeight={"70px"}
               fontWeight={600}
-              maxWidth="700px"
+              maxWidth="500px"
               color="black"
               className="text-sm text-gray-500"
             >
-              Cash management and corporate spending platform
+              The best place to manage your operating cash
             </Heading>
             <Paragraph
               marginTop="1.5rem"
@@ -30,8 +30,9 @@ const Hero = () => {
               fontSize="17px"
               className="text-sm text-gray-500"
             >
-              Experience seamless access to corporate cards, multi-currency
-              accounts, and global payouts, all in one account.
+              Manage payments and operate globally in any location with Multi
+              Currency bank accounts and billing—supporting currencies such as
+              USD, Canadian Dollar, Euro, Pound and more.
             </Paragraph>
             <Pane marginY={50}>
               <Button
@@ -79,14 +80,14 @@ const Hero = () => {
           <Pane gap={10} maxWidth={400} display="flex" flexWrap={"wrap"}>
             <Text>
               Graph is a financial technology company, not a bank . Banking
-              services provided by Evolve Bank & Trust®; Members FDIC.
+              services provided by Partner’s Banks.
             </Text>
           </Pane>
         </Pane>
         <Pane className="hero-right">
           <Image
             alt="hero image"
-            src={require("../../../public/images/general/home-hero.png")}
+            src={require("../../../public/images/general/multi-currency-hero-img.png")}
           />
         </Pane>
       </Pane>

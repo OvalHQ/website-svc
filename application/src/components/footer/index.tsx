@@ -37,7 +37,7 @@ const Footer = () => {
               <Text color="white">Cards</Text>
             </Link>
             <Link
-              href=""
+              href="/multi-currency-accounts"
               style={{
                 textDecoration: "none",
               }}
@@ -128,7 +128,10 @@ const Footer = () => {
         <Pane>
           <Text color="white">Stay updated with us</Text>
           <Pane marginTop="20px" display="flex" gap={55}>
-            <Link href="">
+            <Link
+              href="https://www.linkedin.com/company/rapidpay-africa/"
+              target="_blank"
+            >
               <Image
                 alt="linkedin"
                 src={"/images/general/linkedIn.svg"}
@@ -136,7 +139,7 @@ const Footer = () => {
                 height={25}
               />
             </Link>
-            <Link href="">
+            <Link href="" target="_blank">
               <Image
                 alt="linkedin"
                 src={"/images/general/instagram.svg"}
@@ -144,7 +147,7 @@ const Footer = () => {
                 height={25}
               />
             </Link>
-            <Link href="">
+            <Link href="https://twitter.com/usegraph" target="_blank">
               <Image
                 alt="linkedin"
                 src={"/images/general/x.svg"}
@@ -158,6 +161,7 @@ const Footer = () => {
               //   position: "relative",
               //   height: "25px",
               // }}
+              target="_blank"
             >
               <Image
                 alt="linkedin"
