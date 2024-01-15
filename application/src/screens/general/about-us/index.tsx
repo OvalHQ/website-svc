@@ -8,7 +8,7 @@ import Image from "next/image";
 const AboutUsScreen = () => {
   return (
     <MainLayout>
-      <Pane paddingY="175px" backgroundColor="#E2FDFF" position="relative" zIndex="2">
+      <Pane className="text-black" paddingY="175px" backgroundColor="#E2FDFF" position="relative" zIndex="2">
         <Pane display="flex" justifyContent="space-between" opacity=".3" position="absolute" top={0} zIndex={-4} width="100%" height="100%">
           <Pane>
             <Image
@@ -38,7 +38,7 @@ const AboutUsScreen = () => {
         </Pane>
       </Pane>
       <Pane className="md:py-[113px] flex justify-end md:mr-[260px]">
-        <Pane className="md:w-[600px]">
+        <Pane className="md:w-[600px] text-black">
           <h5 className="font-semibold md:text-3xl md:mb-8">Our mission</h5>
           <Pane>
             <p className="mb-8 font-medium md:text-xl md:mb-8">

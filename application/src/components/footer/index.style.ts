@@ -14,6 +14,24 @@ const FooterWrapper = styled(Pane)`
     display: flex;
     gap: 6rem;
     margin-bottom: 170px;
+    flex-wrap: wrap;
+  }
+
+  @media (max-width: 1000px) {
+    padding: 80px 60px 30px;
+
+    .footer-top {
+      gap: 3rem;
+    }
+  }
+
+  @media (max-width: 600px) {
+    padding: 40px 20px 20px;
+
+    .footer-top {
+      margin-bottom: 50px;
+      row-gap: 60px;
+    }
   }
 `;
 

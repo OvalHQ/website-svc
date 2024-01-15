@@ -27,17 +27,10 @@ const Faqs = () => {
 
   return (
     <Pane className="faqs" id="faqs">
-      <Heading
-        marginBottom={50}
-        fontSize="2.5rem"
-        lineHeight={"30px"}
-        fontWeight={700}
-        textAlign="center"
-        color="black"
-      >
+      <h2 className="mb-[50px] text-[2.5rem] leading-[35px] font-semibold text-center text-black ">
         Frequently Asked Questions
-      </Heading>
-      <Pane width="100%" paddingX="100px">
+      </h2>
+      <div className="w-full px-0 md:px-[100px]">
         {faqsObject.map((faq, index) => {
           return (
             <Pane
@@ -53,7 +46,7 @@ const Faqs = () => {
                 cursor="pointer"
                 onClick={() => handleToggle(index)}
               >
-                <Paragraph fontSize={"20px"} fontWeight={700} color="black">
+                <Paragraph fontSize={"20px"} fontWeight={600} color="black">
                   {faq.question}
                 </Paragraph>
                 {openedId === index ? (
@@ -91,7 +84,7 @@ const Faqs = () => {
             </Pane>
           );
         })}
-      </Pane>
+      </div>
     </Pane>
   );
 };
