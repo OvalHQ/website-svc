@@ -115,26 +115,17 @@ const HomePageScreenWrapper = styled(Pane)`
       width: 350px;
       padding: 50px 30px;
       border-radius: 16px;
-      border: 3px solid;
-      border-image: linear-gradient(
-        133.84deg,
-        rgb(255 255 255) 14.05%,
-        rgb(255 255 255 / 0%) 115.45%
-      );
-      box-shadow: 0 4px 30px rgb(0 0 0 / 52%);
-      -webkit-backdrop-filter: blur(5.3px);
-      backdrop-filter: blur(5.3px);
-      -webkit-backdrop-filter: blur(5.3px);
+      border: 1px solid rgba(255, 255, 255, .25);
       background: linear-gradient(
-          132.73deg,
-          rgba(0, 0, 0, 0.9) 12.88%,
-          rgba(0, 0, 0, 0) 163.96%
-        ),
-        linear-gradient(
-          133.84deg,
-          rgba(255, 255, 255, 0.25) 14.05%,
-          rgba(255, 255, 255, 0) 115.45%
-        );
+        132.73deg,
+        rgba(0, 0, 0, 0.9) 12.88%,
+        rgba(0, 0, 0, 0) 163.96%
+      ),
+      linear-gradient(
+        133.84deg,
+        rgba(255, 255, 255, 0.25) 14.05%,
+        rgba(255, 255, 255, 0) 115.45%
+      );
       transition: all 0.3s linear;
 
       .rounded-circle {
@@ -165,10 +156,20 @@ const HomePageScreenWrapper = styled(Pane)`
             rgb(255 255 255 / 21%) 115.45%
           );
       }
+
+      span {
+        font-weight: 300;
+      }
     }
     @media (max-width: 1200px) {
       .card {
         width: 300px;
+      }
+    }
+    @media (min-width: 1201px) {
+      .card {
+        width: 388px;
+        height: 393px;
       }
     }
 

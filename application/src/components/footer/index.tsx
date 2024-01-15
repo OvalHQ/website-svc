@@ -20,7 +20,7 @@ const Footer = () => {
             alt="graph-logo"
             src={require("../../../public/images/graph-logo-full-white.png")}
           />
-          <p className="text-white text-sm">Finance OS for Businesses</p>
+          <p className="text-white text-sm md:mt-5">Finance OS for Businesses</p>
         </Pane>
         <div className="flex-[2] flex gap-x-8 min-w-[300px] ">
           <Pane flex={1}>
@@ -51,21 +51,22 @@ const Footer = () => {
               </Paragraph>
 
               <Link
-                href=""
+                href="/about-us"
                 style={{
                   textDecoration: "none",
                 }}
               >
                 <Text color="white">About</Text>
               </Link>
-              <Link
-                href=""
+              <Text
                 style={{
                   textDecoration: "none",
+                  cursor: "not-allowed",
+                  opacity: ".5"
                 }}
               >
                 <Text color="white">Blog</Text>
-              </Link>
+              </Text>
             </Pane>
           </Pane>
           <Pane display="flex" flexDirection="column" gap={40} flex={1}>
