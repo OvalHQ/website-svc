@@ -50,11 +50,11 @@ const AboutUsScreen = () => {
             </p>
             
             <p className="mb-8 font-medium md:text-xl md:mb-8">
-              To enable these companies to drive their businesses forward through informed financial decisions, there's a demand for products that align with their progressive mindset and facilitate sustained growth.
+              To enable these companies to drive their businesses forward through informed financial decisions, there&#39;s a demand for products that align with their progressive mindset and facilitate sustained growth.
             </p>
 
             <p className="mb-8 font-medium md:text-xl">
-              Hence, we're developing a pioneering solution that seamlessly integrates essential financial services and software tailored to their journey. While these companies shape the future, our goal is to furnish everything necessary for a confident launch, smarter scalability, and achieving their utmost potential.
+              Hence, we&#39;re developing a pioneering solution that seamlessly integrates essential financial services and software tailored to their journey. While these companies shape the future, our goal is to furnish everything necessary for a confident launch, smarter scalability, and achieving their utmost potential.
             </p>
           </Pane>
         </Pane>
