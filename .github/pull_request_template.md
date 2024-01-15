@@ -1,14 +1,5 @@
 ### What does this MR do?
 
-Check spacing between nav items
-Implement buttons with paddings (remove set heights)
-Update Site Title and favicon
-Check font weight of titles. (The design is mostly 600, but yours is 700)
-Work on the form at "Ready to simplify your financial operations?". It looks different than the design.
-On FAQs check the font weight as well as the size of the icons on the right.
-On the footer, add mailto links to the emails.
-On the footer, link the FAQs to the FAQs section (use ID).
-
 ### Screenshots
 
 #### Before

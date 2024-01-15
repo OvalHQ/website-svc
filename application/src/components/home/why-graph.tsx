@@ -111,8 +111,8 @@ const WhyGraph = () => {
             // marginTop="50px"
           >
             <Image
+              src={require("../../../public/images/general/Bola-img.png")}
               alt="avatar"
-              src={require("../../../public/images/general/bola-img.png")}
               width="30"
               height="30"
             />
