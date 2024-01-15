@@ -26,7 +26,6 @@ const ContactScreen = () => {
 
   const handleSendContactUs = async (values: any) => {
     setIsLoading(true);
-    console.log('VALUES =>', values)
     try {
       const payload = {
         records: [
@@ -285,6 +284,7 @@ const ContactScreen = () => {
                 name="consent"
                 onChange={handleChange('consent')}
                 onBlur={handleBlur('consent')}
+                checked={!!values.consent}
                 value={values.consent}
               />
               <label className="text-xs">I consent to the collection and processing of my  personal data in line with data regulation as described in the Graph’s Privacy Policy.</label>

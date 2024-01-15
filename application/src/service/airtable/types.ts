@@ -17,3 +17,9 @@ type RecordType = {
     fldzP5Wrak1rIiLHj: string;
   }
 }
+
+export type CreateGetStartedRecordPayload = {
+  fields: {
+    fldiaL2CCd0Z39TeV: string;
+  }
+}
