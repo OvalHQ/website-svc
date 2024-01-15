@@ -144,7 +144,7 @@ const Navbar = () => {
                   className="navbar-item-submenu"
                 >
                   <Link
-                    href=""
+                    href="/about-us"
                     style={{
                       textDecoration: "none",
                     }}
@@ -152,14 +152,15 @@ const Navbar = () => {
                     <Text marginY={7}>About Us</Text>
                   </Link>
 
-                  <Link
-                    href=""
+                  <Text
                     style={{
                       textDecoration: "none",
+                      cursor: "not-allowed"
                     }}
+                    opacity="0.5"
                   >
                     <Text marginY={7}>Blog</Text>
-                  </Link>
+                  </Text>
                 </motion.div>
               )}
             </AnimatePresence>
@@ -195,7 +196,7 @@ const Navbar = () => {
                   className="navbar-item-submenu"
                 >
                   <Link
-                    href=""
+                    href="/contact"
                     style={{
                       textDecoration: "none",
                     }}
@@ -309,7 +310,7 @@ const Navbar = () => {
                   <h3 className="font-bold text-black mb-3">Company</h3>
                   <div className="rounded-xl bg-white p-4 flex flex-col justify-start items-start gap-7">
                     <Link
-                      href="/"
+                      href="/about-us"
                       style={{
                         textDecoration: "none",
                       }}
@@ -317,14 +318,14 @@ const Navbar = () => {
                       <p className="text-black font-normal">About Us</p>
                     </Link>
 
-                    <Link
-                      href="/"
+                    <Text
                       style={{
                         textDecoration: "none",
+                        cursor: "not-allowed"
                       }}
                     >
-                      <p className="text-black font-normal">Blog</p>
-                    </Link>
+                      <p className="text-black font-normal cursor-not-allowed">Blog</p>
+                    </Text>
                   </div>
                 </div>
                 <div>
