@@ -1,9 +1,11 @@
 import { Button, Heading, Pane, Paragraph, Text } from "evergreen-ui";
 import Image from "next/image";
 import Link from "next/link";
+import { useRouter } from "next/navigation";
 import React from "react";
 
 const Hero = () => {
+  const router = useRouter();
   return (
     <>
       <Pane className="hero">
@@ -70,6 +72,7 @@ const Hero = () => {
                 height={"auto"}
                 paddingY={5}
                 paddingX={35}
+                onClick={() => router.push("/contact")}
               >
                 Contact Sales
               </Button>
