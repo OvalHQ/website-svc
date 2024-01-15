@@ -80,7 +80,7 @@ const ContactScreen = () => {
 
   return (
     <MainLayout>
-      <Pane className="md:mt-28 md:mb-48">
+      <Pane className="md:mt-28 md:mb-48 text-[#000]">
         <Pane className="md:w-[60%] md:mx-auto">
           <Pane className="md:text-center md:mb-20">
             <h3 className="font-semibold md:text-3xl md:mb-5">Contact our Sales team to get started</h3>
