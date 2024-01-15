@@ -8,9 +8,9 @@ import Image from "next/image";
 const AboutUsScreen = () => {
   return (
     <MainLayout>
-      <Pane className="text-black" paddingY="175px" backgroundColor="#E2FDFF" position="relative" zIndex="2">
-        <Pane display="flex" justifyContent="space-between" opacity=".3" position="absolute" top={0} zIndex={-4} width="100%" height="100%">
-          <Pane>
+      <Pane className="relative text-black md:py-[175px] pt-[200px] pb-[105px] z-2" backgroundColor="#E2FDFF">
+        <Pane display="flex" justifyContent="space-between" opacity=".3" position="absolute" top={0} zIndex={0} width="100%" height="100%">
+          <Pane className="w-[90%] md:w-full">
             <Image
               style={{
                 transform: "rotate(180deg)",
@@ -20,7 +20,7 @@ const AboutUsScreen = () => {
               src={require("../../../../public/images/general/pattern-bg-1.png")}
             />
           </Pane>
-          <Pane>
+          <Pane className="hidden md:block">
             <Image
               style={{
                 height: "100%"
@@ -30,16 +30,16 @@ const AboutUsScreen = () => {
             />
           </Pane>
         </Pane>
-        <Pane width="70%" marginX="auto" zIndex="10">
-          <p className="md:font-medium md:text-2xl md:mb-8">About Us</p>
-          <h2 className="md:font-semibold md:w-[934px] md:text-[70px] leading-[1]">
+        <Pane className="relative md:w-[70%] w-[90%] mx-auto z-10">
+          <p className="md:font-medium md:text-2xl md:mb-8 mb-5 text-sm">About Us</p>
+          <h2 className="font-semibold md:w-[934px] md:text-[70px] text-4xl leading-[1]">
             We are empowering the next generation of founders with the financial tools they need to scale their business globally.
           </h2>
         </Pane>
       </Pane>
-      <Pane className="md:py-[113px] flex justify-end md:mr-[260px]">
-        <Pane className="md:w-[600px] text-black">
-          <h5 className="font-semibold md:text-3xl md:mb-8">Our mission</h5>
+      <Pane className="md:py-[113px] py-16 flex justify-end md:mr-[260px]">
+        <Pane className="md:w-[600px] w-[90%] mx-auto md:mx-0 text-black">
+          <h5 className="font-semibold md:text-3xl text-2xl mb-8">Our Mission</h5>
           <Pane>
             <p className="mb-8 font-medium md:text-xl md:mb-8">
               In the current landscape, forward-thinking companies are revolutionizing traditional business practices. They empower their teams, streamline workflows, digitize data, and operate globally, paving new paths and breaking away from conventional approaches.
@@ -59,7 +59,7 @@ const AboutUsScreen = () => {
           </Pane>
         </Pane>
       </Pane>
-      <Pane className="md:w-[95%] mx-auto md:mb-28">
+      <Pane className="w-[95%] mx-auto md:mb-28 mb-10">
         <SimplifyOperations/>
       </Pane>
     </MainLayout>
