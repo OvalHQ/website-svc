@@ -4,24 +4,11 @@ import React from "react";
 
 const TrustedBy = () => {
   return (
-    <Pane width={"100%"} paddingX={80} paddingY={150} backgroundColor={"white"}>
-      <Heading
-        marginBottom={"80px"}
-        fontSize="2.5rem"
-        lineHeight={"30px"}
-        fontWeight={600}
-        textAlign="center"
-      >
+    <div className="w-full py-32 px-10 md:px-[80px] md:py-[120px] bg-white ">
+      <h2 className="mb-[80px] text-[2.5rem] leading-[40px] font-semibold text-center text-black ">
         Trusted by innovative businesses
-      </Heading>
-      <Pane
-        display="flex"
-        justifyContent="space-around"
-        alignItems="center"
-        gap="20px"
-        rowGap="50px"
-        flexWrap="wrap"
-      >
+      </h2>
+      <div className="flex justify-around items-center gap-x-8 gap-y-[60px] flex-wrap  ">
         <Image
           alt="techstars logo"
           src={require("../../../public/images/general/techstars.png")}
@@ -42,8 +29,8 @@ const TrustedBy = () => {
           alt="techstars logo"
           src={require("../../../public/images/general/flutterwave.png")}
         />
-      </Pane>
-    </Pane>
+      </div>
+    </div>
   );
 };
 

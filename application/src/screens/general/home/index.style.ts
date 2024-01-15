@@ -34,7 +34,7 @@ const HomePageScreenWrapper = styled(Pane)`
     align-items: center;
     padding-left: 5rem;
     padding-bottom: 30px;
-    padding-top: 20px;
+    padding-top: 50px;
 
     .hero-left {
       flex: 1;
@@ -49,8 +49,37 @@ const HomePageScreenWrapper = styled(Pane)`
       flex: 1;
     }
 
-    @media (max-width: 908px) {
-      padding: 80px 2rem;
+    @media (max-width: 1100px) {
+      padding: 100px 2rem;
+      padding-right: 0;
+
+      .hero-left h2 {
+        font-size: 40px;
+        padding-right: 20px;
+      }
+    }
+
+    @media (max-width: 960px) {
+      flex-direction: column;
+      padding: 20px 30px;
+      padding-right: 0;
+
+      .hero-left {
+        width: 100%;
+      }
+      .hero-right {
+        align-self: end;
+        margin-top: -50px;
+      }
+    }
+    @media (max-width: 500px) {
+      padding-top: 70px;
+      flex-direction: column;
+
+      .hero-right {
+        align-self: end;
+        margin-top: -40px;
+      }
     }
   }
 
@@ -137,11 +166,19 @@ const HomePageScreenWrapper = styled(Pane)`
           );
       }
     }
+    @media (max-width: 1200px) {
+      .card {
+        width: 300px;
+      }
+    }
 
-    @media (max-width: 768px) {
+    @media (max-width: 900px) {
       padding: 80px 2rem;
       .grid-container {
         grid-template-columns: 1fr;
+      }
+      .card {
+        width: 350px;
       }
     }
   }
@@ -207,6 +244,7 @@ const HomePageScreenWrapper = styled(Pane)`
 
       .grid-container {
         grid-template-columns: 1fr;
+        padding: 0;
       }
     }
   }
@@ -222,6 +260,9 @@ const HomePageScreenWrapper = styled(Pane)`
     align-items: center;
     @media (max-width: 908px) {
       padding: 80px 2rem;
+    }
+    @media (max-width: 400px) {
+      padding: 40px 20px;
     }
   }
 

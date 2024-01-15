@@ -5,7 +5,7 @@ import { Pane } from "evergreen-ui";
 
 const NavbarWrapper = styled(Pane)`
   width: 100%;
-  maxwidth: 1400px;
+  // max-width: 1400px;
 
   h2,
   p,
@@ -38,8 +38,9 @@ const NavbarWrapper = styled(Pane)`
     }
   }
 
-  @media (max-width: 908px) {
-    // padding: 80px 2rem;
+  @media (max-width: 640px) {
+    position: absolute;
+    top: 0;
   }
 `;
 

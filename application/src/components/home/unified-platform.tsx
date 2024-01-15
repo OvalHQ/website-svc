@@ -25,10 +25,10 @@ const UnifiedPlatform = () => {
       >
         one unified platform.
       </Heading>
-      <Paragraph color="white" opacity={0.6} marginTop="20px">
+      <p className="text-white opacity-60 mt-[20px] text-center">
         All the tools you need to manage expenses proactively and empower teams
         with confidence.
-      </Paragraph>
+      </p>
       <Pane className="grid-container">
         <Pane className="card">
           <Pane

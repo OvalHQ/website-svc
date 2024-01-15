@@ -14,99 +14,100 @@ const Footer = () => {
           gap={5}
           flex={2}
           flexWrap="wrap"
+          minWidth="160px"
         >
           <Image
             alt="graph-logo"
             src={require("../../../public/images/graph-logo-full-white.png")}
           />
-          <Text color="white" fontSize={12}>
-            Finance OS for Businesses
-          </Text>
+          <p className="text-white text-sm">Finance OS for Businesses</p>
         </Pane>
-        <Pane flex={1}>
-          <Pane display="flex" flexDirection="column" gap={40}>
-            <Paragraph fontWeight={"bold"} color="white">
-              Products
-            </Paragraph>
-            <Link
-              href="/cards"
-              style={{
-                textDecoration: "none",
-              }}
-            >
-              <Text color="white">Cards</Text>
-            </Link>
-            <Link
-              href="/multi-currency-accounts"
-              style={{
-                textDecoration: "none",
-              }}
-            >
-              <Text color="white">Multi-Currency Accounts</Text>
-            </Link>
+        <div className="flex-[2] flex gap-x-8 min-w-[300px] ">
+          <Pane flex={1}>
+            <Pane display="flex" flexDirection="column" gap={50}>
+              <Paragraph fontWeight={"bold"} color="white">
+                Products
+              </Paragraph>
+              <Link
+                href="/cards"
+                style={{
+                  textDecoration: "none",
+                }}
+              >
+                <Text color="white">Cards</Text>
+              </Link>
+              <Link
+                href="/multi-currency-accounts"
+                style={{
+                  textDecoration: "none",
+                }}
+              >
+                <Text color="white">Multi-Currency Accounts</Text>
+              </Link>
+            </Pane>
+            <Pane display="flex" flexDirection="column" gap={40} marginTop={50}>
+              <Paragraph fontWeight={"bold"} color="white">
+                Company
+              </Paragraph>
+
+              <Link
+                href=""
+                style={{
+                  textDecoration: "none",
+                }}
+              >
+                <Text color="white">About</Text>
+              </Link>
+              <Link
+                href=""
+                style={{
+                  textDecoration: "none",
+                }}
+              >
+                <Text color="white">Blog</Text>
+              </Link>
+            </Pane>
           </Pane>
-          <Pane display="flex" flexDirection="column" gap={40} marginTop={50}>
+          <Pane display="flex" flexDirection="column" gap={40} flex={1}>
             <Paragraph fontWeight={"bold"} color="white">
-              Company
+              Contact
             </Paragraph>
 
             <Link
-              href=""
+              href="mailto:info@usegraph.co"
               style={{
                 textDecoration: "none",
               }}
             >
-              <Text color="white">About</Text>
+              <Text color="white">info@usegraph.co</Text>
             </Link>
             <Link
-              href=""
+              href="mailto:support@usegraph.co"
               style={{
                 textDecoration: "none",
               }}
             >
-              <Text color="white">Blog</Text>
+              <Text color="white">support@usegraph.co</Text>
+            </Link>
+            <Link
+              href="mailto:legal@usegraph.co"
+              style={{
+                textDecoration: "none",
+              }}
+            >
+              <Text color="white">legal@usegraph.co</Text>
+            </Link>
+            <Link
+              href="/#faqs"
+              style={{
+                textDecoration: "none",
+              }}
+            >
+              <Text color="white">FAQs</Text>
             </Link>
           </Pane>
-        </Pane>
-        <Pane display="flex" flexDirection="column" gap={40} flex={1}>
-          <Paragraph fontWeight={"bold"} color="white">
-            Contact
-          </Paragraph>
-
-          <Link
-            href="mailto:info@usegraph.co"
-            style={{
-              textDecoration: "none",
-            }}
-          >
-            <Text color="white">info@usegraph.co</Text>
-          </Link>
-          <Link
-            href="mailto:support@usegraph.co"
-            style={{
-              textDecoration: "none",
-            }}
-          >
-            <Text color="white">support@usegraph.co</Text>
-          </Link>
-          <Link
-            href="mailto:legal@usegraph.co"
-            style={{
-              textDecoration: "none",
-            }}
-          >
-            <Text color="white">legal@usegraph.co</Text>
-          </Link>
-          <Link
-            href="/#faqs"
-            style={{
-              textDecoration: "none",
-            }}
-          >
-            <Text color="white">FAQs</Text>
-          </Link>
-        </Pane>
-        <Pane display="flex" flexDirection="column" gap={40} flex={2}>
+        </div>
+        <div className="flex flex-col gap-[40px] flex-[2] min-w-[200px]">
           <Paragraph fontWeight={"bold"} color="white">
             Address
           </Paragraph>
@@ -117,17 +118,17 @@ const Footer = () => {
             1007 N Orange St, 4th Floor Ste 1382, Wilmington, New Castle, DE,
             United States 19801.
           </Text>
-        </Pane>
+        </div>
       </Pane>
-      <Pane marginY={30} display="flex" justifyContent="space-between">
-        <Paragraph color="white" width="300px">
+      <div className="my-[80px] md:my-[30px] w-full flex justify-start md:justify-between flex-wrap">
+        <p className="hidden md:block text-sm md:text-white md:w-[300px]">
           Graph is a financial technology company, and not a bank. Banking
           services are provided by {"Graph's"} partner banks.
-        </Paragraph>
+        </p>
 
-        <Pane>
+        <div className="flex gap-6 items-center md:items-start md:flex-col">
           <Text color="white">Stay updated with us</Text>
-          <Pane marginTop="20px" display="flex" gap={55}>
+          <Pane display="flex" gap={55}>
             <Link
               href="https://www.linkedin.com/company/rapidpay-africa/"
               target="_blank"
@@ -155,14 +156,7 @@ const Footer = () => {
                 height={25}
               />
             </Link>
-            <Link
-              href=""
-              // style={{
-              //   position: "relative",
-              //   height: "25px",
-              // }}
-              target="_blank"
-            >
+            <Link href="" target="_blank">
               <Image
                 alt="linkedin"
                 src={"/images/general/facebook.svg"}
@@ -175,16 +169,14 @@ const Footer = () => {
               />
             </Link>
           </Pane>
-        </Pane>
-      </Pane>
-      <Pane
-        marginY={30}
-        display="flex"
-        justifyContent="space-between"
-        borderTop="1px solid #ffffff3d"
-        paddingTop="20px"
-      >
-        <Text color="white">© 2024 Graph</Text>
+        </div>
+      </div>
+      <div className="my-[30px] w-full flex gap-y-4 flex-col md:flex-row items-center justify-between pt-[20px] border-t border-[#ffffff3d] ">
+        <p className="block md:hidden my-3 text-sm md:text-white md:w-[300px] text-center ">
+          Graph is a financial technology company, and not a bank. Banking
+          services are provided by {"Graph's"} partner banks.
+        </p>
+        <p className="hidden md:block text-xs text-white">© 2024 Graph</p>
         <Pane display="flex" gap={20}>
           <Link
             href=""
@@ -217,7 +209,9 @@ const Footer = () => {
             </Text>
           </Link>
         </Pane>
-      </Pane>
+
+        <p className="block md:hidden text-xs text-white">© 2024 Graph</p>
+      </div>
     </FooterWrapper>
   );
 };

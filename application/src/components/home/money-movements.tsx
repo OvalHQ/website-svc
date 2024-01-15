@@ -16,24 +16,22 @@ const MoneyMovement = () => {
 
   return (
     <Pane className="money-movement">
-      <Pane display="flex" gap="30px" width="100%">
-        <Pane
-          flex={1}
-          borderRadius={15}
-          background={
-            active === ACTIVE_STATE_ENUM.MULTI
-              ? Colors.dark.secondary
-              : Colors.dark.primary
-          }
-          transition="all 1s cubic-bezier(0.58, 0.05, 0.08, 1.04)"
-          paddingY={60}
-          paddingLeft={"4rem"}
+      <div className="flex gap-[30px] w-full">
+        <div
+          style={{
+            backgroundColor:
+              active === ACTIVE_STATE_ENUM.MULTI
+                ? Colors.dark.secondary
+                : Colors.dark.primary,
+          }}
+          className=" flex-1 py-[60px] rounded-lg "
         >
-          <Pane
-            display="flex"
-            gap={15}
-            justifyContent="right"
-            paddingRight="30px"
+          <div
+            // display="flex"
+            // gap={15}
+            // justifyContent="right"
+            // paddingRight="30px"
+            className="flex gap-5 pr-[30px]  pl-[30px]  md:pl-[4rem]"
           >
             {/* <Pane> */}
             <Text
@@ -73,44 +71,29 @@ const MoneyMovement = () => {
               Multi-Currency Accounts
             </Text>
             {/* </Pane> */}
-          </Pane>
-          <Pane display="flex" justifyContent="space-around">
-            <Pane maxWidth={"600px"}>
-              {active === ACTIVE_STATE_ENUM.MULTI ? (
-                <Heading
-                  size={900}
-                  fontSize={"45px"}
-                  lineHeight="50px"
-                  fontWeight={600}
-                  marginY={20}
-                  color="black"
-                >
-                  Introducing Faster Money Movement Beyond Banks.
-                </Heading>
-              ) : (
-                <Heading
-                  size={900}
-                  fontSize={"45px"}
-                  lineHeight="50px"
-                  fontWeight={600}
-                  marginY={20}
-                  color="white"
-                >
-                  Empower your team. Spend and manage Gloabally
-                </Heading>
-              )}
+          </div>
+          <div className="flex  flex-col lg:flex-row justify-around">
+            <div className="max-w-[600px] pl-[30px]  md:pl-[4rem] ">
+              <h1
+                className={`${
+                  active === ACTIVE_STATE_ENUM.MULTI
+                    ? "text-black"
+                    : "text-white"
+                } my-[20px] text-[35px]  md:text-[45px] font-bold leading-[40px] md:leading-[50px] transition ease-in-out duration-1000 `}
+              >
+                {active === ACTIVE_STATE_ENUM.MULTI
+                  ? "Introducing Faster Money Movement Beyond Banks."
+                  : "Empower your team. Spend and manage Gloabally"}
+              </h1>
               <Paragraph
                 fontSize={"16px"}
                 marginY={40}
                 transition="all 1s cubic-bezier(0.58, 0.05, 0.08, 1.04)"
                 color={active === ACTIVE_STATE_ENUM.CARDS ? "white" : "black"}
               >
-                Graph empowers you to swiftly direct your funds and manage bills
-                efficiently through instant transfers. Utilize instant transfers
-                to efficiently reimburse employees, manage payroll, and conduct
-                global transactions in USD and foreign currencies. Reach
-                suppliers, vendors and partners in over 90 countries instantly,
-                eliminating the delays of traditional money transfers.
+                {active === ACTIVE_STATE_ENUM.MULTI
+                  ? "Graph empowers you to swiftly direct your funds and manage bills efficiently through instant transfers. Utilize instant transfers to efficiently reimburse employees, manage payroll, and conduct global transactions in USD and foreign currencies. Reachsuppliers, vendors and partners in over 90 countries instantly, eliminating the delays of traditional money transfers."
+                  : "Equip your team with dollar cards that work anywhere, anytime. Manage expenses and make international purchases with ease. Graph’s corporate cards offer flexibility, control, and real-time transaction visibility, giving you the power to manage your finances globally with confidence."}
               </Paragraph>
               <Pane
                 display="flex"
@@ -145,7 +128,9 @@ const MoneyMovement = () => {
                     }
                     fontWeight={400}
                   >
-                    Secure and transparent transactions
+                    {active === ACTIVE_STATE_ENUM.MULTI
+                      ? "Same-day settlement"
+                      : "Spending limits and controls (coming soon)"}
                   </Text>
                 </Pane>
                 <Pane
@@ -171,7 +156,9 @@ const MoneyMovement = () => {
                     }
                     fontWeight={400}
                   >
-                    Competitive exchange rates
+                    {active === ACTIVE_STATE_ENUM.MULTI
+                      ? "Competitive exchange rates"
+                      : "Seamless expense tracking"}
                   </Text>
                 </Pane>
                 <Pane
@@ -197,7 +184,9 @@ const MoneyMovement = () => {
                     }
                     fontWeight={400}
                   >
-                    Secure and transparent transactions
+                    {active === ACTIVE_STATE_ENUM.MULTI
+                      ? "Secure and transparent transactions"
+                      : "Integrate with your existing accounting systems"}
                   </Text>
                 </Pane>
               </Pane>
@@ -217,32 +206,30 @@ const MoneyMovement = () => {
               >
                 Learn more
               </Button>
-            </Pane>
-            <Pane marginTop="auto" flex={1}>
-              <Pane position="relative">
-                <Pane position="absolute" right="0" bottom="0">
-                  {active === ACTIVE_STATE_ENUM.MULTI ? (
-                    <Image
-                      style={{
-                        // height: "400px",
-                        maxWidth: "400px",
-                        transition: "width 0.6s ease-out 0s",
-                      }}
-                      alt="faster money"
-                      src={require("../../../public/images/general/faster-money-img.png")}
-                    />
-                  ) : (
-                    <Image
-                      style={{
-                        // height: "400px",
-                        maxWidth: "400px",
-                        transition: "width 0.6s ease-out 0s",
-                      }}
-                      alt="hero image"
-                      src={require("../../../public/images/general/hero.png")}
-                    />
-                  )}
-                  {/* <AnimatePresence>
+            </div>
+            <Pane marginTop="auto" flex={1} className="relative">
+              {/* <Pane position="relative"> */}
+              <div className="lg:absolute lg:right-0 lg:bottom-0">
+                {active === ACTIVE_STATE_ENUM.MULTI ? (
+                  <Image
+                    style={{
+                      transition: "width 0.6s ease-out 0s",
+                    }}
+                    alt="faster money"
+                    src={require("../../../public/images/general/faster-money-img.png")}
+                    className="ml-auto max-width-full md:max-w-[400px]"
+                  />
+                ) : (
+                  <Image
+                    style={{
+                      transition: "width 0.6s ease-out 0s",
+                    }}
+                    alt="hero image"
+                    src={require("../../../public/images/general/hero.png")}
+                    className="ml-auto max-width-full md:max-w-[400px]"
+                  />
+                )}
+                {/* <AnimatePresence>
                     {active === ACTIVE_STATE_ENUM.MULTI && (
                       <motion.div
                         initial="collapsed"
@@ -303,22 +290,22 @@ const MoneyMovement = () => {
                       </motion.div>
                     )}
                   </AnimatePresence> */}
-                </Pane>
-              </Pane>
+              </div>
+              {/* </Pane> */}
             </Pane>
-          </Pane>
-        </Pane>
-        <Pane
-          transition="all 1s cubic-bezier(0.58, 0.05, 0.08, 1.04)"
-          borderRadius={15}
-          background={`${
-            active === ACTIVE_STATE_ENUM.CARDS
-              ? `${Colors.dark.secondary}`
-              : `${Colors.dark.primary}`
-          }`}
-          width={"180px"}
-        ></Pane>
-      </Pane>
+          </div>
+        </div>
+        <div
+          className={` hidden xl:block rounded-lg	w-[180px] transition ease-in-out duraion-1000
+          `}
+          style={{
+            backgroundColor:
+              active === ACTIVE_STATE_ENUM.MULTI
+                ? `#2176ff`
+                : `${Colors.dark.secondary}`,
+          }}
+        ></div>
+      </div>
     </Pane>
   );
 };

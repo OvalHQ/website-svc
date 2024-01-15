@@ -9,30 +9,13 @@ const Hero = () => {
       <Pane className="hero">
         <Pane className="hero-left">
           <Pane>
-            <Heading
-              marginY={4}
-              marginTop={"100px"}
-              fontSize="60px"
-              lineHeight={"70px"}
-              fontWeight={600}
-              maxWidth="700px"
-              color="black"
-              className="text-sm text-gray-500"
-            >
+            <h2 className="my-4 mt-5 lg:mt-20 text-[60px] text-w text-black font-semibold leading-[40px] md:leading-[70px] max-w-[400px] md:max-w-[700px] ">
               Cash management and corporate spending platform
-            </Heading>
-            <Paragraph
-              marginTop="1.5rem"
-              maxWidth="400px"
-              fontWeight="400"
-              color="black"
-              lineHeight={"30px"}
-              fontSize="17px"
-              className="text-sm text-gray-500"
-            >
+            </h2>
+            <p className=" text-[17px] leading-[30px] max-w-[400px] text-black mt-[1.5rem] ">
               Experience seamless access to corporate cards, multi-currency
               accounts, and global payouts, all in one account.
-            </Paragraph>
+            </p>
             <Pane marginY={50}>
               <Button
                 className="cta-primary"
@@ -76,12 +59,12 @@ const Hero = () => {
             </Pane>
           </Pane>
 
-          <Pane gap={10} maxWidth={400} display="flex" flexWrap={"wrap"}>
-            <Text>
+          <div className="gap-[10px] max-w-[210px] sm:max-w-[300px] lg:max-w-[400px] flex flex-wrap ">
+            <p className="text-black text-sm lg:text-sm ">
               Graph is a financial technology company, not a bank . Banking
               services provided by Evolve Bank & Trust®; Members FDIC.
-            </Text>
-          </Pane>
+            </p>
+          </div>
         </Pane>
         <Pane className="hero-right">
           <Image
