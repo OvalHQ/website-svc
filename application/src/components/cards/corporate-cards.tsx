@@ -4,42 +4,23 @@ import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 
+import CorporateCardImg from "../../../public/images/general/corporate-card-img.svg";
+
 const CorporateCards = () => {
   return (
     <Pane className="corporate-cards">
-      <Pane display="flex" gap="30px" width="100%">
-        <Pane
-          flex={1}
-          borderRadius={15}
-          background={"#D1F89840"}
-          // transition="all 1s cubic-bezier(0.58, 0.05, 0.08, 1.04)"
-          paddingY={60}
-          paddingLeft={"4rem"}
-        >
-          <Pane display="flex" justifyContent="space-around">
-            <Pane maxWidth={"600px"}>
-              <Heading
-                size={900}
-                fontSize={"45px"}
-                lineHeight="50px"
-                fontWeight={700}
-                marginY={20}
-                color="black"
-                maxWidth="500px"
-              >
+      <div className="flex gap-[30px] w-full flex-col md:flex-row">
+        <div className="rounded-xl flex-1 bg-[#D1F89840] pl-4 py-5 sm:py-[60px] sm:pl-[3rem]">
+          <div className="flex w-full flex-col lg:flex-row gap-y-14">
+            <Pane maxWidth={"500px"}>
+              <h2 className="my-4 mt-5 lg:mt-14 text-[40px] text-black font-semibold leading-[40px] md:leading-[50px] max-w-[400px] md:max-w-[700px] ">
                 Save more with the all-in-one corporate card
-              </Heading>
-              <Paragraph
-                fontSize={"16px"}
-                marginY={40}
-                transition="all 1s cubic-bezier(0.58, 0.05, 0.08, 1.04)"
-                maxWidth="500px"
-                color={"black"}
-              >
+              </h2>
+              <p className=" text-[15px] leading-[30px] max-w-[400px] text-black mt-[1.5rem] ">
                 Easily make payment for travel, online ads , and more with
                 International and local card’s acceptance in 20 currencies or
                 more.
-              </Paragraph>
+              </p>
               <Pane
                 display="flex"
                 alignItems="flex-start"
@@ -70,7 +51,7 @@ const CorporateCards = () => {
                   <Text
                     transition="all 1s cubic-bezier(0.58, 0.05, 0.08, 1.04)"
                     color={"black"}
-                    fontWeight={400}
+                    fontWeight={600}
                   >
                     Issue unlimited cards to your employees
                   </Text>
@@ -94,7 +75,7 @@ const CorporateCards = () => {
                   <Text
                     transition="all 1s cubic-bezier(0.58, 0.05, 0.08, 1.04)"
                     color={"black"}
-                    fontWeight={400}
+                    fontWeight={600}
                   >
                     Manage all expense in one place
                   </Text>
@@ -118,7 +99,7 @@ const CorporateCards = () => {
                   <Text
                     transition="all 1s cubic-bezier(0.58, 0.05, 0.08, 1.04)"
                     color={"black"}
-                    fontWeight={400}
+                    fontWeight={600}
                   >
                     Make unlimted purchases and ads for your business
                   </Text>
@@ -136,6 +117,7 @@ const CorporateCards = () => {
                 height={"auto"}
                 paddingY={5}
                 paddingX={35}
+                fontFamily={"Neue Haas Grotesk Display Pro"}
               >
                 <Link
                   href={
@@ -149,21 +131,18 @@ const CorporateCards = () => {
             </Pane>
             <Pane marginTop="auto" flex={1} paddingRight="35px">
               <Pane position="relative">
-                {/* <Pane position="absolute" right="0" bottom="0"> */}
                 <Image
-                  style={{
-                    maxWidth: "700px",
-                    marginLeft: "auto",
-                  }}
+                  width={"700"}
+                  height={"700"}
                   alt="hero image"
-                  src={require("../../../public/images/general/corporate-card-img.png")}
+                  src={CorporateCardImg}
+                  className="ml-auto max-width-full md:w-full md:max-w-[650px]"
                 />
-                {/* </Pane> */}
               </Pane>
             </Pane>
-          </Pane>
-        </Pane>
-      </Pane>
+          </div>
+        </div>
+      </div>
     </Pane>
   );
 };

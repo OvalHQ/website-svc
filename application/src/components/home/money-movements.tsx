@@ -29,13 +29,7 @@ const MoneyMovement = () => {
           }}
           className=" flex-1 py-[60px] rounded-lg "
         >
-          <div
-            // display="flex"
-            // gap={15}
-            // justifyContent="right"
-            // paddingRight="30px"
-            className="flex gap-5 pr-[30px]  pl-[30px]  md:pl-[4rem]"
-          >
+          <div className="flex gap-5 pr-[30px]  pl-[30px]  md:pl-[4rem]">
             {/* <Pane> */}
             <Text
               borderRadius={"20px"}

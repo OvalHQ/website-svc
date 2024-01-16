@@ -1,4 +1,3 @@
-import { Heading, Pane } from "evergreen-ui";
 import Image from "next/image";
 import React from "react";
 
@@ -14,19 +13,19 @@ const TrustedBy = () => {
           src={require("../../../public/images/general/techstars.png")}
         />
         <Image
-          alt="techstars logo"
+          alt="bridgecard logo"
           src={require("../../../public/images/general/bridgecard.png")}
         />
         <Image
-          alt="techstars logo"
+          alt="sproutly logo"
           src={require("../../../public/images/general/sproutly.png")}
         />
         <Image
-          alt="techstars logo"
+          alt="chowcentral logo"
           src={require("../../../public/images/general/chowcentral.png")}
         />
         <Image
-          alt="techstars logo"
+          alt="flutterwave logo"
           src={require("../../../public/images/general/flutterwave.png")}
         />
       </div>

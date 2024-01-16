@@ -12,6 +12,7 @@ const CardsPageScreenWrapper = styled(Pane)`
   justify-content: center;
 
   h2,
+  h3,
   p,
   span {
     font-family: Neue Haas Grotesk Display Pro !important;
@@ -34,7 +35,7 @@ const CardsPageScreenWrapper = styled(Pane)`
 
   .hero {
     background: ${Colors.light.primary};
-    height: 90vh;
+    min-height: 90vh;
     width: 100%;
     display: flex;
     justify-content: center;
@@ -53,6 +54,39 @@ const CardsPageScreenWrapper = styled(Pane)`
     }
     .hero-right {
       flex: 1;
+    }
+
+    @media (max-width: 1100px) {
+      padding: 100px 2rem;
+      padding-right: 0;
+
+      .hero-left h2 {
+        font-size: 40px;
+        padding-right: 20px;
+      }
+    }
+
+    @media (max-width: 960px) {
+      flex-direction: column;
+      padding: 20px 30px;
+      padding-right: 0;
+
+      .hero-left {
+        width: 100%;
+      }
+      .hero-right {
+        align-self: end;
+        margin-top: -50px;
+      }
+    }
+    @media (max-width: 500px) {
+      padding-top: 70px;
+      flex-direction: column;
+
+      .hero-right {
+        align-self: end;
+        margin-top: -40px;
+      }
     }
   }
 
@@ -75,6 +109,10 @@ const CardsPageScreenWrapper = styled(Pane)`
     flex-direction: column;
     align-items: center;
     padding: 170px 70px;
+
+    @media (max-width: 500px) {
+      padding: 50px 15px;
+    }
   }
 `;
 

@@ -6,49 +6,19 @@ const CardsForBusinesses = () => {
   return (
     <Pane className="cards-for-businesses">
       <Pane>
-        <Heading
-          fontSize="3rem"
-          lineHeight={"50px"}
-          fontWeight={600}
-          textAlign="center"
-          color="black"
-          maxWidth={"800px"}
-          // marginY={30}
-        >
+        <h2 className=" text-[2.5rem] leading-[40px] font-semibold text-center text-black ">
           Corporate physical and virtual cards
-        </Heading>
-        <Heading
-          fontSize="3rem"
-          lineHeight={"50px"}
-          fontWeight={600}
-          textAlign="center"
-          color="black"
-          maxWidth={"800px"}
-          // marginY={30}
-        >
+        </h2>
+        <h2 className="mb-[40px] text-[2.5rem] leading-[40px] font-semibold text-center text-black ">
           for startups and enterprises
-        </Heading>
+        </h2>
       </Pane>
-      <Pane
-        marginY={70}
-        paddingX={50}
-        display="flex"
-        justifyContent="center"
-        alignItems="center"
-        rowGap="10px"
-        gap="20px"
-        flexWrap="wrap"
-      >
+      <div className="flex my-[70px] px-4 sm:px-[50px] flex-wrap justify-center items-center gap-[10px] ">
         {dataToDisplay.map((data, index) => {
           return (
-            <Pane
+            <div
               key={index}
-              borderRadius={15}
-              backgroundColor="white"
-              paddingY="50px"
-              paddingX="30px"
-              width={250}
-              height={"380px"}
+              className="rouned-xl bg-white py-[50px] px-[30px] w-[300px] sm:w-[250px] h-[380px] "
             >
               <Pane
                 position="relative"
@@ -78,11 +48,11 @@ const CardsForBusinesses = () => {
                 </Heading>
                 <Text lineHeight="24px">{data.description}</Text>
               </Pane>
-            </Pane>
+            </div>
           );
         })}
         <Pane></Pane>
-      </Pane>
+      </div>
     </Pane>
   );
 };
