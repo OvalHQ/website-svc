@@ -26,7 +26,7 @@ const SimplifyOperations = () => {
             Open an account today.
           </Paragraph>
           <div className="my-[50px] md:bg-white rounded-xl  py-3 px-4 flex flex-col gap-y-4  gap-x-2 md:flex-row justify-center items-center ">
-            <input className="h-[45px] px-4 py-4 border-none flex-1 rounded-xl text-sm focus:outline-gray-10 w-full" />
+            <input className="h-[45px] px-4 py-4 border-none flex-1 rounded-xl text-sm focus:outline-gray-700 w-full text-black .placeholder-black " />
             <button className="cta-primary text-white h-[45px] w-full sm:w-[200px] rounded-xl text-sm font-normal py-[10px] px-[35px] bg-black ">
               Get Started for free
             </button>

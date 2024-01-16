@@ -7,8 +7,8 @@ const UnifiedPlatform = () => {
     <Pane className="unified-platform">
       <Heading
         // marginBottom={50}
-        fontSize="2.5rem"
-        lineHeight={"40px"}
+        fontSize="60px"
+        lineHeight={"60px"}
         fontWeight={600}
         textAlign="center"
         color="white"
@@ -17,15 +17,15 @@ const UnifiedPlatform = () => {
       </Heading>
       <Heading
         // marginBottom={50}
-        fontSize="2.5rem"
-        lineHeight={"40px"}
-        fontWeight={700}
+        fontSize="60px"
+        lineHeight={"60px"}
+        fontWeight={600}
         textAlign="center"
         color="white"
       >
         one unified platform.
       </Heading>
-      <p className="text-white opacity-60 mt-[20px] text-center">
+      <p className="text-white opacity-60 mt-[20px] my-14 text-center">
         All the tools you need to manage expenses proactively and empower teams
         with confidence.
       </p>
@@ -33,21 +33,24 @@ const UnifiedPlatform = () => {
         <Pane className="card">
           <Pane
             position="relative"
-            height={50}
-            width={50}
+            height={60}
+            width={60}
             className="rounded-circle"
           >
             <Image
               alt="icon"
               src={require("../../../public/images/general/stack.png")}
-              width={30}
-              height={30}
+              width={40}
+              height={40}
             />
           </Pane>
           <Pane>
-            <Heading size={800} fontWeight={600} marginY={20} color="white">
-              All-in-One Finance Platform
-            </Heading>
+            <h3 className="font-semibold mt-[20px] text-white text-3xl">
+              All-in-One
+            </h3>
+            <h3 className="font-semibold mb-[20px] text-white text-3xl">
+              Finance Platform
+            </h3>
             <Text lineHeight="24px" color="white">
               Simplify your financial ecosystem with Graph’s all-in-one finance
               platform. From corporate cards to global payouts, we provide a
@@ -59,21 +62,24 @@ const UnifiedPlatform = () => {
         <Pane className="card">
           <Pane
             position="relative"
-            height={50}
-            width={50}
+            height={60}
+            width={60}
             className="rounded-circle"
           >
             <Image
               alt="icon"
               src={require("../../../public/images/general/card.png")}
-              width={30}
-              height={30}
+              width={40}
+              height={40}
             />
           </Pane>
           <Pane>
-            <Heading size={800} fontWeight={700} marginY={20} color="white">
-              Corporate Dollar Card
-            </Heading>
+            <h3 className="font-semibold mt-[20px] text-white text-3xl">
+              Corporate
+            </h3>
+            <h3 className="font-semibold mb-[20px] text-white text-3xl">
+              Dollar Card
+            </h3>
             <Text lineHeight="24px" color="white">
               Streamline your financial operations with powerful virtual and
               physical VISA dollar cards.
@@ -83,21 +89,24 @@ const UnifiedPlatform = () => {
         <Pane className="card">
           <Pane
             position="relative"
-            height={50}
-            width={50}
+            height={60}
+            width={60}
             className="rounded-circle"
           >
             <Image
               alt="icon"
               src={require("../../../public/images/general/institute.png")}
-              width={30}
-              height={30}
+              width={40}
+              height={40}
             />
           </Pane>
           <Pane>
-            <Heading size={800} fontWeight={700} marginY={20} color="white">
-              Business Bank Accounts
-            </Heading>
+            <h3 className="font-semibold mt-[20px] text-white text-3xl">
+              Business
+            </h3>
+            <h3 className="font-semibold mb-[20px] text-white text-3xl">
+              Bank Accounts
+            </h3>
             <Text lineHeight="24px" color="white">
               Experience cash management with insured and regulated bank
               accounts the way it should be exceptional and tailored just for
@@ -109,22 +118,22 @@ const UnifiedPlatform = () => {
         <Pane className="card">
           <Pane
             position="relative"
-            height={50}
-            width={50}
+            height={60}
+            width={60}
             className="rounded-circle"
           >
             <Image
               alt="icon"
               src={require("../../../public/images/general/home-world.png")}
-              //   fill
-              width={30}
+              //   fi4l
+              width={34}
               height={30}
             />
           </Pane>
           <Pane>
-            <Heading size={800} fontWeight={700} marginY={20} color="white">
+            <h3 className="font-semibold my-[20px] text-white text-3xl">
               Seamless Global Operations
-            </Heading>
+            </h3>
             <Text lineHeight="24px" color="white">
               Navigate the complexities of international finance effortlessly.
               Break free from borders, extend your financial reach, streamline
@@ -136,22 +145,22 @@ const UnifiedPlatform = () => {
         <Pane className="card">
           <Pane
             position="relative"
-            height={50}
-            width={50}
+            height={60}
+            width={60}
             className="rounded-circle"
           >
             <Image
               alt="icon"
               src={require("../../../public/images/general/home-trust.png")}
-              //   fill
-              width={30}
+              //   fi4l
+              width={34}
               height={30}
             />
           </Pane>
           <Pane>
-            <Heading size={800} fontWeight={700} marginY={20} color="white">
+            <h3 className="font-semibold my-[20px] text-white text-3xl">
               Compliance-First
-            </Heading>
+            </h3>
             <Text lineHeight="24px" color="white">
               Graph is built with security and regulatory compliance at its
               core. We ensure all business transactions adhere to the highest

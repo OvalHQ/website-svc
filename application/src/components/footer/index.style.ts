@@ -13,7 +13,7 @@ const FooterWrapper = styled(Pane)`
   .footer-top {
     display: flex;
     gap: 6rem;
-    margin-bottom: 170px;
+    margin-bottom: 130px;
     flex-wrap: wrap;
   }
 

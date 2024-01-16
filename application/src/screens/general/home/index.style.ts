@@ -99,7 +99,7 @@ const HomePageScreenWrapper = styled(Pane)`
       display: grid;
       grid-template-rows: auto auto;
       grid-template-columns: 1fr 1fr 1fr;
-      gap: 10px;
+      gap: 25px;
       padding: 20px;
     }
 
@@ -112,27 +112,23 @@ const HomePageScreenWrapper = styled(Pane)`
 
     .card {
       z-index: 5;
-      width: 350px;
+      width: 370px;
       padding: 50px 30px;
       border-radius: 16px;
-      border: 3px solid;
-      border-image: linear-gradient(
-        133.84deg,
-        rgb(255 255 255) 14.05%,
-        rgb(255 255 255 / 0%) 115.45%
-      );
+      border: 1px solid #2f2f2f;
+      /* border-image: linear-gradient( 133.84deg, rgb(255 255 255) 14.05%, rgb(255 255 255 / 0%) 115.45% ); */
       box-shadow: 0 4px 30px rgb(0 0 0 / 52%);
       -webkit-backdrop-filter: blur(5.3px);
-      backdrop-filter: blur(5.3px);
+      backdrop-filter: blur(1px);
       -webkit-backdrop-filter: blur(5.3px);
       background: linear-gradient(
           132.73deg,
-          rgba(0, 0, 0, 0.9) 12.88%,
-          rgba(0, 0, 0, 0) 163.96%
+          rgb(0 0 0 / 90%) 12.88%,
+          rgb(22 19 19 / 0%) 163.96%
         ),
         linear-gradient(
           133.84deg,
-          rgba(255, 255, 255, 0.25) 14.05%,
+          rgb(0 0 0 / 25%) 14.05%,
           rgba(255, 255, 255, 0) 115.45%
         );
       transition: all 0.3s linear;

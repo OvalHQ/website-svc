@@ -27,10 +27,10 @@ const Navbar = () => {
       <div
         className={` ${
           menuOpened ? "top-0 fixed z-50" : "static"
-        }  sm:bg-white py-8 sm:py-[10px] px-10 sm:px-[40px] md:px-[80px] w-full flex items-center justify-between`}
+        }  sm:bg-white py-8 sm:py-[10px] px-10 sm:px-[40px] md:px-[80px] h-[75px] w-full flex items-center justify-between`}
       >
         <Link href={"/"}>
-          <LogoWithText alt="Graph logo" height={24} />
+          <LogoWithText alt="Graph logo" height={40} />
         </Link>
 
         <div className=" hidden sm:flex justify-center items-center gap-[35px]">
@@ -46,7 +46,7 @@ const Navbar = () => {
               alignItems="center"
               gap="1px"
             >
-              <Text>Products</Text>
+              <p className="text-black text-sm font-medium">Products</p>
               <CaretDownIcon color={Colors.dark.primary} />
             </Pane>
 
@@ -125,7 +125,7 @@ const Navbar = () => {
               alignItems="center"
               gap="1px"
             >
-              <Text>Company</Text>
+              <p className="text-black text-sm font-medium">Company</p>
               <CaretDownIcon color={Colors.dark.primary} />
             </Pane>
 
@@ -176,7 +176,7 @@ const Navbar = () => {
               alignItems="center"
               gap="1px"
             >
-              <Text>Support</Text>
+              <p className="text-black text-sm font-medium">Support</p>
               <CaretDownIcon color={Colors.dark.primary} />
             </Pane>
 
@@ -217,7 +217,9 @@ const Navbar = () => {
           </Pane>
         </div>
         <div className=" hidden sm:flex justify-center items-center gap-[15px]">
-          <Text marginRight={10}>Log In</Text>
+          <Link href="">
+            <p className="text-black text-sm font-medium">Log in</p>
+          </Link>
           <Button
             type="submit"
             size="large"
@@ -350,7 +352,7 @@ const Navbar = () => {
                   </div>
                 </div>
 
-                <button className="rounded-xl py-3 w-full block mt-auto bg-[#2276FF] hover:opacity-80 ">
+                <button className="rounded-xl py-3 w-full block mt-auto text-xs font-extralight bg-[#2276FF] hover:opacity-80 ">
                   Create an account
                 </button>
               </div>
