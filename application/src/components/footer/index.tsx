@@ -1,8 +1,10 @@
-import { Pane, Paragraph, Text } from "evergreen-ui";
+import { Pane, Text } from "evergreen-ui";
 import React from "react";
 import FooterWrapper from "./index.style";
 import Image from "next/image";
 import Link from "next/link";
+
+import GraphLogo from "../../../public/images/graph-logo-full-white.png";
 
 const Footer = () => {
   return (
@@ -17,8 +19,10 @@ const Footer = () => {
           minWidth="160px"
         >
           <Image
-            alt="graph-logo"
-            src={require("../../../public/images/graph-logo-full-white.png")}
+            alt="graph-logo svg"
+            width={"180"}
+            height={"60"}
+            src={GraphLogo}
           />
           <p className="text-white text-sm mt-3">Finance OS for Businesses</p>
         </Pane>

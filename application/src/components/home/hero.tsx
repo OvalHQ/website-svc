@@ -2,7 +2,8 @@ import { Button, Heading, Pane, Paragraph, Text } from "evergreen-ui";
 import Image from "next/image";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
-import React from "react";
+
+import HeroImg from "../../../public/images/general/home-hero.svg";
 
 const Hero = () => {
   const router = useRouter();
@@ -26,11 +27,12 @@ const Hero = () => {
                 color="#ffffff"
                 background="black"
                 borderRadius={10}
-                fontSize={13}
-                fontWeight={400}
+                fontSize={15}
+                fontWeight={500}
                 height={"auto"}
                 paddingY={5}
                 paddingX={35}
+                fontFamily={"Neue Haas Grotesk Display Pro"}
               >
                 <Link
                   href={
@@ -50,11 +52,12 @@ const Hero = () => {
                 background={"transparent"}
                 borderColor={"black"}
                 borderRadius={10}
-                fontSize={13}
-                fontWeight={400}
+                fontSize={15}
+                fontWeight={500}
                 height={"auto"}
                 paddingY={5}
                 paddingX={35}
+                fontFamily={"Neue Haas Grotesk Display Pro"}
                 onClick={() => router.push("/contact")}
               >
                 Contact Sales
@@ -72,7 +75,11 @@ const Hero = () => {
         <Pane className="hero-right">
           <Image
             alt="hero image"
-            src={require("../../../public/images/general/home-hero.png")}
+            width="900"
+            height="900"
+            // className="w-64 h-64"
+            src={HeroImg}
+            // src={require("../../../public/images/general/home-hero_old.png")}
           />
         </Pane>
       </Pane>

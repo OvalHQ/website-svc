@@ -4,7 +4,10 @@ import { Button, Heading, Pane, Paragraph, Text, TickIcon } from "evergreen-ui";
 import React, { useState } from "react";
 import Image from "next/image";
 import Colors from "@/theme/Colors";
-import { AnimatePresence, motion } from "framer-motion";
+// import { AnimatePresence, motion } from "framer-motion";
+
+import MoneyMovementImg from "../../../public/images/general/faster-money-img.svg";
+import CardsImg from "../../../public/images/general/hero.svg";
 
 const ACTIVE_STATE_ENUM = {
   CARDS: "CARDS",
@@ -216,7 +219,10 @@ const MoneyMovement = () => {
                       transition: "width 0.6s ease-out 0s",
                     }}
                     alt="faster money"
-                    src={require("../../../public/images/general/faster-money-img.png")}
+                    width={"400"}
+                    height={"400"}
+                    src={MoneyMovementImg}
+                    // src={require("../../../public/images/general/faster-money-img.png")}
                     className="ml-auto max-width-full md:max-w-[400px]"
                   />
                 ) : (
@@ -225,7 +231,9 @@ const MoneyMovement = () => {
                       transition: "width 0.6s ease-out 0s",
                     }}
                     alt="hero image"
-                    src={require("../../../public/images/general/hero.png")}
+                    width={"400"}
+                    height={"400"}
+                    src={CardsImg}
                     className="ml-auto max-width-full md:max-w-[400px]"
                   />
                 )}

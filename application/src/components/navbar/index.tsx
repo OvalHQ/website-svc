@@ -155,7 +155,7 @@ const Navbar = () => {
                   <Text
                     style={{
                       textDecoration: "none",
-                      cursor: "not-allowed"
+                      cursor: "not-allowed",
                     }}
                     opacity="0.5"
                   >
@@ -219,19 +219,11 @@ const Navbar = () => {
         </div>
         <div className=" hidden sm:flex justify-center items-center gap-[15px]">
           <Link href="">
-            <p className="text-black text-sm font-medium">Log in</p>
+            <p className="text-black w-[40px] text-sm font-medium">Log in</p>
           </Link>
-          <Button
-            type="submit"
-            size="large"
-            appearance="primary"
-            background={Colors.dark.primary}
-            borderRadius={10}
-            fontSize={13}
-            fontWeight={400}
-          >
+          <button className="rounded-xl py-4 px-5 w-full block mt-auto text-xs font-light bg-[#2276FF] hover:opacity-80 ">
             Create an account
-          </Button>
+          </button>
         </div>
         <div
           className="block sm:hidden text-black cursor-pointer hover:scale-125 ml-auto "
@@ -323,10 +315,12 @@ const Navbar = () => {
                     <Text
                       style={{
                         textDecoration: "none",
-                        cursor: "not-allowed"
+                        cursor: "not-allowed",
                       }}
                     >
-                      <p className="text-black font-normal cursor-not-allowed">Blog</p>
+                      <p className="text-black font-normal cursor-not-allowed">
+                        Blog
+                      </p>
                     </Text>
                   </div>
                 </div>

@@ -36,18 +36,12 @@ const StartupsToEnterprise = () => {
                   //   width={'100%'}
                 />
               </Pane>
-              <Paragraph
-                fontWeight={800}
-                fontSize={"26px"}
-                color="black"
-                paddingBottom="10px"
-                paddingTop="20px"
-              >
+              <h3 className="font-bold text-xl leading-5 text-black pb-[10px] pt-[10px]">
                 {data.title}
-              </Paragraph>
-              <Text fontSize={"18px"} lineHeight={"25px"}>
+              </h3>
+              <p className="text-sm text-black opacity-95">
                 {data.description}
-              </Text>
+              </p>
             </Pane>
           );
         })}
