@@ -156,6 +156,7 @@ const Navbar = () => {
                     style={{
                       textDecoration: "none",
                       cursor: "not-allowed",
+                      marginTop: "7px",
                     }}
                     opacity="0.5"
                   >
