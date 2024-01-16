@@ -161,10 +161,20 @@ const HomePageScreenWrapper = styled(Pane)`
             rgb(255 255 255 / 21%) 115.45%
           );
       }
+
+      span {
+        font-weight: 300;
+      }
     }
     @media (max-width: 1200px) {
       .card {
         width: 300px;
+      }
+    }
+    @media (min-width: 1201px) {
+      .card {
+        width: 388px;
+        height: 393px;
       }
     }
 

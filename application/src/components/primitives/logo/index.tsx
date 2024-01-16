@@ -8,7 +8,7 @@ export const LogoWithText = ({ ...rest }: Props) => {
     <Image
       {...rest}
       src={"/images/graph-logo-full.svg"}
-      width={120}
+      width={115}
       alt="Graph logo"
     />
   );

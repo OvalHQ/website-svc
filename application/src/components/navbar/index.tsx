@@ -30,7 +30,7 @@ const Navbar = () => {
         }  sm:bg-white py-8 sm:py-[10px] px-10 sm:px-[40px] md:px-[80px] h-[75px] w-full flex items-center justify-between`}
       >
         <Link href={"/"}>
-          <LogoWithText alt="Graph logo" height={40} />
+          <LogoWithText alt="Graph logo" height={30} width={195} />
         </Link>
 
         <div className=" hidden sm:flex justify-center items-center gap-[35px]">

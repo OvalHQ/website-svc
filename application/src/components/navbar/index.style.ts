@@ -41,6 +41,9 @@ const NavbarWrapper = styled(Pane)`
   @media (max-width: 640px) {
     position: absolute;
     top: 0;
+    background: transparent;
+    z-index: 1;
+
   }
 `;
 
