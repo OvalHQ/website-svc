@@ -34,7 +34,7 @@ const MultiCurrencyAccountsScreenWrapper = styled(Pane)`
 
   .hero {
     background: ${Colors.light.secondary};
-    height: 90vh;
+    min-height: 90vh;
     width: 100%;
     display: flex;
     justify-content: center;
@@ -53,6 +53,29 @@ const MultiCurrencyAccountsScreenWrapper = styled(Pane)`
     }
     .hero-right {
       flex: 1;
+    }
+
+    @media (max-width: 960px) {
+      flex-direction: column;
+      padding: 20px 30px;
+      padding-right: 0;
+
+      .hero-left {
+        width: 100%;
+      }
+      .hero-right {
+        align-self: end;
+        margin-top: -50px;
+      }
+    }
+    @media (max-width: 500px) {
+      padding-top: 90px;
+      flex-direction: column;
+
+      .hero-right {
+        align-self: end;
+        margin-top: -30px;
+      }
     }
   }
 
@@ -75,6 +98,10 @@ const MultiCurrencyAccountsScreenWrapper = styled(Pane)`
     flex-direction: column;
     align-items: center;
     padding: 170px 70px;
+
+    @media (max-width: 500px) {
+      padding: 50px 15px;
+    }
   }
 `;
 
