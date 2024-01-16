@@ -55,21 +55,22 @@ const Footer = () => {
               </p>
 
               <Link
-                href=""
+                href="/about-us"
                 style={{
                   textDecoration: "none",
                 }}
               >
                 <Text color="white">About</Text>
               </Link>
-              <Link
-                href=""
+              <Text
                 style={{
                   textDecoration: "none",
+                  cursor: "not-allowed",
+                  opacity: ".5",
                 }}
               >
                 <Text color="white">Blog</Text>
-              </Link>
+              </Text>
             </Pane>
           </Pane>
           <Pane display="flex" flexDirection="column" gap={30} flex={1}>
