@@ -133,7 +133,7 @@ const Footer = () => {
 
         <div className="flex gap-6 items-center md:items-start md:flex-col">
           <Text color="white">Stay updated with us</Text>
-          <Pane display="flex" gap={55}>
+          <Pane display="flex" gap={45}>
             <Link
               href="https://www.linkedin.com/company/rapidpay-africa/"
               target="_blank"

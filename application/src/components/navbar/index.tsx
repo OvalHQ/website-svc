@@ -1,7 +1,6 @@
 "use client";
 
 import {
-  Button,
   CaretDownIcon,
   CrossIcon,
   MenuIcon,
@@ -18,6 +17,8 @@ import { LogoWithText } from "../primitives/logo";
 import Link from "next/link";
 import Image from "next/image";
 
+import CaretIcon from "../../../public/images/general/caret-down.svg";
+
 const Navbar = () => {
   const [openedId, setOpenedId] = useState(-1);
   const [menuOpened, setMenuOpened] = useState(false);
@@ -26,8 +27,10 @@ const Navbar = () => {
     <NavbarWrapper>
       <div
         className={` ${
-          menuOpened ? "top-0 fixed z-50" : "static"
-        }  sm:bg-white py-8 sm:py-[10px] px-10 sm:px-[40px] md:px-[80px] h-[75px] w-full flex items-center justify-between`}
+          menuOpened
+            ? "top-0 fixed z-50 h-20 bg-[#e2fdff] transition-colors"
+            : "static"
+        }   sm:bg-white py-8 sm:py-[10px] px-10 sm:px-[40px] md:px-[80px] h-[75px] w-full flex items-center justify-between`}
       >
         <Link href={"/"}>
           <LogoWithText alt="Graph logo" height={30} width={195} />
@@ -43,11 +46,17 @@ const Navbar = () => {
             <Pane
               display="flex"
               justifyContent="center"
-              alignItems="center"
-              gap="1px"
+              alignItems="end"
+              gap="3px"
             >
               <p className="text-black text-sm font-medium">Products</p>
-              <CaretDownIcon color={Colors.dark.primary} />
+              <Image
+                alt="caret down icon"
+                width={15}
+                height={15}
+                src={CaretIcon}
+                className="text-[#2276FF] mb-[4px]"
+              />
             </Pane>
 
             <AnimatePresence initial={false}>
@@ -122,11 +131,17 @@ const Navbar = () => {
             <Pane
               display="flex"
               justifyContent="center"
-              alignItems="center"
-              gap="1px"
+              alignItems="end"
+              gap="3px"
             >
               <p className="text-black text-sm font-medium">Company</p>
-              <CaretDownIcon color={Colors.dark.primary} />
+              <Image
+                alt="caret down icon"
+                width={15}
+                height={15}
+                src={CaretIcon}
+                className="text-[#2276FF] mb-[4px]"
+              />
             </Pane>
 
             <AnimatePresence initial={false}>
@@ -175,11 +190,17 @@ const Navbar = () => {
             <Pane
               display="flex"
               justifyContent="center"
-              alignItems="center"
-              gap="1px"
+              alignItems="end"
+              gap="3px"
             >
               <p className="text-black text-sm font-medium">Support</p>
-              <CaretDownIcon color={Colors.dark.primary} />
+              <Image
+                alt="caret down icon"
+                width={15}
+                height={15}
+                src={CaretIcon}
+                className="text-[#2276FF] mb-[4px]"
+              />
             </Pane>
 
             <AnimatePresence initial={false}>
@@ -245,7 +266,7 @@ const Navbar = () => {
               variants={{
                 open: {
                   opacity: 1,
-                  height: "calc(100vh-5rem)",
+                  height: "calc(100vh-3rem)",
                   background: "#E2FDFF",
                 },
                 collapsed: { opacity: 0, height: 0 },
@@ -254,7 +275,7 @@ const Navbar = () => {
               // className=""
             >
               <div
-                className={`fixed left-0 right-0 top-20 z-10 bg-[#E2FDFF] h-[calc(100vh-5rem)] w-full py-4 pb-12 px-12 flex flex-col gap-2 justify-between `}
+                className={`fixed left-0 right-0 top-20 z-10 bg-[#E2FDFF] h-[calc(100vh-3rem)] w-full py-4 pb-12 px-12 flex flex-col gap-2 justify-between `}
               >
                 <div>
                   <h3 className="font-bold text-black mb-3">Products</h3>

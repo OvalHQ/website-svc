@@ -1,14 +1,8 @@
-import {
-  Button,
-  Heading,
-  Pane,
-  Paragraph,
-  Text,
-  TickCircleIcon,
-} from "evergreen-ui";
+import { Button, Pane, Text, TickCircleIcon } from "evergreen-ui";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
+import HeroImg from "../../../public/images/general/hero.svg";
 
 const Hero = () => {
   return (
@@ -16,51 +10,30 @@ const Hero = () => {
       <Pane className="hero">
         <Pane className="hero-left">
           <Pane>
-            <Heading
-              marginY={4}
-              marginTop={"100px"}
-              fontSize="60px"
-              lineHeight={"70px"}
-              fontWeight={600}
-              maxWidth="700px"
-              color="white"
-            >
+            <h2 className="text-white mt-8 lg:mt-20 text-[60px] font-semibold leading-[40px] md:leading-[70px] max-w-[400px] md:max-w-[700px] ">
               Business Cards,
-            </Heading>
-            <Heading
-              marginY={4}
-              marginTop={"100px"}
-              fontSize="60px"
-              lineHeight={"70px"}
-              fontWeight={600}
-              maxWidth="700px"
-              color="white"
-            >
+            </h2>
+            <h2 className="text-white mb-4 lg:mb-8 text-[60px] font-semibold leading-[40px] md:leading-[70px] max-w-[400px] md:max-w-[700px] ">
               Simplified
-            </Heading>
-            <Paragraph
-              color="white"
-              marginTop="1.5rem"
-              maxWidth="400px"
-              fontWeight="400"
-              lineHeight={"30px"}
-              fontSize="17px"
-              className="text-sm text-gray-500"
-            >
+            </h2>
+
+            <p className=" text-[16px] leading-[30px] max-w-[400px] text-white mt-[1.5rem] ">
               Issue cards to employees in seconds, control spend in one click,
               and make unlimited purchases.
-            </Paragraph>
+            </p>
+
             <Pane marginY={50}>
               <Button
                 type="submit"
                 size="large"
                 color="#000000"
                 borderRadius={10}
-                fontSize={13}
-                fontWeight={400}
+                fontSize={15}
+                fontWeight={500}
                 height={"auto"}
                 paddingY={5}
                 paddingX={35}
+                fontFamily={"Neue Haas Grotesk Display Pro"}
               >
                 <Link
                   href={
@@ -79,13 +52,14 @@ const Hero = () => {
                 color="white"
                 background={"transparent"}
                 borderRadius={10}
-                fontSize={13}
-                fontWeight={400}
+                fontSize={15}
+                fontWeight={500}
                 height={"auto"}
                 paddingY={5}
                 paddingX={35}
+                fontFamily={"Neue Haas Grotesk Display Pro"}
               >
-                Contact Sales
+                <Link href={"/contact"}>Contact Sales</Link>
               </Button>
             </Pane>
           </Pane>
@@ -119,10 +93,7 @@ const Hero = () => {
           </Pane>
         </Pane>
         <Pane className="hero-right">
-          <Image
-            alt="hero image"
-            src={require("../../../public/images/general/hero_old.png")}
-          />
+          <Image alt="hero image" width={"700"} height={"700"} src={HeroImg} />
         </Pane>
       </Pane>
     </>
