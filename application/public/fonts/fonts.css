@@ -1,70 +1,86 @@
 @font-face {
-  font-family: 'Mona Sans';
-  src: url('./Mona-Sans.ttf');
+  font-family: "Mona Sans";
+  src: url("./Mona-Sans.ttf");
   font-weight: auto;
   font-style: auto;
   font-display: auto;
 }
 
 @font-face {
-  font-family: 'Mona Sans';
-  src: url('./Mona-Sans.ttf');
+  font-family: "Mona Sans";
+  src: url("./Mona-Sans.ttf");
   font-weight: 1 999;
   font-style: auto;
   font-display: auto;
 }
 
 @font-face {
-  font-family: 'SF Pro';
-  src: url('./SF-Pro.ttf');
+  font-family: "SF Pro";
+  src: url("./SF-Pro.ttf");
   font-weight: auto;
   font-style: auto;
   font-display: auto;
 }
 
 @font-face {
-  font-family: 'SF Pro';
-  src: url('./SF-Pro.ttf');
+  font-family: "SF Pro";
+  src: url("./SF-Pro.ttf");
   font-weight: 1 999;
   font-style: auto;
   font-display: auto;
 }
 
 @font-face {
-  font-family: 'SF Pro';
-  src: url('./SF-Pro-Italic.ttf');
+  font-family: "SF Pro";
+  src: url("./SF-Pro-Italic.ttf");
   font-weight: 1 999;
   font-style: italic;
   font-display: auto;
 }
 
 @font-face {
-  font-family: 'Neue Haas Grotesk Display Pro';
-  src: url('./neue-haas-grotesk-display-pro-cufonfonts/NeueHaasDisplayBold.ttf');
+  font-family: "Neue Haas Grotesk Display Pro";
+  src: url("./neue-haas-grotesk-display-pro-cufonfonts/NeueHaasDisplayBold.ttf");
   font-weight: 800;
   font-style: bold;
   font-display: auto;
 }
 
 @font-face {
-  font-family: 'Neue Haas Grotesk Display Pro';
-  src: url('./neue-haas-grotesk-display-pro-cufonfonts/NeueHaasDisplayMediu.ttf');
+  font-family: "Neue Haas Grotesk Display Pro";
+  src: url("./neue-haas-grotesk-display-pro-cufonfonts/NeueHaasDisplayMediu.ttf");
   font-weight: 600;
   font-style: auto;
   font-display: auto;
 }
 
 @font-face {
-  font-family: 'Neue Haas Grotesk Display Pro';
-  src: url('./neue-haas-grotesk-display-pro-cufonfonts/NeueHaasDisplayLight.ttf');
+  font-family: "Neue Haas Grotesk Display Pro";
+  src: url("./neue-haas-grotesk-display-pro-cufonfonts/NeueHaasDisplayRoman.ttf");
+  font-weight: 500;
+  font-style: auto;
+  font-display: auto;
+}
+
+@font-face {
+  font-family: "Neue Haas Grotesk Display Pro";
+  src: url("./neue-haas-grotesk-display-pro-cufonfonts/NeueHaasDisplayLight.ttf");
   font-weight: 400;
   font-style: auto;
   font-display: auto;
 }
 
 @font-face {
-  font-family: 'Neue Haas Grotesk Display Pro';
-  src: url('./neue-haas-grotesk-display-pro-cufonfonts/NeueHaasDisplayThin.ttf');
+  font-family: "Neue Haas Grotesk Display Pro";
+  src: url("./neue-haas-grotesk-display-pro-cufonfonts/NeueHaasDisplayThin.ttf");
+  font-weight: 300;
+  font-style: auto;
+  font-display: auto;
+}
+
+@font-face {
+  font-family: "Neue Haas Grotesk Display Pro";
+  src: url("./neue-haas-grotesk-display-pro-cufonfonts/NeueHaasDisplayXThin.ttf");
   font-weight: 200;
   font-style: auto;
   font-display: auto;

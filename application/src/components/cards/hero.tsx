@@ -121,7 +121,7 @@ const Hero = () => {
         <Pane className="hero-right">
           <Image
             alt="hero image"
-            src={require("../../../public/images/general/hero.png")}
+            src={require("../../../public/images/general/hero_old.png")}
           />
         </Pane>
       </Pane>

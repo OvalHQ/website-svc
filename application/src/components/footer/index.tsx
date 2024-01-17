@@ -1,8 +1,10 @@
-import { Pane, Paragraph, Text } from "evergreen-ui";
+import { Pane, Text } from "evergreen-ui";
 import React from "react";
 import FooterWrapper from "./index.style";
 import Image from "next/image";
 import Link from "next/link";
+
+import GraphLogo from "../../../public/images/graph-logo-full-white.png";
 
 const Footer = () => {
   return (
@@ -17,17 +19,19 @@ const Footer = () => {
           minWidth="160px"
         >
           <Image
-            alt="graph-logo"
-            src={require("../../../public/images/graph-logo-full-white.png")}
+            alt="graph-logo svg"
+            width={"180"}
+            height={"60"}
+            src={GraphLogo}
           />
-          <p className="text-white text-sm md:mt-5">Finance OS for Businesses</p>
+          <p className="text-white text-sm mt-3">Finance OS for Businesses</p>
         </Pane>
-        <div className="flex-[2] flex gap-x-8 min-w-[300px] ">
+        <div className="flex-[2] flex gap-x-10 min-w-[300px] ">
           <Pane flex={1}>
-            <Pane display="flex" flexDirection="column" gap={50}>
-              <Paragraph fontWeight={"bold"} color="white">
+            <Pane display="flex" flexDirection="column" gap={30}>
+              <p className="text-sm text-white font-semibold" color="white">
                 Products
-              </Paragraph>
+              </p>
               <Link
                 href="/cards"
                 style={{
@@ -45,10 +49,10 @@ const Footer = () => {
                 <Text color="white">Multi-Currency Accounts</Text>
               </Link>
             </Pane>
-            <Pane display="flex" flexDirection="column" gap={40} marginTop={50}>
-              <Paragraph fontWeight={"bold"} color="white">
+            <Pane display="flex" flexDirection="column" gap={30} marginTop={50}>
+              <p className="text-sm text-white font-semibold" color="white">
                 Company
-              </Paragraph>
+              </p>
 
               <Link
                 href="/about-us"
@@ -62,17 +66,17 @@ const Footer = () => {
                 style={{
                   textDecoration: "none",
                   cursor: "not-allowed",
-                  opacity: ".5"
+                  opacity: ".5",
                 }}
               >
                 <Text color="white">Blog</Text>
               </Text>
             </Pane>
           </Pane>
-          <Pane display="flex" flexDirection="column" gap={40} flex={1}>
-            <Paragraph fontWeight={"bold"} color="white">
+          <Pane display="flex" flexDirection="column" gap={30} flex={1}>
+            <p className="text-sm text-white font-semibold" color="white">
               Contact
-            </Paragraph>
+            </p>
 
             <Link
               href="mailto:info@usegraph.co"
@@ -109,9 +113,9 @@ const Footer = () => {
           </Pane>
         </div>
         <div className="flex flex-col gap-[40px] flex-[2] min-w-[200px]">
-          <Paragraph fontWeight={"bold"} color="white">
+          <p className="text-sm text-white font-semibold" color="white">
             Address
-          </Paragraph>
+          </p>
           <Text color="white">
             325 Front Street, Toronto, ON, Canada M5V 2Y1.
           </Text>
@@ -121,7 +125,7 @@ const Footer = () => {
           </Text>
         </div>
       </Pane>
-      <div className="my-[80px] md:my-[30px] w-full flex justify-start md:justify-between flex-wrap">
+      <div className="my-[60px] md:my-[30px] w-full flex justify-start md:justify-between flex-wrap">
         <p className="hidden md:block text-sm md:text-white md:w-[300px]">
           Graph is a financial technology company, and not a bank. Banking
           services are provided by {"Graph's"} partner banks.

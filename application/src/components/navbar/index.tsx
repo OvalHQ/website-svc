@@ -27,7 +27,7 @@ const Navbar = () => {
       <div
         className={` ${
           menuOpened ? "top-0 fixed z-50" : "static"
-        }  sm:bg-white py-8 sm:py-[10px] px-10 sm:px-[40px] md:px-[80px] w-full flex items-center justify-between`}
+        }  sm:bg-white py-8 sm:py-[10px] px-10 sm:px-[40px] md:px-[80px] h-[75px] w-full flex items-center justify-between`}
       >
         <Link href={"/"}>
           <LogoWithText alt="Graph logo" height={30} width={195} />
@@ -46,7 +46,7 @@ const Navbar = () => {
               alignItems="center"
               gap="1px"
             >
-              <Text>Products</Text>
+              <p className="text-black text-sm font-medium">Products</p>
               <CaretDownIcon color={Colors.dark.primary} />
             </Pane>
 
@@ -125,7 +125,7 @@ const Navbar = () => {
               alignItems="center"
               gap="1px"
             >
-              <Text>Company</Text>
+              <p className="text-black text-sm font-medium">Company</p>
               <CaretDownIcon color={Colors.dark.primary} />
             </Pane>
 
@@ -156,7 +156,7 @@ const Navbar = () => {
                     style={{
                       textDecoration: "none",
                       cursor: "not-allowed",
-                      marginTop: "7px"
+                      marginTop: "7px",
                     }}
                     opacity="0.5"
                   >
@@ -178,7 +178,7 @@ const Navbar = () => {
               alignItems="center"
               gap="1px"
             >
-              <Text>Support</Text>
+              <p className="text-black text-sm font-medium">Support</p>
               <CaretDownIcon color={Colors.dark.primary} />
             </Pane>
 
@@ -219,18 +219,12 @@ const Navbar = () => {
           </Pane>
         </div>
         <div className=" hidden sm:flex justify-center items-center gap-[15px]">
-          <Text marginRight={10}>Log In</Text>
-          <Button
-            type="submit"
-            size="large"
-            appearance="primary"
-            background={Colors.dark.primary}
-            borderRadius={10}
-            fontSize={13}
-            fontWeight={400}
-          >
+          <Link href="">
+            <p className="text-black w-[40px] text-sm font-medium">Log in</p>
+          </Link>
+          <button className="rounded-xl py-4 px-5 w-full block mt-auto text-xs font-light bg-[#2276FF] hover:opacity-80 ">
             Create an account
-          </Button>
+          </button>
         </div>
         <div
           className="block sm:hidden text-black cursor-pointer hover:scale-125 ml-auto "
@@ -322,10 +316,12 @@ const Navbar = () => {
                     <Text
                       style={{
                         textDecoration: "none",
-                        cursor: "not-allowed"
+                        cursor: "not-allowed",
                       }}
                     >
-                      <p className="text-black font-normal cursor-not-allowed">Blog</p>
+                      <p className="text-black font-normal cursor-not-allowed">
+                        Blog
+                      </p>
                     </Text>
                   </div>
                 </div>
@@ -352,7 +348,7 @@ const Navbar = () => {
                   </div>
                 </div>
 
-                <button className="rounded-xl py-3 w-full block mt-auto bg-[#2276FF] hover:opacity-80 ">
+                <button className="rounded-xl py-3 w-full block mt-auto text-xs font-extralight bg-[#2276FF] hover:opacity-80 ">
                   Create an account
                 </button>
               </div>

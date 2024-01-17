@@ -10,42 +10,53 @@ import {
 } from "evergreen-ui";
 import Image from "next/image";
 import React, { useState } from "react";
-import * as yup from 'yup';
-import { useFormik } from 'formik';
+import * as yup from "yup";
+import { useFormik } from "formik";
 import { ValidationMessages } from "@/utils/constants";
 import { AirtableAPI } from "@/service/airtable/api";
 
 const SimplifyOperations = () => {
   const [isLoading, setIsLoading] = useState(false);
   const validationSchema = yup.object().shape({
-    email: yup.string().email(ValidationMessages.email).required(ValidationMessages.required)
+    email: yup
+      .string()
+      .email(ValidationMessages.email)
+      .required(ValidationMessages.required),
   });
 
   const handleSendGetStarted = async (values: any) => {
-    console.log('VALUES ->', values)
+    console.log("VALUES ->", values);
     setIsLoading(true);
     try {
       const payload = {
-        "fields": {
-          "fldiaL2CCd0Z39TeV": values.email,
-        }
-      }
-      const response = await AirtableAPI.createGetStartedRecord(payload)
-      console.log('RESPONSE [SIMPLIFY OPERATIONS PAGE] =>', response)
-      toaster.success('Success!');
+        fields: {
+          fldiaL2CCd0Z39TeV: values.email,
+        },
+      };
+      const response = await AirtableAPI.createGetStartedRecord(payload);
+      console.log("RESPONSE [SIMPLIFY OPERATIONS PAGE] =>", response);
+      toaster.success("Success!");
       resetForm();
     } catch (e) {
-      toaster.danger('Error: Please try again!');
+      toaster.danger("Error: Please try again!");
     } finally {
       setIsLoading(false);
     }
   };
 
-  const { values, errors, touched, handleChange, handleBlur, handleSubmit, resetForm } = useFormik({
+  const {
+    values,
+    errors,
+    touched,
+    handleChange,
+    handleBlur,
+    handleSubmit,
+    resetForm,
+  } = useFormik({
     validationSchema: validationSchema,
     enableReinitialize: true,
     initialValues: {
-      email: '',
+      email: "",
     },
     onSubmit: handleSendGetStarted,
   });
@@ -57,9 +68,7 @@ const SimplifyOperations = () => {
           <h1 className=" text-[34px]  leading-[40px] max-w-[400px] md:text-[3.5rem] md:leading-[70px] font-semibold text-center text-black md:max-w-[700px]">
             Ready to simplify your financial operations?
           </h1>
-          <p
-            className="md:text-xl text-sm text-center font-medium my-2.5"
-          >
+          <p className="md:text-xl text-sm text-center font-medium my-2.5">
             Open an account today.
           </p>
           <div className="md:my-[50px] mt-8 mb-0 md:bg-white rounded-xl md:flex md:justify-between md:items-center  py-3 px-4 gap-y-4  gap-x-2 md:flex-row justify-center items-center ">
@@ -72,12 +81,14 @@ const SimplifyOperations = () => {
                   w-full px-4 py-4 border-none flex-1 rounded-xl text-sm focus:outline-gray-10 md:placeholder:text-left placeholder:text-center placeholder:opacity-[0.25] placeholder:text-black
                 "
                 placeholder="Enter your work email"
-                onChange={handleChange('email')}
-                onBlur={handleBlur('email')}
+                onChange={handleChange("email")}
+                onBlur={handleBlur("email")}
                 value={values.email}
               />
               {touched.email && errors.email && (
-                <div className="text-xs mt-1 tracking-wider text-red-500">{errors.email}</div>
+                <div className="text-xs mt-1 tracking-wider text-red-500">
+                  {errors.email}
+                </div>
               )}
             </div>
             <div className="w-[200px] md:w-auto">
@@ -106,7 +117,7 @@ const SimplifyOperations = () => {
           <Image
             style={{
               opacity: 0.1,
-              height: "100%"
+              height: "100%",
             }}
             alt="background-layer"
             src={require("../../../public/images/general/pattern-bg-1.png")}
