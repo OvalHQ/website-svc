@@ -4,40 +4,23 @@ import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 
+import SolidFoundationImg from "../../../public/images/general/solid-foundation-img.svg";
+
 const SolidFoundation = () => {
   return (
     <Pane className="solid-foundation">
-      <Pane display="flex" gap="30px" width="100%">
-        <Pane
-          flex={1}
-          borderRadius={15}
-          background={"white"}
-          paddingY={60}
-          paddingLeft={"4rem"}
-        >
-          <Pane display="flex" justifyContent="space-around">
-            <Pane maxWidth={"600px"}>
-              <Heading
-                size={900}
-                fontSize={"45px"}
-                lineHeight="50px"
-                fontWeight={700}
-                marginY={20}
-                color="black"
-                maxWidth="500px"
-              >
+      <div className="flex gap-[30px] w-full flex-col md:flex-row">
+        <div className="rounded-xl flex-1 bg-white pl-4 py-5 sm:py-[60px] sm:pl-[3rem]">
+          <div className="flex w-full flex-col lg:flex-row gap-y-14">
+            <Pane maxWidth={"500px"}>
+              <h2 className="my-4 mt-5 lg:mt-14 text-[40px] text-black font-semibold leading-[40px] md:leading-[50px] max-w-[400px] md:max-w-[700px] ">
                 Launch with a solid financial foundation
-              </Heading>
-              <Paragraph
-                fontSize={"16px"}
-                marginY={40}
-                transition="all 1s cubic-bezier(0.58, 0.05, 0.08, 1.04)"
-                maxWidth="500px"
-                color={"black"}
-              >
+              </h2>
+              <p className=" text-[15px] leading-[30px] max-w-[400px] text-black mt-[1.5rem] ">
                 Open a flexible account that lets you manage, spend, and grow
                 your cash — all in a single dashboard
-              </Paragraph>
+              </p>
+
               <Pane
                 display="flex"
                 alignItems="flex-start"
@@ -136,21 +119,20 @@ const SolidFoundation = () => {
                 </Link>
               </Button>
             </Pane>
-            <Pane marginTop="auto" flex={1} paddingRight="25px">
+            <Pane marginTop="auto" flex={1} paddingRight="35px">
               <Pane position="relative">
                 <Image
-                  style={{
-                    maxWidth: "700px",
-                    marginLeft: "auto",
-                  }}
+                  width={"700"}
+                  height={"700"}
                   alt="hero image"
-                  src={require("../../../public/images/general/solid-foundation-img.png")}
+                  src={SolidFoundationImg}
+                  className="ml-auto max-width-full md:w-full md:max-w-[650px]"
                 />
               </Pane>
             </Pane>
-          </Pane>
-        </Pane>
-      </Pane>
+          </div>
+        </div>
+      </div>
     </Pane>
   );
 };

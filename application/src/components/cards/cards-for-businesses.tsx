@@ -43,7 +43,7 @@ const CardsForBusinesses = () => {
                 />
               </Pane>
               <Pane>
-                <Heading size={800} fontWeight={700} marginY={20}>
+                <Heading size={800} fontWeight={600} marginY={20}>
                   {data.title}
                 </Heading>
                 <Text lineHeight="24px">{data.description}</Text>

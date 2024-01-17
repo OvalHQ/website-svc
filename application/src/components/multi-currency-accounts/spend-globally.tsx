@@ -7,37 +7,17 @@ const SpendGlobally = () => {
   return (
     <Pane className="spend-globally">
       <Pane>
-        <Heading
-          fontSize="3rem"
-          lineHeight={"50px"}
-          fontWeight={600}
-          textAlign="center"
-          color="black"
-          maxWidth={"800px"}
-        >
+        <h2 className=" text-[2.5rem] leading-[40px] font-semibold text-center text-black ">
           Spend globally, Operate Locally.
-        </Heading>
+        </h2>
       </Pane>
-      <Pane
-        marginY={70}
-        paddingX={50}
-        display="flex"
-        justifyContent="center"
-        alignItems="center"
-        rowGap="10px"
-        gap="20px"
-        flexWrap="wrap"
-      >
+
+      <Pane className="flex my-[70px] px-4 sm:px-[50px] flex-wrap justify-center items-center gap-[30px] ">
         {dataToDisplay.map((data, index) => {
           return (
-            <Pane
+            <div
               key={index}
-              borderRadius={15}
-              backgroundColor={Colors.dark.secondary}
-              paddingY="50px"
-              paddingX="30px"
-              width={250}
-              height={"380px"}
+              className="rouned-2xl bg-[#E2FDFF] py-[50px] px-[30px] w-[300px] sm:w-[250px] h-[320px] sm:h-[380px] "
             >
               <Pane
                 position="relative"
@@ -49,6 +29,7 @@ const SpendGlobally = () => {
                 alignItems="center"
                 borderRadius="50%"
                 border="1px solid #2276FF40"
+                marginBottom={10}
               >
                 <Image
                   alt="icon"
@@ -62,12 +43,12 @@ const SpendGlobally = () => {
                 />
               </Pane>
               <Pane>
-                <Heading size={800} fontWeight={700} marginY={20}>
+                <Heading size={800} fontWeight={600} marginY={20}>
                   {data.title}
                 </Heading>
                 <Text lineHeight="24px">{data.description}</Text>
               </Pane>
-            </Pane>
+            </div>
           );
         })}
       </Pane>
