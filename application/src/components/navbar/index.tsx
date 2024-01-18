@@ -12,16 +12,17 @@ import React, { useState } from "react";
 import NavbarWrapper from "./index.style";
 
 import { AnimatePresence, motion } from "framer-motion";
-import Colors from "@/theme/Colors";
-import { LogoWithText } from "../primitives/logo";
+import { LogoWithText, LogoWithTextWhite } from "../primitives/logo";
 import Link from "next/link";
 import Image from "next/image";
 
 import CaretIcon from "../../../public/images/general/caret-down.svg";
+import { usePathname } from "next/navigation";
 
 const Navbar = () => {
   const [openedId, setOpenedId] = useState(-1);
   const [menuOpened, setMenuOpened] = useState(false);
+  const pathname = usePathname();
 
   return (
     <NavbarWrapper>
@@ -33,7 +34,11 @@ const Navbar = () => {
         }   sm:bg-white py-8 sm:py-[10px] px-10 sm:px-[40px] md:px-[80px] w-full flex items-center justify-between`}
       >
         <Link href={"/"}>
-          <LogoWithText alt="Graph logo" height={30} width={195} />
+          {pathname === "/cards" && !menuOpened ? (
+            <LogoWithTextWhite alt="Graph logo" height={30} width={195} />
+          ) : (
+            <LogoWithText alt="Graph logo" height={30} width={195} />
+          )}
         </Link>
 
         <div className=" hidden sm:flex justify-center items-center gap-[35px]">
@@ -243,13 +248,15 @@ const Navbar = () => {
             <p className="text-black w-[40px] text-sm font-medium">Log in</p>
           </Link>
           <Link href="/contact">
-            <button className="rounded-xl py-4 px-5 w-full block mt-auto text-xs font-light bg-[#2276FF] hover:opacity-80 ">
+            <button className="rounded-xl py-4 px-5 w-full block mt-auto text-xs font-light bg-[#2276FF] hover:opacity-80 text-white">
               Create an account
             </button>
           </Link>
         </div>
         <div
-          className="block sm:hidden text-black cursor-pointer hover:scale-125 ml-auto "
+          className={`block sm:hidden ${
+            pathname === "/cards" && !menuOpened ? "text-white" : "text-black"
+          }  cursor-pointer hover:scale-125 ml-auto  `}
           onClick={() => {
             setMenuOpened((prev) => !prev);
           }}
@@ -272,11 +279,10 @@ const Navbar = () => {
                 },
                 collapsed: { opacity: 0, height: 0 },
               }}
-              transition={{ duration: 0.2 }}
-              // className=""
+              transition={{ duration: 0.6 }}
             >
               <div
-                className={`fixed left-0 right-0 top-20 z-10 bg-[#E2FDFF] h-[calc(100vh-3rem)] w-full py-4 pb-12 px-12 flex flex-col gap-2 justify-between `}
+                className={`fixed z-100 left-0 right-0 top-20 z-10 bg-[#E2FDFF] h-[calc(100vh-3rem)] w-full py-4 pb-12 px-12 flex flex-col gap-2 justify-around `}
               >
                 <div>
                   <h3 className="font-bold text-black mb-3">Products</h3>
@@ -371,7 +377,7 @@ const Navbar = () => {
                 </div>
 
                 <Link href="/contact">
-                  <button className="rounded-xl py-3 w-full block mt-auto text-xs font-extralight bg-[#2276FF] hover:opacity-80 ">
+                  <button className="rounded-xl py-3 w-full block mt-auto text-xs font-extralight bg-[#2276FF] hover:opacity-80 text-white">
                     Create an account
                   </button>
                 </Link>

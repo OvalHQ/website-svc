@@ -10,13 +10,13 @@ const CorporateCards = () => {
   return (
     <Pane className="corporate-cards">
       <div className="flex gap-[30px] w-full flex-col md:flex-row">
-        <div className="rounded-xl flex-1 bg-[#D1F89840] pl-4 py-5 sm:py-[60px] sm:pl-[3rem]">
+        <div className="rounded-2xl flex-1 bg-[#D1F89840] pl-4 py-5 sm:py-[60px] sm:pl-[5rem]">
           <div className="flex w-full flex-col lg:flex-row gap-y-14">
             <Pane maxWidth={"500px"}>
-              <h2 className="my-4 mt-5 lg:mt-14 text-[40px] text-black font-semibold leading-[40px] md:leading-[50px] max-w-[400px] md:max-w-[700px] ">
+              <h2 className="my-4 mt-5 lg:mt-14 text-[50px] text-black font-semibold leading-[40px] md:leading-[50px] max-w-[400px] md:max-w-[700px] ">
                 Save more with the all-in-one corporate card
               </h2>
-              <p className=" text-[15px] leading-[30px] max-w-[400px] text-black opacity-80 mt-[1.5rem] ">
+              <p className=" text-[15px] leading-[30px] max-w-[430px] text-black opacity-70 mt-[1.5rem] ">
                 Easily make payment for travel, online ads , and more with
                 International and local card’s acceptance in 20 currencies or
                 more.
@@ -25,7 +25,7 @@ const CorporateCards = () => {
                 display="flex"
                 alignItems="flex-start"
                 // justifyContent="center"
-                rowGap={20}
+                rowGap={30}
                 flexDirection="column"
                 columnGap={20}
                 flexWrap="wrap"
@@ -51,7 +51,7 @@ const CorporateCards = () => {
                   <Text
                     transition="all 1s cubic-bezier(0.58, 0.05, 0.08, 1.04)"
                     color={"black"}
-                    fontWeight={600}
+                    fontWeight={500}
                   >
                     Issue unlimited cards to your employees
                   </Text>
@@ -75,7 +75,7 @@ const CorporateCards = () => {
                   <Text
                     transition="all 1s cubic-bezier(0.58, 0.05, 0.08, 1.04)"
                     color={"black"}
-                    fontWeight={600}
+                    fontWeight={500}
                   >
                     Manage all expense in one place
                   </Text>
@@ -99,7 +99,7 @@ const CorporateCards = () => {
                   <Text
                     transition="all 1s cubic-bezier(0.58, 0.05, 0.08, 1.04)"
                     color={"black"}
-                    fontWeight={600}
+                    fontWeight={500}
                   >
                     Make unlimted purchases and ads for your business
                   </Text>

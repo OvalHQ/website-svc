@@ -11,16 +11,16 @@ const Hero = () => {
       <Pane className="hero">
         <Pane className="hero-left">
           <div className="pr-5">
-            <h2 className="text-black mb-4 lg:mb-8 text-[45px] md:text-[60px] font-semibold leading-[45px] md:leading-[60px] max-w-[400px] md:max-w-[700px] ">
+            <h2 className="text-black mb-4 lg:mb-8 text-[45px] md:text-[70px] font-semibold leading-[45px] md:leading-[70px] max-w-[400px] md:max-w-[500px] ">
               The best place to manage your operating cash
             </h2>
 
-            <p className=" text-[14px] font-medium leading-[30px] max-w-[400px] text-black mt-[1.5rem] ">
+            <p className=" text-[18px] font-medium leading-[30px] max-w-[480px] text-black mt-[1.5rem] ">
               Manage payments and operate globally in any location with Multi
               Currency bank accounts and billing—supporting currencies such as
               USD, Canadian Dollar, Euro, Pound and more.
             </p>
-            <Pane marginY={50}>
+            <Pane marginTop={50} marginBottom={90}>
               <Button
                 className="cta-primary"
                 type="submit"
@@ -35,12 +35,7 @@ const Hero = () => {
                 paddingX={35}
                 fontFamily={"Neue Haas Grotesk Display Pro"}
               >
-                <Link
-                  href={
-                    "https://airtable.com/appoAvLm7YJjEJveN/shrScB7fxfi4fRMu6"
-                  }
-                  target="_blank"
-                >
+                <Link href={"/contact"} target="_blank">
                   Get Started
                 </Link>
               </Button>

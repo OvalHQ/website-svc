@@ -79,7 +79,7 @@ const HomePageScreenWrapper = styled(Pane)`
 
       .hero-right {
         align-self: end;
-        margin-top: -40px;
+        margin-top: -30px;
       }
     }
   }
@@ -96,6 +96,7 @@ const HomePageScreenWrapper = styled(Pane)`
     justify-content: center;
     align-items: center;
     height: 1400px;
+    z-index: -1;
 
     .grid-container {
       display: grid;

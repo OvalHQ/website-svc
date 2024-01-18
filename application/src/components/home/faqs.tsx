@@ -77,7 +77,12 @@ const Faqs = () => {
                     }}
                     transition={{ duration: 0.5 }}
                   >
-                    <Text fontSize={"16px"} fontWeight={400} marginTop={30}>
+                    <Text
+                      fontSize={"16px"}
+                      color="black"
+                      fontWeight={400}
+                      marginTop={30}
+                    >
                       {faq.answer}
                     </Text>
                   </motion.div>

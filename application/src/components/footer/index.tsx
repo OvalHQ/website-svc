@@ -147,7 +147,7 @@ const Footer = () => {
             </Link>
             <Link href="" target="_blank">
               <Image
-                alt="linkedin"
+                alt="instagram"
                 src={"/images/general/instagram.svg"}
                 width={25}
                 height={25}
@@ -155,15 +155,15 @@ const Footer = () => {
             </Link>
             <Link href="https://twitter.com/usegraph" target="_blank">
               <Image
-                alt="linkedin"
+                alt="twitter"
                 src={"/images/general/x.svg"}
                 width={25}
                 height={25}
               />
             </Link>
-            <Link href="" target="_blank">
+            <Link href="https://www.facebook.com/usegraph" target="_blank">
               <Image
-                alt="linkedin"
+                alt="facebook"
                 src={"/images/general/facebook.svg"}
                 width={25}
                 height={25}

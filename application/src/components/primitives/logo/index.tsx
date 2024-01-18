@@ -14,6 +14,17 @@ export const LogoWithText = ({ ...rest }: Props) => {
   );
 };
 
+export const LogoWithTextWhite = ({ ...rest }: Props) => {
+  return (
+    <Image
+      {...rest}
+      src={"/images/graph-logo-full-white.svg"}
+      width={115}
+      alt="Graph logo"
+    />
+  );
+};
+
 export const Logo = ({ ...rest }: Props) => {
   return (
     <Image

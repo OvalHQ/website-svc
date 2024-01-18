@@ -7,7 +7,7 @@ const SpendGlobally = () => {
   return (
     <Pane className="spend-globally">
       <Pane>
-        <h2 className=" text-[2.5rem] leading-[40px] font-semibold text-center text-black ">
+        <h2 className=" text-[50px] leading-[40px] font-semibold text-center text-black ">
           Spend globally, Operate Locally.
         </h2>
       </Pane>
@@ -17,7 +17,11 @@ const SpendGlobally = () => {
           return (
             <div
               key={index}
-              className="rouned-2xl bg-[#E2FDFF] py-[50px] px-[30px] w-[300px] sm:w-[250px] h-[320px] sm:h-[380px] "
+              className="rouned-2xl bg-[#E2FDFF] py-[50px] px-[25px] w-[300px] sm:w-[250px] h-[320px] sm:h-[380px] "
+              style={{
+                background:
+                  "linear-gradient(132.73deg, rgba(226, 253, 255, 0.9) 12.88%, rgba(226, 253, 255, 0) 163.96%),linear-gradient(133.84deg, rgba(226, 253, 255, 0.25) 14.05%, rgba(226, 253, 255, 0) 115.45%)",
+              }}
             >
               <Pane
                 position="relative"
@@ -43,10 +47,12 @@ const SpendGlobally = () => {
                 />
               </Pane>
               <Pane>
-                <Heading size={800} fontWeight={600} marginY={20}>
+                <h2 className="font-semibold my-[20px] text-black text-[30px] leading-[30px]">
                   {data.title}
-                </Heading>
-                <Text lineHeight="24px">{data.description}</Text>
+                </h2>
+                <p className="text-[16px] text-black opacity-80 ">
+                  {data.description}
+                </p>
               </Pane>
             </div>
           );

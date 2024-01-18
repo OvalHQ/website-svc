@@ -40,7 +40,8 @@ const CardsPageScreenWrapper = styled(Pane)`
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-left: 4rem;
+    padding-left: 5rem;
+    padding-bottom: 10px;
     padding-top: 50px;
 
     .hero-left {
@@ -53,6 +54,7 @@ const CardsPageScreenWrapper = styled(Pane)`
     }
     .hero-right {
       flex: 1;
+      margin-left: -300px;
     }
 
     @media (max-width: 1100px) {
@@ -72,10 +74,12 @@ const CardsPageScreenWrapper = styled(Pane)`
 
       .hero-left {
         width: 100%;
+        padding-top: 60px;
       }
       .hero-right {
         align-self: end;
         margin-top: -50px;
+        margin-left: 0;
       }
     }
     @media (max-width: 500px) {
@@ -84,7 +88,7 @@ const CardsPageScreenWrapper = styled(Pane)`
 
       .hero-right {
         align-self: end;
-        margin-top: -40px;
+        margin-top: -20px;
       }
     }
   }
