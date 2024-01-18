@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-@import '../../public/fonts/fonts.css';
+@import "../../public/fonts/fonts.css";
 
 :root {
   --foreground-rgb: 0, 0, 0;
@@ -24,5 +24,21 @@ html {
 
 body {
   color: rgb(var(--foreground-rgb));
-  font-family: 'Neue Haas Grotesk Display Pro';
+  font-family: "Neue Haas Grotesk Display Pro";
+}
+
+/* apply CSS to the select tag of  
+.dropdown-container div*/
+
+.dropdown-container select {
+  /* for Firefox */
+  -moz-appearance: none;
+  /* for Safari, Chrome, Opera */
+  -webkit-appearance: none;
+  cursor: pointer;
+}
+
+/* for IE10 */
+.dropdown-container select::-ms-expand {
+  display: none;
 }

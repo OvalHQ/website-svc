@@ -1,4 +1,4 @@
-import { Button, Heading, Pane, Paragraph, Text } from "evergreen-ui";
+import { Button, Pane } from "evergreen-ui";
 import Image from "next/image";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
@@ -12,10 +12,10 @@ const Hero = () => {
       <Pane className="hero">
         <Pane className="hero-left">
           <Pane>
-            <h2 className="my-4 mt-5 lg:mt-20 text-[60px] text-w text-black font-semibold leading-[40px] md:leading-[70px] max-w-[400px] md:max-w-[700px] ">
+            <h2 className="my-4 mt-5 lg:mt-20 text-[70px]  text-black font-semibold leading-[40px] md:leading-[80px] max-w-[400px] md:max-w-[700px] ">
               Cash management and corporate spending platform
             </h2>
-            <p className=" text-[17px] leading-[30px] max-w-[400px] text-black mt-[1.5rem] ">
+            <p className=" text-[18px] leading-[30px] max-w-[450px] font-medium text-black mt-[1.5rem] ">
               Experience seamless access to corporate cards, multi-currency
               accounts, and global payouts, all in one account.
             </p>
@@ -66,7 +66,7 @@ const Hero = () => {
           </Pane>
 
           <div className="gap-[10px] max-w-[210px] sm:max-w-[300px] lg:max-w-[400px] flex flex-wrap ">
-            <p className="text-black text-sm lg:text-sm ">
+            <p className="text-black text-sm lg:text-[14px] ">
               Graph is a financial technology company, not a bank . Banking
               services provided by Evolve Bank & Trust®; Members FDIC.
             </p>
@@ -77,7 +77,7 @@ const Hero = () => {
             alt="hero image"
             width="900"
             height="900"
-            // className="w-64 h-64"
+            className="ml-auto"
             src={HeroImg}
             // src={require("../../../public/images/general/home-hero_old.png")}
           />

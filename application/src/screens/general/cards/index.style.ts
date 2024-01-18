@@ -46,7 +46,6 @@ const CardsPageScreenWrapper = styled(Pane)`
     .hero-left {
       flex: 1;
       height: 100%;
-      padding-top: 3rem;
       display: flex;
       flex-direction: column;
       justify-content: space-around;

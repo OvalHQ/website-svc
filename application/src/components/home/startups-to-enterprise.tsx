@@ -16,7 +16,7 @@ const StartupsToEnterprise = () => {
       >
         From startups to enterprises and businesses of all sizes.
       </Heading>
-      <p className="text-black font-[18px] text-center">
+      <p className="text-black font-[500] text-center">
         We help you streamline and simplify your financial operations toward
         driving business growth
       </p>
@@ -36,7 +36,7 @@ const StartupsToEnterprise = () => {
                   //   width={'100%'}
                 />
               </Pane>
-              <h3 className="font-bold text-xl leading-5 text-black pb-[10px] pt-[10px]">
+              <h3 className="font-bold text-xl tracking-[-1px] leading-5 text-black pb-[10px] pt-[10px]">
                 {data.title}
               </h3>
               <p className="text-sm text-black opacity-95">

@@ -6,7 +6,7 @@ const WhyGraph = () => {
   return (
     <Pane className="why-graph">
       <Heading
-        fontSize="2.5rem"
+        fontSize="40px"
         lineHeight={"40px"}
         fontWeight={600}
         textAlign="center"
@@ -16,7 +16,7 @@ const WhyGraph = () => {
         Discover why Graph is the
       </Heading>
       <Heading
-        fontSize="2.5rem"
+        fontSize="40px"
         lineHeight={"40px"}
         fontWeight={600}
         textAlign="center"
@@ -45,7 +45,7 @@ const WhyGraph = () => {
           flexDirection="column"
           justifyContent="space-between"
         >
-          <Paragraph fontSize={"16px"}>
+          <Paragraph fontSize={"16px"} color={"#000000"} fontWeight={500}>
             As a startup with global operations, {"Graph's"} Simplified Global
             Payments product has been a lifesaver for us. The traditional
             hassles of cross-border transactions are now a thing of the past.
@@ -76,7 +76,7 @@ const WhyGraph = () => {
               <Text fontWeight="bold" color="black">
                 Joe Abeden
               </Text>
-              <Text fontSize={12} color="black" opacity={0.6}>
+              <Text fontSize={12} color="black" opacity={0.5}>
                 CTO, Bridgecard
               </Text>
             </Pane>
@@ -94,7 +94,7 @@ const WhyGraph = () => {
           flexDirection="column"
           justifyContent="space-between"
         >
-          <Paragraph fontSize={"16px"}>
+          <Paragraph fontSize={"16px"} color={"#000000"} fontWeight={500}>
             {"Graph's"} Simplified Global Payments solution has revolutionized
             the way we handle transactions at our startup. The integration
             process was remarkably smooth, and within no time, we were able to
@@ -125,7 +125,7 @@ const WhyGraph = () => {
               <Text fontWeight="bold" color="black">
                 Bola Ajayi
               </Text>
-              <Text fontSize={12} color="black" opacity={0.6}>
+              <Text fontSize={12} color="black" opacity={0.5}>
                 CEO, Chowcentral
               </Text>
             </Pane>
@@ -143,7 +143,7 @@ const WhyGraph = () => {
           flexDirection="column"
           justifyContent="space-between"
         >
-          <Paragraph fontSize={"16px"}>
+          <Paragraph fontSize={"16px"} color={"#000000"} fontWeight={500}>
             One of the standout features of {"Graph's"} products is their
             exceptional customer support. As a startup, having a reliable
             support team is crucial, and Graph has exceeded our expectations.
@@ -175,7 +175,7 @@ const WhyGraph = () => {
               <Text fontWeight="bold" color="black">
                 Grace Thompson
               </Text>
-              <Text fontSize={12} color="black" opacity={0.6}>
+              <Text fontSize={12} color="black" opacity={0.5}>
                 CFO, Sproutly
               </Text>
             </Pane>

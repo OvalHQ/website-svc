@@ -10,10 +10,10 @@ const Hero = () => {
       <Pane className="hero">
         <Pane className="hero-left">
           <Pane>
-            <h2 className="text-white mt-8 lg:mt-20 text-[60px] font-semibold leading-[40px] md:leading-[70px] max-w-[400px] md:max-w-[700px] ">
+            <h2 className="text-white mt-8 lg:mt-8 text-[60px] font-semibold leading-[40px] md:leading-[70px] max-w-[400px] md:max-w-[700px] ">
               Business Cards,
             </h2>
-            <h2 className="text-white mb-4 lg:mb-8 text-[60px] font-semibold leading-[40px] md:leading-[70px] max-w-[400px] md:max-w-[700px] ">
+            <h2 className="text-white mb-5 lg:mb-8 text-[60px] font-semibold leading-[40px] md:leading-[70px] max-w-[400px] md:max-w-[700px] ">
               Simplified
             </h2>
 
@@ -22,7 +22,7 @@ const Hero = () => {
               and make unlimited purchases.
             </p>
 
-            <Pane marginY={50}>
+            <div className="mt-[50px] sm:mt-[30px] mb-[70px] sm:mb-[120px]">
               <Button
                 type="submit"
                 size="large"
@@ -61,7 +61,7 @@ const Hero = () => {
               >
                 <Link href={"/contact"}>Contact Sales</Link>
               </Button>
-            </Pane>
+            </div>
           </Pane>
 
           <Pane
@@ -93,7 +93,13 @@ const Hero = () => {
           </Pane>
         </Pane>
         <Pane className="hero-right">
-          <Image alt="hero image" width={"700"} height={"700"} src={HeroImg} />
+          <Image
+            alt="hero image"
+            width={"700"}
+            height={"700"}
+            src={HeroImg}
+            className="ml-auto"
+          />
         </Pane>
       </Pane>
     </>

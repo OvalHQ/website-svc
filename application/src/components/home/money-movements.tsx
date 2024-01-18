@@ -27,9 +27,9 @@ const MoneyMovement = () => {
                 ? Colors.dark.secondary
                 : Colors.dark.primary,
           }}
-          className=" flex-1 py-[60px] rounded-lg "
+          className=" flex-1 py-[60px] rounded-2xl "
         >
-          <div className="flex gap-5 pr-[30px]  pl-[30px]  md:pl-[4rem]">
+          <div className="flex justify-end gap-3 pr-[30px]  pl-[30px]  md:pl-[4rem]">
             {/* <Pane> */}
             <Text
               borderRadius={"20px"}
@@ -70,13 +70,13 @@ const MoneyMovement = () => {
             {/* </Pane> */}
           </div>
           <div className="flex  flex-col lg:flex-row justify-around">
-            <div className="max-w-[600px] pl-[30px]  md:pl-[4rem] ">
+            <div className="max-w-[650px] pl-[30px]  md:pl-[4rem] ">
               <h1
                 className={`${
                   active === ACTIVE_STATE_ENUM.MULTI
                     ? "text-black"
                     : "text-white"
-                } my-[20px] text-[35px]  md:text-[45px] font-bold leading-[40px] md:leading-[50px] transition ease-in-out duration-1000 `}
+                } my-[20px] text-[35px] md:text-[45px] font-bold -tracking-[2px] leading-[40px] md:leading-[50px] transition ease-in-out duration-1000 `}
               >
                 {active === ACTIVE_STATE_ENUM.MULTI
                   ? "Introducing Faster Money Movement Beyond Banks."
@@ -89,7 +89,7 @@ const MoneyMovement = () => {
                 color={active === ACTIVE_STATE_ENUM.CARDS ? "white" : "black"}
               >
                 {active === ACTIVE_STATE_ENUM.MULTI
-                  ? "Graph empowers you to swiftly direct your funds and manage bills efficiently through instant transfers. Utilize instant transfers to efficiently reimburse employees, manage payroll, and conduct global transactions in USD and foreign currencies. Reachsuppliers, vendors and partners in over 90 countries instantly, eliminating the delays of traditional money transfers."
+                  ? "Graph empowers you to swiftly direct your funds and manage bills efficiently through instant transfers. Utilize instant transfers to efficiently reimburse employees, manage payroll, and conduct global transactions in USD and foreign currencies. Reach suppliers, vendors and partners in over 90 countries instantly, eliminating the delays of traditional money transfers."
                   : "Equip your team with dollar cards that work anywhere, anytime. Manage expenses and make international purchases with ease. Graph’s corporate cards offer flexibility, control, and real-time transaction visibility, giving you the power to manage your finances globally with confidence."}
               </Paragraph>
               <Pane
@@ -123,7 +123,7 @@ const MoneyMovement = () => {
                     color={
                       active === ACTIVE_STATE_ENUM.CARDS ? "white" : "black"
                     }
-                    fontWeight={400}
+                    fontWeight={600}
                   >
                     {active === ACTIVE_STATE_ENUM.MULTI
                       ? "Same-day settlement"
@@ -151,7 +151,7 @@ const MoneyMovement = () => {
                     color={
                       active === ACTIVE_STATE_ENUM.CARDS ? "white" : "black"
                     }
-                    fontWeight={400}
+                    fontWeight={600}
                   >
                     {active === ACTIVE_STATE_ENUM.MULTI
                       ? "Competitive exchange rates"
@@ -179,7 +179,7 @@ const MoneyMovement = () => {
                     color={
                       active === ACTIVE_STATE_ENUM.CARDS ? "white" : "black"
                     }
-                    fontWeight={400}
+                    fontWeight={600}
                   >
                     {active === ACTIVE_STATE_ENUM.MULTI
                       ? "Secure and transparent transactions"
@@ -195,11 +195,12 @@ const MoneyMovement = () => {
                 background="black"
                 borderRadius={10}
                 border="none"
-                fontSize={13}
+                fontSize={14}
                 fontWeight={400}
                 height={"auto"}
-                paddingY={5}
+                paddingY={8}
                 paddingX={35}
+                fontFamily={"Neue Haas Grotesk Display Pro"}
               >
                 Learn more
               </Button>
@@ -298,8 +299,7 @@ const MoneyMovement = () => {
           </div>
         </div>
         <div
-          className={` hidden xl:block rounded-lg	w-[180px] transition ease-in-out duraion-1000
-          `}
+          className={` hidden xl:block rounded-2xl	w-[180px] transition ease-in-out duraion-1000`}
           style={{
             backgroundColor:
               active === ACTIVE_STATE_ENUM.MULTI

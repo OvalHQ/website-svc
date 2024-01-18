@@ -63,15 +63,15 @@ const SimplifyOperations = () => {
 
   return (
     <Pane className="simplify-operations text-black">
-      <div className="relative md:h-[500px] md:p-[50px] py-12 rounded-lg bg-[#C0D7FF] flex justify-center items-center w-full  ">
+      <div className="relative md:h-[500px] md:p-[50px] py-12 rounded-2xl bg-[#C0D7FF] flex justify-center items-center w-full  ">
         <Pane zIndex={5}>
-          <h1 className=" text-[34px]  leading-[40px] max-w-[400px] md:text-[3.5rem] md:leading-[70px] font-semibold text-center text-black md:max-w-[700px]">
+          <h1 className=" text-[34px] -tracking-[1px] leading-[40px] max-w-[400px] md:text-[3.5rem] md:leading-[70px] font-semibold text-center text-black md:max-w-[700px]">
             Ready to simplify your financial operations?
           </h1>
           <p className="md:text-xl text-sm text-center font-medium my-2.5">
             Open an account today.
           </p>
-          <div className="md:my-[50px] mt-8 mb-0 md:bg-white rounded-xl md:flex md:justify-between md:items-center  py-3 px-4 gap-y-4  gap-x-2 md:flex-row justify-center items-center ">
+          <div className="md:my-[50px] mt-8 mb-0 md:bg-white rounded-2xl md:flex md:justify-between md:items-center  py-3 px-4 gap-y-4  gap-x-2 md:flex-row flex flex-col justify-center items-center ">
             <div className="w-full mb-4 md:mb-0 ">
               <input
                 name="email"
@@ -106,7 +106,7 @@ const SimplifyOperations = () => {
           <Image
             style={{
               transform: "rotate(180deg)",
-              opacity: 0.1,
+              opacity: 0.15,
               height: "100%",
             }}
             alt="background-layer"
@@ -116,7 +116,7 @@ const SimplifyOperations = () => {
         <Pane position="absolute" right={0} zIndex={1}>
           <Image
             style={{
-              opacity: 0.1,
+              opacity: 0.15,
               height: "100%",
             }}
             alt="background-layer"

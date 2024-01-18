@@ -77,6 +77,7 @@ const Hero = () => {
             alt="hero image"
             width={"700"}
             height={"700"}
+            className="ml-auto"
             src={MultiCurrencyHeroImg}
           />
         </Pane>

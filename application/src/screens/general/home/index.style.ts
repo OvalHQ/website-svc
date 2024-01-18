@@ -11,6 +11,7 @@ const HomePageScreenWrapper = styled(Pane)`
   align-items: center;
   justify-content: center;
 
+  h1,
   h2,
   p,
   span {
@@ -94,6 +95,7 @@ const HomePageScreenWrapper = styled(Pane)`
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    height: 1400px;
 
     .grid-container {
       display: grid;
@@ -180,6 +182,9 @@ const HomePageScreenWrapper = styled(Pane)`
 
     @media (max-width: 900px) {
       padding: 80px 2rem;
+
+      height: auto;
+
       .grid-container {
         grid-template-columns: 1fr;
       }
@@ -208,7 +213,7 @@ const HomePageScreenWrapper = styled(Pane)`
     background: #d1f89880;
     width: 100%;
     min-height: 70vh;
-    padding: 170px 6rem;
+    padding: 140px 6rem;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -220,7 +225,7 @@ const HomePageScreenWrapper = styled(Pane)`
   .startups-to-enterprise {
     background: white;
     width: 100%;
-    padding: 200px 100px;
+    padding: 130px 100px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -277,7 +282,7 @@ const HomePageScreenWrapper = styled(Pane)`
     background: white;
     width: 100%;
     min-height: 50vh;
-    padding: 90px 7rem;
+    padding: 130px 7rem;
     display: flex;
     flex-direction: column;
     align-items: center;
