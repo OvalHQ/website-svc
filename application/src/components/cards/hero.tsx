@@ -95,8 +95,8 @@ const Hero = () => {
         <Pane className="hero-right">
           <Image
             alt="hero image"
-            width={"700"}
-            height={"700"}
+            width={"900"}
+            height={"900"}
             src={HeroImg}
             className="ml-auto"
           />

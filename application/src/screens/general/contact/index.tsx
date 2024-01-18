@@ -106,18 +106,18 @@ const ContactScreen = () => {
   return (
     <MainLayout>
       <Pane className="md:mt-28 md:mb-48 text-[#000]">
-        <Pane className="md:w-[60%] md:mx-auto">
-          <Pane className="md:text-center md:mb-20">
-            <h3 className="font-semibold md:text-3xl md:mb-5">
+        <div className="md:w-[60%] md:mx-auto">
+          <div className="flex flex-col justify-center mt-[150px] items-center md:text-center md:mb-20">
+            <h3 className="font-semibold leading-[28px] text-[28px] w-[270px] md:w-auto text-center md:text-3xl mb-5">
               Contact our Sales team to get started
             </h3>
-            <p className="opacity-[0.5] md:text-base ">
+            <p className="opacity-[0.5] text-sm md:text-base  md:w-auto text-center ">
               For further enquiries, Please contact us.
             </p>
-          </Pane>
-          <Pane>
-            <Pane className="flex items-start gap-5 mb-6">
-              <Pane className="basis-1/2">
+          </div>
+          <div className="pb-[80px] pt-[70px]  px-12">
+            <div className="flex flex-col md:flex-row items-start w-full md:w-auto gap-5 mb-6">
+              <div className="md:basis-1/2 w-full md:w-auto">
                 <label htmlFor="name" className="font-medium md:text-sm">
                   Name & Surname
                 </label>{" "}
@@ -126,7 +126,7 @@ const ContactScreen = () => {
                   id="name"
                   name="name"
                   type="text"
-                  className="rounded-md md:p-4 md:pr-6 md:text-sm placeholder:opacity-[1] border border-[#00000025] w-full mt-2"
+                  className="rounded-md p-4 pr-6 md:text-sm placeholder:opacity-[1] border border-[#00000025] w-full mt-2"
                   placeholder="Enter your name"
                   onChange={handleChange("name")}
                   onBlur={handleBlur("name")}
@@ -137,8 +137,8 @@ const ContactScreen = () => {
                     {errors.name}
                   </div>
                 )}
-              </Pane>
-              <Pane className="basis-1/2">
+              </div>
+              <div className="md:basis-1/2 w-full md:w-auto">
                 <label
                   htmlFor="business_name"
                   className="font-medium md:text-sm"
@@ -150,7 +150,7 @@ const ContactScreen = () => {
                   id="business_name"
                   name="business_name"
                   type="text"
-                  className="rounded-md md:p-4 md:pr-6 md:text-sm placeholder:opacity-[1] border border-[#00000025] w-full mt-2"
+                  className="rounded-md p-4 pr-6 md:text-sm placeholder:opacity-[1] border border-[#00000025] w-full mt-2"
                   placeholder="Enter your business name"
                   onChange={handleChange("business_name")}
                   onBlur={handleBlur("business_name")}
@@ -161,10 +161,10 @@ const ContactScreen = () => {
                     {errors.business_name}
                   </div>
                 )}
-              </Pane>
-            </Pane>
-            <Pane className="flex items-start gap-5 mb-6">
-              <Pane className="basis-1/2">
+              </div>
+            </div>
+            <Pane className="flex flex-col md:flex-row items-start gap-5 mb-6">
+              <Pane className="md:basis-1/2 w-full md:w-auto">
                 <label htmlFor="email" className="font-medium md:text-sm">
                   Email
                 </label>{" "}
@@ -173,7 +173,7 @@ const ContactScreen = () => {
                   name="email"
                   id="email"
                   type="text"
-                  className="rounded-md md:p-4 md:pr-6 md:text-sm placeholder:opacity-[1] border border-[#00000025] w-full mt-2"
+                  className="rounded-md p-4 pr-6 md:text-sm placeholder:opacity-[1] border border-[#00000025] w-full mt-2"
                   placeholder="Enter your email"
                   onChange={handleChange("email")}
                   onBlur={handleBlur("email")}
@@ -185,14 +185,14 @@ const ContactScreen = () => {
                   </div>
                 )}
               </Pane>
-              <Pane className="basis-1/2">
+              <Pane className="md:basis-1/2 w-full md:w-auto">
                 <label htmlFor="designation" className="font-medium md:text-sm">
                   Designation
                 </label>{" "}
                 <br />
                 <div className="relative dropdown-container">
                   <select
-                    className="rounded-md bg-[transparent] md:p-4 md:pr-6 md:text-sm placeholder:opacity-[1] border border-[#00000025] focus:outline-[#737373] w-full mt-2"
+                    className="rounded-md bg-[transparent] p-4 pr-6 md:text-sm placeholder:opacity-[1] border border-[#00000025] focus:outline-[#737373] w-full mt-2"
                     name="designation"
                     id="designation"
                     onChange={handleChange("designation")}
@@ -232,8 +232,8 @@ const ContactScreen = () => {
                 )}
               </Pane>
             </Pane>
-            <Pane className="flex items-start gap-5 mb-6">
-              <Pane className="basis-1/2">
+            <Pane className="flex flex-col md:flex-row items-start gap-5 mb-6">
+              <Pane className="md:basis-1/2 w-full md:w-auto">
                 <label htmlFor="phone" className="font-medium md:text-sm">
                   Phone Number
                 </label>{" "}
@@ -242,7 +242,7 @@ const ContactScreen = () => {
                   name="phone"
                   id="phone"
                   type="text"
-                  className="rounded-md md:p-4 md:pr-6 md:text-sm placeholder:opacity-[1] border border-[#00000025] w-full mt-2"
+                  className="rounded-md p-4 pr-6 md:text-sm placeholder:opacity-[1] border border-[#00000025] w-full mt-2"
                   placeholder="Enter your phone number"
                   onChange={handleChange("phone")}
                   onBlur={handleBlur("phone")}
@@ -254,7 +254,7 @@ const ContactScreen = () => {
                   </div>
                 )}
               </Pane>
-              <Pane className="basis-1/2">
+              <Pane className="md:basis-1/2 w-full md:w-auto">
                 <label htmlFor="website" className="font-medium md:text-sm">
                   Website
                 </label>{" "}
@@ -263,7 +263,7 @@ const ContactScreen = () => {
                   name="website"
                   id="website"
                   type="text"
-                  className="rounded-md md:p-4 md:pr-6 md:text-sm placeholder:opacity-[1] border border-[#00000025] w-full mt-2"
+                  className="rounded-md p-4 pr-6 md:text-sm placeholder:opacity-[1] border border-[#00000025] w-full mt-2"
                   placeholder="Enter your company website"
                   onChange={handleChange("website")}
                   onBlur={handleBlur("website")}
@@ -276,8 +276,8 @@ const ContactScreen = () => {
                 )}
               </Pane>
             </Pane>
-            <Pane className="flex items-start gap-5 mb-6">
-              <Pane className="basis-1/2">
+            <Pane className="flex flex-col md:flex-row items-start gap-5 mb-6">
+              <Pane className="md:basis-1/2 w-full md:w-auto">
                 <label
                   htmlFor="transaction_volume"
                   className="font-medium md:text-sm"
@@ -289,7 +289,7 @@ const ContactScreen = () => {
                   <select
                     name="transaction_volume"
                     id="transaction_volume"
-                    className="rounded-md bg-[transparent] md:p-4 md:pr-6 md:text-sm placeholder:opacity-[1] border border-[#00000025] w-full mt-2"
+                    className="rounded-md bg-[transparent] p-4 pr-6 md:text-sm placeholder:opacity-[1] border border-[#00000025] w-full mt-2"
                     onChange={handleChange("transaction_volume")}
                     onBlur={handleBlur("transaction_volume")}
                     value={values.transaction_volume}
@@ -327,7 +327,7 @@ const ContactScreen = () => {
                   </div>
                 )}
               </Pane>
-              <Pane className="basis-1/2">
+              <Pane className="md:basis-1/2 w-full md:w-auto">
                 <label htmlFor="country" className="font-medium md:text-sm">
                   Country
                 </label>{" "}
@@ -336,7 +336,7 @@ const ContactScreen = () => {
                   <select
                     name="country"
                     id="country"
-                    className="rounded-md bg-[transparent] md:p-4 md:pr-6 md:text-sm placeholder:opacity-[1] border border-[#00000025] w-full mt-2"
+                    className="rounded-md bg-[transparent] p-4 pr-6 md:text-sm placeholder:opacity-[1] border border-[#00000025] w-full mt-2"
                     onChange={handleChange("country")}
                     onBlur={handleBlur("country")}
                     value={values.country}
@@ -375,8 +375,8 @@ const ContactScreen = () => {
                 )}
               </Pane>
             </Pane>
-            <Pane className="flex items-start gap-5 mb-6">
-              <Pane className="basis-1/2">
+            <Pane className="flex flex-col md:flex-row items-start gap-5 mb-6">
+              <Pane className="md:basis-1/2 w-full md:w-auto">
                 <label
                   htmlFor="product_interest"
                   className="font-medium md:text-sm"
@@ -386,7 +386,7 @@ const ContactScreen = () => {
                 <br />
                 <div className="relative dropdown-container">
                   <select
-                    className="rounded-md bg-[transparent] md:p-4 md:pr-6 md:text-sm placeholder:opacity-[1] border border-[#00000025] w-full mt-2"
+                    className="rounded-md bg-[transparent] p-4 pr-6 md:text-sm placeholder:opacity-[1] border border-[#00000025] w-full mt-2"
                     name=""
                     id="product_interest"
                     onChange={handleChange("product_interest")}
@@ -426,9 +426,9 @@ const ContactScreen = () => {
                   </div>
                 )}
               </Pane>
-              <Pane className="basis-1/2"></Pane>
+              <Pane className="md:basis-1/2 w-full md:w-auto"></Pane>
             </Pane>
-            <Pane className="flex items-start gap-5 mb-12 w-full">
+            <Pane className="flex flex-col md:flex-row items-start gap-5 mb-12 w-full">
               <Pane className="w-full">
                 <label
                   htmlFor="business_needs"
@@ -440,7 +440,7 @@ const ContactScreen = () => {
                 <textarea
                   name="business_needs"
                   id="business_needs"
-                  className="box-border rounded-md md:p-4 md:pr-6 md:text-sm placeholder:opacity-[1] border border-[#00000025] w-full mt-2 text-[#000000] md:h-[168px]"
+                  className="box-border rounded-md p-4 pr-6 md:text-sm placeholder:opacity-[1] border border-[#00000025] w-full mt-2 text-[#000000] h-[168px]"
                   onChange={handleChange("business_needs")}
                   onBlur={handleBlur("business_needs")}
                   value={values.business_needs}
@@ -462,7 +462,7 @@ const ContactScreen = () => {
                 checked={!!values.consent}
                 value={values.consent}
               />
-              <label className="text-xs">
+              <label className="text-sm text-black font-medium">
                 I consent to the collection and processing of my personal data
                 in line with data regulation as described in the Graph’s Privacy
                 Policy.
@@ -477,14 +477,14 @@ const ContactScreen = () => {
               <button
                 type="submit"
                 onClick={() => handleSubmit()}
-                className="md:w-[400px] flex items-center justify-center gap-4 bg-[#2276FF] py-4 px-6 text-white md:text-sm font-medium rounded-xl"
+                className="w-full md:w-[400px] flex items-center justify-center gap-4 bg-[#2276FF] py-4 px-6 text-white md:text-sm font-medium rounded-xl"
               >
                 {isLoading && <Spinner size={25} />}
                 <span>Send Message</span>
               </button>
             </Pane>
-          </Pane>
-        </Pane>
+          </div>
+        </div>
       </Pane>
     </MainLayout>
   );

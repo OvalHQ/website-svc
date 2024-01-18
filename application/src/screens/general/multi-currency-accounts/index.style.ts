@@ -45,7 +45,7 @@ const MultiCurrencyAccountsScreenWrapper = styled(Pane)`
     .hero-left {
       flex: 1;
       height: 100%;
-      padding-top: 3rem;
+      padding-top: 1.5rem;
       display: flex;
       flex-direction: column;
       justify-content: space-around;
@@ -53,6 +53,7 @@ const MultiCurrencyAccountsScreenWrapper = styled(Pane)`
     }
     .hero-right {
       flex: 1;
+      margin-left: -300px;
     }
 
     @media (max-width: 960px) {
@@ -66,6 +67,7 @@ const MultiCurrencyAccountsScreenWrapper = styled(Pane)`
       .hero-right {
         align-self: end;
         margin-top: -50px;
+        margin-left: 0;
       }
     }
     @media (max-width: 500px) {

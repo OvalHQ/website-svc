@@ -8,6 +8,7 @@ import Colors from "@/theme/Colors";
 
 import MoneyMovementImg from "../../../public/images/general/faster-money-img.svg";
 import CardsImg from "../../../public/images/general/hero.svg";
+import Link from "next/link";
 
 const ACTIVE_STATE_ENUM = {
   CARDS: "CARDS",
@@ -27,7 +28,7 @@ const MoneyMovement = () => {
                 ? Colors.dark.secondary
                 : Colors.dark.primary,
           }}
-          className=" flex-1 py-[60px] rounded-2xl "
+          className=" flex-1 py-[60px] rounded-2xl transition ease-in-out duration-1000 "
         >
           <div className="flex justify-end gap-3 pr-[30px]  pl-[30px]  md:pl-[4rem]">
             {/* <Pane> */}
@@ -76,17 +77,18 @@ const MoneyMovement = () => {
                   active === ACTIVE_STATE_ENUM.MULTI
                     ? "text-black"
                     : "text-white"
-                } my-[20px] text-[35px] md:text-[45px] font-bold -tracking-[2px] leading-[40px] md:leading-[50px] transition ease-in-out duration-1000 `}
+                } md:max-w-[520px] my-[20px] text-[35px] md:text-[45px] font-semibold -tracking-[1px] leading-[40px] md:leading-[50px] transition ease-in-out duration-1000 `}
               >
                 {active === ACTIVE_STATE_ENUM.MULTI
                   ? "Introducing Faster Money Movement Beyond Banks."
-                  : "Empower your team. Spend and manage Gloabally"}
+                  : "Empower Your Team. Spend & Manage Globally"}
               </h1>
               <Paragraph
                 fontSize={"16px"}
                 marginY={40}
                 transition="all 1s cubic-bezier(0.58, 0.05, 0.08, 1.04)"
                 color={active === ACTIVE_STATE_ENUM.CARDS ? "white" : "black"}
+                opacity={active === ACTIVE_STATE_ENUM.CARDS ? "0.5" : "0.5"}
               >
                 {active === ACTIVE_STATE_ENUM.MULTI
                   ? "Graph empowers you to swiftly direct your funds and manage bills efficiently through instant transfers. Utilize instant transfers to efficiently reimburse employees, manage payroll, and conduct global transactions in USD and foreign currencies. Reach suppliers, vendors and partners in over 90 countries instantly, eliminating the delays of traditional money transfers."
@@ -95,7 +97,6 @@ const MoneyMovement = () => {
               <Pane
                 display="flex"
                 alignItems="center"
-                // justifyContent="center"
                 rowGap={20}
                 columnGap={20}
                 flexWrap="wrap"
@@ -123,7 +124,7 @@ const MoneyMovement = () => {
                     color={
                       active === ACTIVE_STATE_ENUM.CARDS ? "white" : "black"
                     }
-                    fontWeight={600}
+                    fontWeight={500}
                   >
                     {active === ACTIVE_STATE_ENUM.MULTI
                       ? "Same-day settlement"
@@ -151,7 +152,7 @@ const MoneyMovement = () => {
                     color={
                       active === ACTIVE_STATE_ENUM.CARDS ? "white" : "black"
                     }
-                    fontWeight={600}
+                    fontWeight={500}
                   >
                     {active === ACTIVE_STATE_ENUM.MULTI
                       ? "Competitive exchange rates"
@@ -179,7 +180,7 @@ const MoneyMovement = () => {
                     color={
                       active === ACTIVE_STATE_ENUM.CARDS ? "white" : "black"
                     }
-                    fontWeight={600}
+                    fontWeight={500}
                   >
                     {active === ACTIVE_STATE_ENUM.MULTI
                       ? "Secure and transparent transactions"
@@ -202,7 +203,15 @@ const MoneyMovement = () => {
                 paddingX={35}
                 fontFamily={"Neue Haas Grotesk Display Pro"}
               >
-                Learn more
+                <Link
+                  href={
+                    active === ACTIVE_STATE_ENUM.MULTI
+                      ? "/multi-currency-accounts"
+                      : "/cards"
+                  }
+                >
+                  Learn more
+                </Link>
               </Button>
             </div>
             <Pane marginTop="auto" flex={1} className="relative">

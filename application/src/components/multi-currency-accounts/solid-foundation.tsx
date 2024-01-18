@@ -10,13 +10,13 @@ const SolidFoundation = () => {
   return (
     <Pane className="solid-foundation">
       <div className="flex gap-[30px] w-full flex-col md:flex-row">
-        <div className="rounded-xl flex-1 bg-white pl-4 py-5 sm:py-[60px] sm:pl-[3rem]">
+        <div className="rounded-2xl flex-1 bg-white pl-4 py-5 sm:py-[60px] sm:pl-[5rem]">
           <div className="flex w-full flex-col lg:flex-row gap-y-14">
-            <Pane maxWidth={"500px"}>
-              <h2 className="my-4 mt-5 lg:mt-14 text-[40px] text-black font-semibold leading-[40px] md:leading-[50px] max-w-[400px] md:max-w-[700px] ">
+            <Pane maxWidth={"700px"}>
+              <h2 className="my-4 mt-5 lg:mt-14 text-[60px] text-black font-semibold leading-[40px] md:leading-[60px] max-w-[400px] md:max-w-[700px] ">
                 Launch with a solid financial foundation
               </h2>
-              <p className=" text-[15px] leading-[30px] max-w-[400px] text-black mt-[1.5rem] ">
+              <p className=" text-[15px] leading-[30px] max-w-[400px] text-black opacity-65 mt-[1.5rem] ">
                 Open a flexible account that lets you manage, spend, and grow
                 your cash — all in a single dashboard
               </p>
@@ -48,7 +48,7 @@ const SolidFoundation = () => {
                   >
                     <TickIcon color={Colors.dark.primary} />
                   </Pane>
-                  <Text color={"black"} fontWeight={400}>
+                  <Text color={"black"} fontWeight={500} fontSize={16}>
                     Apply for an account in minutes with no minimum balance or
                     personal guarantee.
                   </Text>
@@ -69,7 +69,7 @@ const SolidFoundation = () => {
                   >
                     <TickIcon color={Colors.dark.primary} />
                   </Pane>
-                  <Text color={"black"} fontWeight={400}>
+                  <Text color={"black"} fontWeight={500} fontSize={16}>
                     Easily receive and make payments by instant bank transfers
                     and multiple payment methods
                   </Text>
@@ -90,7 +90,7 @@ const SolidFoundation = () => {
                   >
                     <TickIcon color={Colors.dark.primary} />
                   </Pane>
-                  <Text color={"black"} fontWeight={400}>
+                  <Text color={"black"} fontWeight={500} fontSize={16}>
                     Graph partners banks are regulated and funds are FDIC
                     Insured
                   </Text>
@@ -119,14 +119,14 @@ const SolidFoundation = () => {
                 </Link>
               </Button>
             </Pane>
-            <Pane marginTop="auto" flex={1} paddingRight="35px">
+            <Pane marginTop="auto" flex={1} paddingRight="40px">
               <Pane position="relative">
                 <Image
-                  width={"700"}
-                  height={"700"}
+                  width={"600"}
+                  height={"600"}
                   alt="hero image"
                   src={SolidFoundationImg}
-                  className="ml-auto max-width-full md:w-full md:max-w-[650px]"
+                  className="ml-auto max-width-full md:w-full md:max-w-[500px]"
                 />
               </Pane>
             </Pane>

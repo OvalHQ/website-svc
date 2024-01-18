@@ -10,6 +10,13 @@ const FooterWrapper = styled(Pane)`
   min-height: 500px;
   padding: 80px 120px 30px;
 
+  h1,
+  h2,
+  p,
+  span {
+    font-family: Neue Haas Grotesk Display Pro !important;
+  }
+
   .footer-top {
     display: flex;
     gap: 6rem;

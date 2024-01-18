@@ -18,7 +18,11 @@ const CardsForBusinesses = () => {
           return (
             <div
               key={index}
-              className="rounded-2xl bg-white py-[50px] px-[30px] w-[300px] sm:w-[250px] h-[380px] "
+              className="rounded-2xl py-[50px] px-[30px] w-[300px] sm:w-[250px] h-[380px] "
+              style={{
+                background:
+                  "linear-gradient(132.73deg, rgba(255, 255, 255, 0.9) 12.88%, rgba(255, 255, 255, 0) 163.96%),linear-gradient(133.84deg, rgba(255, 255, 255, 0.25) 14.05%, rgba(255, 255, 255, 0) 115.45%)",
+              }}
             >
               <Pane
                 position="relative"
