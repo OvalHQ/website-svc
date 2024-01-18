@@ -77,7 +77,9 @@ const Faqs = () => {
                     }}
                     transition={{ duration: 0.5 }}
                   >
-                    <Text marginTop={30}>{faq.answer}</Text>
+                    <Text fontSize={"16px"} fontWeight={400} marginTop={30}>
+                      {faq.answer}
+                    </Text>
                   </motion.div>
                 )}
               </AnimatePresence>
@@ -98,24 +100,28 @@ const faqsObject = [
       "Yes, you can. Graph is designed for startups, businesses, and enterprises of all sizes. Whether you're a small startup venturing into international markets or a well-established enterprise looking to streamline global transactions, Graph is the solution for you.",
   },
   {
-    question: "How fast are the global payouts with Graph?",
+    question: "How does Graph simplify international finance?",
     answer:
-      "Yes, you can. Graph is designed for startups, businesses, and enterprises of all sizes. Whether you're a small startup venturing into international markets or a well-established enterprise looking to streamline global transactions, Graph is the solution for you.",
+      "Graph simplifies international finance by offering corporate cards for versatile global transactions and a global payout system for effortless cross-border payments. We eliminate the complexities associated with international money transfers, making it easier for businesses to expand globally.",
+  },
+  {
+    question: "How fast are the global payouts with Graph?",
+    answer: "Global payouts are typically settled in t+1 business day.",
   },
   {
     question: "How secure is Graph’s platform?",
     answer:
-      "Yes, you can. Graph is designed for startups, businesses, and enterprises of all sizes. Whether you're a small startup venturing into international markets or a well-established enterprise looking to streamline global transactions, Graph is the solution for you.",
+      "Security is our top priority. Graph employs industry-standard security measures, and we adhere to global compliance standards and regulations to protect your transactions.",
   },
   {
     question: "What’s required to open a Graph account?",
     answer:
-      "Yes, you can. Graph is designed for startups, businesses, and enterprises of all sizes. Whether you're a small startup venturing into international markets or a well-established enterprise looking to streamline global transactions, Graph is the solution for you.",
+      "Opening a Graph account is a straightforward process. To get started, you'll need to provide information about your business and some legal documents to ensure compliance with regulatory requirements. Our onboarding process is designed to be simple and user-friendly.",
   },
   {
     question: "Can I make international transactions with Graph?",
     answer:
-      "Yes, you can. Graph is designed for startups, businesses, and enterprises of all sizes. Whether you're a small startup venturing into international markets or a well-established enterprise looking to streamline global transactions, Graph is the solution for you.",
+      "Absolutely. Graph is designed to facilitate international transactions for businesses operating on a global scale. Whether you need to make cross-border payments to suppliers, vendors or partners worldwide, our global payout system simplifies the process. With Graph, you can effortlessly transfer funds (EUR,GBP,USD) internationally, removing the complexities associated with traditional international money transfers.",
   },
   {
     question: "How can I contact customer support?",

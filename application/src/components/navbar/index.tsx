@@ -30,7 +30,7 @@ const Navbar = () => {
           menuOpened
             ? "top-0 fixed z-50 h-20 bg-[#e2fdff] transition-colors"
             : "static"
-        }   sm:bg-white py-8 sm:py-[10px] px-10 sm:px-[40px] md:px-[80px] h-[75px] w-full flex items-center justify-between`}
+        }   sm:bg-white py-8 sm:py-[10px] px-10 sm:px-[40px] md:px-[80px] w-full flex items-center justify-between`}
       >
         <Link href={"/"}>
           <LogoWithText alt="Graph logo" height={30} width={195} />
@@ -167,16 +167,15 @@ const Navbar = () => {
                     <Text marginY={7}>About Us</Text>
                   </Link>
 
-                  <Text
+                  <Link
+                    href={"https://usegraph.medium.com/ "}
                     style={{
                       textDecoration: "none",
-                      cursor: "not-allowed",
                       marginTop: "7px",
                     }}
-                    opacity="0.5"
                   >
                     <Text marginY={7}>Blog</Text>
-                  </Text>
+                  </Link>
                 </motion.div>
               )}
             </AnimatePresence>
@@ -240,12 +239,14 @@ const Navbar = () => {
           </Pane>
         </div>
         <div className=" hidden sm:flex justify-center items-center gap-[15px]">
-          <Link href="">
+          <Link href="https://dashboard.useoval.com/login">
             <p className="text-black w-[40px] text-sm font-medium">Log in</p>
           </Link>
-          <button className="rounded-xl py-4 px-5 w-full block mt-auto text-xs font-light bg-[#2276FF] hover:opacity-80 ">
-            Create an account
-          </button>
+          <Link href="/contact">
+            <button className="rounded-xl py-4 px-5 w-full block mt-auto text-xs font-light bg-[#2276FF] hover:opacity-80 ">
+              Create an account
+            </button>
+          </Link>
         </div>
         <div
           className="block sm:hidden text-black cursor-pointer hover:scale-125 ml-auto "
@@ -334,23 +335,23 @@ const Navbar = () => {
                       <p className="text-black font-normal">About Us</p>
                     </Link>
 
-                    <Text
+                    <Link
+                      href={"https://usegraph.medium.com/ "}
                       style={{
                         textDecoration: "none",
-                        cursor: "not-allowed",
                       }}
                     >
                       <p className="text-black font-normal cursor-not-allowed">
                         Blog
                       </p>
-                    </Text>
+                    </Link>
                   </div>
                 </div>
                 <div>
                   <h3 className="font-bold text-black mb-3">Support</h3>
                   <div className="rounded-xl bg-white p-4 flex flex-col justify-start items-start gap-7">
                     <Link
-                      href="/"
+                      href="/contact"
                       style={{
                         textDecoration: "none",
                       }}
@@ -359,7 +360,7 @@ const Navbar = () => {
                     </Link>
 
                     <Link
-                      href="/"
+                      href="/#faqs"
                       style={{
                         textDecoration: "none",
                       }}
@@ -369,9 +370,11 @@ const Navbar = () => {
                   </div>
                 </div>
 
-                <button className="rounded-xl py-3 w-full block mt-auto text-xs font-extralight bg-[#2276FF] hover:opacity-80 ">
-                  Create an account
-                </button>
+                <Link href="/contact">
+                  <button className="rounded-xl py-3 w-full block mt-auto text-xs font-extralight bg-[#2276FF] hover:opacity-80 ">
+                    Create an account
+                  </button>
+                </Link>
               </div>
             </motion.div>
           )}

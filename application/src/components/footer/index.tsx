@@ -62,15 +62,15 @@ const Footer = () => {
               >
                 <Text color="white">About</Text>
               </Link>
-              <Text
+
+              <Link
+                href={"https://usegraph.medium.com/ "}
                 style={{
                   textDecoration: "none",
-                  cursor: "not-allowed",
-                  opacity: ".5",
                 }}
               >
                 <Text color="white">Blog</Text>
-              </Text>
+              </Link>
             </Pane>
           </Pane>
           <Pane display="flex" flexDirection="column" gap={30} flex={1}>
@@ -131,7 +131,7 @@ const Footer = () => {
           services are provided by {"Graph's"} partner banks.
         </p>
 
-        <div className="flex gap-6 items-center md:items-start md:flex-col">
+        <div className="flex gap-6 items-center md:items-start md:flex-col md:mr-[12px]">
           <Text color="white">Stay updated with us</Text>
           <Pane display="flex" gap={45}>
             <Link
@@ -184,7 +184,8 @@ const Footer = () => {
         <p className="hidden md:block text-xs text-white">© 2024 Graph</p>
         <Pane display="flex" gap={20}>
           <Link
-            href=""
+            href="https://drive.google.com/file/d/11KrnNbj5qnbsJImBhLytEbghGc8tCs3y/view"
+            target="_blank"
             style={{
               textDecoration: "none",
             }}
@@ -194,7 +195,8 @@ const Footer = () => {
             </Text>
           </Link>
           <Link
-            href=""
+            href="https://drive.google.com/file/d/1wqDKrvKDqlNXxCQPPEYxzeXzXQIf-lcl/view"
+            target="_blank"
             style={{
               textDecoration: "none",
             }}

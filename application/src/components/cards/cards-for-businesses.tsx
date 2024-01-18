@@ -13,12 +13,12 @@ const CardsForBusinesses = () => {
           for startups and enterprises
         </h2>
       </Pane>
-      <div className="flex my-[70px] px-4 sm:px-[50px] flex-wrap justify-center items-center gap-[10px] ">
+      <div className="flex my-[70px] px-4 sm:px-[50px] flex-wrap justify-center items-center gap-[25px] ">
         {dataToDisplay.map((data, index) => {
           return (
             <div
               key={index}
-              className="rouned-xl bg-white py-[50px] px-[30px] w-[300px] sm:w-[250px] h-[380px] "
+              className="rounded-2xl bg-white py-[50px] px-[30px] w-[300px] sm:w-[250px] h-[380px] "
             >
               <Pane
                 position="relative"
@@ -46,7 +46,9 @@ const CardsForBusinesses = () => {
                 <Heading size={800} fontWeight={600} marginY={20}>
                   {data.title}
                 </Heading>
-                <Text lineHeight="24px">{data.description}</Text>
+                <p className="text-[16px] text-[#000000BF] ">
+                  {data.description}
+                </p>
               </Pane>
             </div>
           );

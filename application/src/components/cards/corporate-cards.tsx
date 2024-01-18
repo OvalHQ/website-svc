@@ -16,7 +16,7 @@ const CorporateCards = () => {
               <h2 className="my-4 mt-5 lg:mt-14 text-[40px] text-black font-semibold leading-[40px] md:leading-[50px] max-w-[400px] md:max-w-[700px] ">
                 Save more with the all-in-one corporate card
               </h2>
-              <p className=" text-[15px] leading-[30px] max-w-[400px] text-black mt-[1.5rem] ">
+              <p className=" text-[15px] leading-[30px] max-w-[400px] text-black opacity-80 mt-[1.5rem] ">
                 Easily make payment for travel, online ads , and more with
                 International and local card’s acceptance in 20 currencies or
                 more.
