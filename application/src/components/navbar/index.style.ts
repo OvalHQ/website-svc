@@ -6,6 +6,7 @@ import { Pane } from "evergreen-ui";
 const NavbarWrapper = styled(Pane)`
   width: 100%;
   // max-width: 1400px;
+  z-index: 100;
 
   h2,
   p,
