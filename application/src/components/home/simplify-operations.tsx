@@ -9,8 +9,10 @@ import * as yup from "yup";
 import { useFormik } from "formik";
 import { ValidationMessages } from "@/utils/constants";
 import { AirtableAPI } from "@/service/airtable/api";
+import { useRouter } from "next/navigation";
 
 const SimplifyOperations = () => {
+  const router = useRouter();
   const [isLoading, setIsLoading] = useState(false);
   const validationSchema = yup.object().shape({
     email: yup
@@ -20,17 +22,16 @@ const SimplifyOperations = () => {
   });
 
   const handleSendGetStarted = async (values: any) => {
-    console.log("VALUES ->", values);
     setIsLoading(true);
     try {
-      const payload = {
-        fields: {
-          fldiaL2CCd0Z39TeV: values.email,
-        },
-      };
-      const response = await AirtableAPI.createGetStartedRecord(payload);
-      console.log("RESPONSE [SIMPLIFY OPERATIONS PAGE] =>", response);
-      toaster.success("Success!");
+      // const payload = {
+      //   fields: {
+      //     fldiaL2CCd0Z39TeV: values.email,
+      //   },
+      // };
+      // const response = await AirtableAPI.createGetStartedRecord(payload);
+      // toaster.success("Success!");
+      router.push(`/contact?&email=${values.email}`)
       resetForm();
     } catch (e) {
       toaster.danger("Error: Please try again!");
