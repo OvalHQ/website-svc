@@ -34,8 +34,27 @@ const Navbar = () => {
         }   sm:bg-white py-8 sm:py-[10px] px-10 sm:px-[40px] md:px-[80px] w-full flex items-center justify-between`}
       >
         <Link href={"/"}>
-          {pathname === "/cards" && !menuOpened ? (
-            <LogoWithTextWhite alt="Graph logo" height={30} width={195} />
+          {pathname === "/cards" ? (
+            <>
+              {menuOpened ? (
+                <LogoWithText alt="Graph logo" height={30} width={195} />
+              ) : (
+                <>
+                  <LogoWithTextWhite
+                    alt="Graph logo"
+                    height={30}
+                    width={195}
+                    className="sm:hidden block"
+                  />
+                  <LogoWithText
+                    alt="Graph logo"
+                    height={30}
+                    width={195}
+                    className="hidden sm:block"
+                  />
+                </>
+              )}
+            </>
           ) : (
             <LogoWithText alt="Graph logo" height={30} width={195} />
           )}
