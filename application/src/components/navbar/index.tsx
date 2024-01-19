@@ -30,7 +30,7 @@ const Navbar = () => {
         className={` ${
           menuOpened
             ? "top-0 fixed z-[100] h-20 bg-[#e2fdff] transition-colors"
-            : "static"
+            : "static z-[1]"
         }   sm:bg-white py-8 sm:py-[10px] px-10 sm:px-[40px] md:px-[80px] w-full flex items-center justify-between`}
       >
         <Link href={"/"}>
