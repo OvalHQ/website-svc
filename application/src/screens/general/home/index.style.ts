@@ -96,7 +96,7 @@ const HomePageScreenWrapper = styled(Pane)`
     justify-content: center;
     align-items: center;
     height: 1400px;
-    z-index: -1;
+    z-index: 0;
 
     .grid-container {
       display: grid;

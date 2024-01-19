@@ -2,6 +2,11 @@ import { Heading, Pane, Paragraph, Text } from "evergreen-ui";
 import Image from "next/image";
 import React from "react";
 
+import WorldIcon from "../../../public/images/general/world.svg";
+import TrustIcon from "../../../public/images/general/trust.svg";
+import FastIcon from "../../../public/images/general/fast.svg";
+import PhoneIcon from "../../../public/images/general/phone.svg";
+
 const CardsForBusinesses = () => {
   return (
     <Pane className="cards-for-businesses">
@@ -37,7 +42,7 @@ const CardsForBusinesses = () => {
               >
                 <Image
                   alt="icon"
-                  src={require(`../../../public/images/general/${data.icon}`)}
+                  src={data.icon}
                   style={{
                     maxWidth: "40px",
                     maxHeight: "40px",
@@ -67,24 +72,24 @@ export default CardsForBusinesses;
 
 const dataToDisplay = [
   {
-    icon: "world.png",
+    icon: WorldIcon,
     title: "Worldwide Card Acceptance",
     description:
       "Physical and virtual cards issued on Visa worldwide network that works everywhere3DS security, PIN, fraud protection, and more onWorld Elite Visa cards",
   },
   {
-    icon: "trust.png",
+    icon: TrustIcon,
     title: "3DS Security",
     description: "PIN, fraud protection, and more on World Elite Visa cards.",
   },
   {
-    icon: "phone.png",
+    icon: PhoneIcon,
     title: "24/7 Customer Support",
     description:
       "Call or chat live24/7 from anywhere, with notifications by Slack, text, email, WhatsApp — whatever you prefer",
   },
   {
-    icon: "fast.png",
+    icon: FastIcon,
     title: "Lightning Fast Payment",
     description:
       "Make unlimited payment instantly and easily add to apple pay.",

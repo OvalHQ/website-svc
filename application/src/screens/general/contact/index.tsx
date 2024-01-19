@@ -1,14 +1,7 @@
 "use client";
 
 import MainLayout from "@/components/layout/main";
-import {
-  Button,
-  Pane,
-  SelectField,
-  Spinner,
-  TextInputField,
-  toaster,
-} from "evergreen-ui";
+import { Pane, Spinner, toaster } from "evergreen-ui";
 import * as yup from "yup";
 import { useFormik } from "formik";
 import {
@@ -454,6 +447,7 @@ const ContactScreen = () => {
             </Pane>
             <Pane className="flex gap-2 items-center justify-center">
               <input
+                className="w-[15px]"
                 type="checkbox"
                 id="consent"
                 name="consent"
@@ -462,7 +456,10 @@ const ContactScreen = () => {
                 checked={!!values.consent}
                 value={values.consent}
               />
-              <label className="text-sm text-black font-medium">
+              <label
+                htmlFor="consent"
+                className="text-sm text-black font-medium"
+              >
                 I consent to the collection and processing of my personal data
                 in line with data regulation as described in the Graph’s Privacy
                 Policy.

@@ -39,7 +39,7 @@ const StartupsToEnterprise = () => {
               <h3 className="font-bold text-xl tracking-[-1px] leading-5 text-black pb-[10px] pt-[10px]">
                 {data.title}
               </h3>
-              <p className="text-sm text-black opacity-95">
+              <p className="text-[17px] text-black opacity-95">
                 {data.description}
               </p>
             </Pane>
