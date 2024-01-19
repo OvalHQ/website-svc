@@ -29,7 +29,7 @@ const Navbar = () => {
       <div
         className={` ${
           menuOpened
-            ? "top-0 fixed z-50 h-20 bg-[#e2fdff] transition-colors"
+            ? "top-0 fixed z-[100] h-20 bg-[#e2fdff] transition-colors"
             : "static"
         }   sm:bg-white py-8 sm:py-[10px] px-10 sm:px-[40px] md:px-[80px] w-full flex items-center justify-between`}
       >

@@ -13,7 +13,7 @@ const CorporateCards = () => {
         <div className="rounded-2xl flex-1 bg-[#D1F89840] pl-4 py-5 sm:py-[60px] sm:pl-[5rem]">
           <div className="flex w-full flex-col lg:flex-row gap-y-14">
             <Pane maxWidth={"500px"}>
-              <h2 className="my-4 mt-5 lg:mt-14 text-[50px] text-black font-semibold leading-[40px] md:leading-[50px] max-w-[400px] md:max-w-[700px] ">
+              <h2 className="my-4 mt-5 lg:mt-14 text-[40px] md:text-[50px] text-black font-semibold leading-[40px] md:leading-[50px] max-w-[400px] md:max-w-[700px] ">
                 Save more with the all-in-one corporate card
               </h2>
               <p className=" text-[15px] leading-[30px] max-w-[430px] text-black opacity-70 mt-[1.5rem] ">
@@ -119,14 +119,7 @@ const CorporateCards = () => {
                 paddingX={35}
                 fontFamily={"Neue Haas Grotesk Display Pro"}
               >
-                <Link
-                  href={
-                    "https://airtable.com/appoAvLm7YJjEJveN/shrScB7fxfi4fRMu6"
-                  }
-                  target="_blank"
-                >
-                  Get Started
-                </Link>
+                <Link href={"/contact"}>Get Started</Link>
               </Button>
             </Pane>
             <Pane marginTop="auto" flex={1} paddingRight="35px">

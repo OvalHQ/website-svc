@@ -34,14 +34,7 @@ const Hero = () => {
                 paddingX={35}
                 fontFamily={"Neue Haas Grotesk Display Pro"}
               >
-                <Link
-                  href={
-                    "https://airtable.com/appoAvLm7YJjEJveN/shrScB7fxfi4fRMu6"
-                  }
-                  target="_blank"
-                >
-                  Get Started
-                </Link>
+                <Link href={"/contact"}>Get Started</Link>
               </Button>
               <Button
                 className="cta"

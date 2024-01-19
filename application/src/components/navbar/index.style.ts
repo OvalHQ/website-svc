@@ -42,8 +42,6 @@ const NavbarWrapper = styled(Pane)`
     position: absolute;
     top: 0;
     background: transparent;
-    z-index: 1;
-
   }
 `;
 

@@ -137,6 +137,7 @@ const Footer = () => {
             <Link
               href="https://www.linkedin.com/company/rapidpay-africa/"
               target="_blank"
+              className="hover:scale-105"
             >
               <Image
                 alt="linkedin"
@@ -145,7 +146,11 @@ const Footer = () => {
                 height={25}
               />
             </Link>
-            <Link href="" target="_blank">
+            <Link
+              href="https://www.instagram.com/usegraph/"
+              target="_blank"
+              className="hover:scale-105"
+            >
               <Image
                 alt="instagram"
                 src={"/images/general/instagram.svg"}
@@ -153,7 +158,11 @@ const Footer = () => {
                 height={25}
               />
             </Link>
-            <Link href="https://twitter.com/usegraph" target="_blank">
+            <Link
+              href="https://twitter.com/usegraph"
+              target="_blank"
+              className="hover:scale-105"
+            >
               <Image
                 alt="twitter"
                 src={"/images/general/x.svg"}
@@ -161,7 +170,11 @@ const Footer = () => {
                 height={25}
               />
             </Link>
-            <Link href="https://www.facebook.com/usegraph" target="_blank">
+            <Link
+              href="https://www.facebook.com/usegraph"
+              target="_blank"
+              className="hover:scale-105"
+            >
               <Image
                 alt="facebook"
                 src={"/images/general/facebook.svg"}

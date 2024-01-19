@@ -1,7 +1,11 @@
-import Colors from "@/theme/Colors";
-import { Heading, Pane, Text } from "evergreen-ui";
+import { Pane } from "evergreen-ui";
 import Image from "next/image";
 import React from "react";
+
+import WorldIcon from "../../../public/images/general/world.svg";
+import BarChartIcon from "../../../public/images/general/bar-chart-icon.svg";
+import FastIcon from "../../../public/images/general/fast.svg";
+import PhoneIcon from "../../../public/images/general/phone.svg";
 
 const SpendGlobally = () => {
   return (
@@ -37,7 +41,7 @@ const SpendGlobally = () => {
               >
                 <Image
                   alt="icon"
-                  src={require(`../../../public/images/general/${data.icon}`)}
+                  src={data.icon}
                   style={{
                     maxWidth: "40px",
                     maxHeight: "40px",
@@ -66,25 +70,25 @@ export default SpendGlobally;
 
 const dataToDisplay = [
   {
-    icon: "world.png",
+    icon: WorldIcon,
     title: "International Payment Simplified",
     description:
       "Enjoy the easiest and most flexible way to pay domestic and international vendors and suppliers in 90+ countries",
   },
   {
-    icon: "bar-chart-icon.png",
+    icon: BarChartIcon,
     title: "Increased Scalability for Businesses",
     description:
       "Expand into new markets and quickly build trust and credibility and  make payments in local currency",
   },
   {
-    icon: "phone.png",
+    icon: PhoneIcon,
     title: "24/7 Customer Support",
     description:
       "Call or chat live24/7 from anywhere, with notifications by Slack, text, email, WhatsApp — whatever you prefer",
   },
   {
-    icon: "fast.png",
+    icon: FastIcon,
     title: "Lightning Fast Payment",
     description: "Pay suppliers and vendors instantly with ease.",
   },
