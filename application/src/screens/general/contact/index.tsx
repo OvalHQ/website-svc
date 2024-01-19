@@ -11,10 +11,14 @@ import {
   TRANSACTION_VOLUME_OPTIONS,
   ValidationMessages,
 } from "@/utils/constants";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { AirtableAPI } from "@/service/airtable/api";
+import { useRouter, useSearchParams } from "next/navigation";
 
 const ContactScreen = () => {
+  const searchParams = useSearchParams();
+  const presetEmail = searchParams.get("email") || ""
+
   const [isLoading, setIsLoading] = useState(false);
   const validationSchema = yup.object().shape({
     name: yup.string().required(ValidationMessages.required),
@@ -59,7 +63,6 @@ const ContactScreen = () => {
         ],
       };
       const response = await AirtableAPI.createContactRecord(payload);
-      console.log("RESPONSE [CONTACT PAGE] =>", response);
       toaster.success("Message sent!");
       resetForm();
     } catch (e) {
@@ -83,7 +86,7 @@ const ContactScreen = () => {
     initialValues: {
       name: "",
       business_name: "",
-      email: "",
+      email: presetEmail,
       designation: "",
       phone: "",
       website: "",
