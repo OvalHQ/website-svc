@@ -63,9 +63,10 @@ const WhyGraph = () => {
           >
             <Image
               alt="avatar"
-              src={require("../../../public/images/general/joe-img.png")}
+              src={require("../../../public/images/general/tunde.jpeg")}
               width="30"
               height="30"
+              className="rounded-full"
             />
             <Pane
               display="flex"
@@ -74,7 +75,7 @@ const WhyGraph = () => {
               alignItems="self-start"
             >
               <Text fontWeight="bold" color="black">
-                Joe Abeden
+                Tunde Adewole
               </Text>
               <Text fontSize={12} color="black" opacity={0.5}>
                 CTO, Bridgecard
@@ -111,10 +112,11 @@ const WhyGraph = () => {
             // marginTop="50px"
           >
             <Image
-              src={require("../../../public/images/general/Bola-img.png")}
+              src={require("../../../public/images/general/tosin.jpeg")}
               alt="avatar"
               width="30"
               height="30"
+              className="rounded-full"
             />
             <Pane
               display="flex"
@@ -123,7 +125,7 @@ const WhyGraph = () => {
               alignItems="self-start"
             >
               <Text fontWeight="bold" color="black">
-                Bola Ajayi
+                Tosin Onafuye
               </Text>
               <Text fontSize={12} color="black" opacity={0.5}>
                 CEO, Chowcentral
@@ -165,6 +167,7 @@ const WhyGraph = () => {
               src={require("../../../public/images/general/grace-img.png")}
               width="30"
               height="30"
+              className="rounded-full"
             />
             <Pane
               display="flex"
