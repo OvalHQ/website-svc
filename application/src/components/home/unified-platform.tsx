@@ -96,7 +96,7 @@ const UnifiedPlatform = () => {
             <p className="leading-[24px] text-white opacity-75 text-[17px] font-[400]">
               Experience cash management with insured and regulated bank
               accounts the way it should be exceptional and tailored just for
-              you
+              you.
             </p>
           </Pane>
         </Pane>

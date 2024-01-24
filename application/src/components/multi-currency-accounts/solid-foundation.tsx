@@ -91,7 +91,7 @@ const SolidFoundation = () => {
                     <TickIcon color={Colors.dark.primary} />
                   </Pane>
                   <Text color={"black"} fontWeight={500} fontSize={16}>
-                    Graph partners banks are regulated and funds are FDIC
+                    {"Graph's"} partner banks are regulated and funds are FDIC
                     Insured
                   </Text>
                 </Pane>

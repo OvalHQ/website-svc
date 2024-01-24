@@ -164,7 +164,7 @@ const WhyGraph = () => {
           >
             <Image
               alt="avatar"
-              src={require("../../../public/images/general/grace-img.png")}
+              src={require("../../../public/images/general/emeka.jpg")}
               width="30"
               height="30"
               className="rounded-full"
@@ -176,10 +176,10 @@ const WhyGraph = () => {
               alignItems="self-start"
             >
               <Text fontWeight="bold" color="black">
-                Grace Thompson
+                Emeka Nwune
               </Text>
               <Text fontSize={12} color="black" opacity={0.5}>
-                CFO, Sproutly
+                CEO, Swift Medics Healthcare
               </Text>
             </Pane>
           </Pane>
