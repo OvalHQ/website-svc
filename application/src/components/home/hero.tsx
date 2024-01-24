@@ -72,7 +72,6 @@ const Hero = () => {
             height="900"
             className="ml-auto"
             src={HeroImg}
-            // src={require("../../../public/images/general/home-hero_old.png")}
           />
         </Pane>
       </Pane>
@@ -81,18 +80,3 @@ const Hero = () => {
 };
 
 export default Hero;
-
-const keywords = [
-  {
-    title: "Advertisement companies",
-  },
-  {
-    title: "Startups",
-  },
-  {
-    title: "Enterprises",
-  },
-  {
-    title: "Retailers",
-  },
-];
