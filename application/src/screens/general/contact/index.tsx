@@ -11,7 +11,7 @@ import {
   TRANSACTION_VOLUME_OPTIONS,
   ValidationMessages,
 } from "@/utils/constants";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { AirtableAPI } from "@/service/airtable/api";
 import Modal from "@/components/modal/modal";
 import Image from "next/image";
@@ -19,8 +19,12 @@ import Image from "next/image";
 import CheckMark from "../../../../public/images/checkmark.svg";
 import Link from "next/link";
 import { useOutsideClick } from "@/utils/hooks/useOutsideClikc";
+import { useRouter, useSearchParams } from "next/navigation";
 
 const ContactScreen = () => {
+  const searchParams = useSearchParams();
+  const presetEmail = searchParams.get("email") || "";
+
   const [isLoading, setIsLoading] = useState(false);
 
   const [showSuccessModal, setShowSuccessModal] = useState(false);
@@ -67,7 +71,6 @@ const ContactScreen = () => {
         ],
       };
       const response = await AirtableAPI.createContactRecord(payload);
-      console.log("RESPONSE [CONTACT PAGE] =>", response);
       toaster.success("Message sent!");
       setShowSuccessModal(true);
       resetForm();
@@ -92,7 +95,7 @@ const ContactScreen = () => {
     initialValues: {
       name: "",
       business_name: "",
-      email: "",
+      email: presetEmail,
       designation: "",
       phone: "",
       website: "",

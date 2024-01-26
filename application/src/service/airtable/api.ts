@@ -20,7 +20,6 @@ const createContactRecord = async (payload: CreateContactRecordPayload) => {
 }
 
 const createGetStartedRecord = async (payload: CreateGetStartedRecordPayload) => {
-  console.log('Payload =>', payload)
   const response = await APIClient(`${getStartedBaseId}/${getStartedTableId}`, {
     headers: {
       Authorization: `Bearer ${token}`
@@ -28,7 +27,6 @@ const createGetStartedRecord = async (payload: CreateGetStartedRecordPayload) =>
     method: 'POST',
     data: payload
   })
-  console.log('RESPONSE =>', response);
   return response;
 }
 
