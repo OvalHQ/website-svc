@@ -1,9 +1,9 @@
 pipeline {
   environment {
-    imageRepo = 'oval/website'
+    imageRepo = 'oval/web-ui'
     commitSha = sh(returnStdout: true, script: "git log -1 --pretty=format:'%h'").trim()
     imageName = "${imageRepo}:${commitSha}"
-    buildArgs = sh(returnStdout: true, script: "grep -v '^#' ~/env/oval-ui.env | xargs").trim()
+    buildArgs = sh(returnStdout: true, script: " ~/buildargs.sh ~/env/oval/web-ui.env")
   }
 
   agent any
@@ -15,22 +15,14 @@ pipeline {
       }
       stage('Build Image') {
           steps {
-            sh 'export ${buildArgs} && docker build -t ${imageName} --build-arg NEXT_PUBLIC_SERVER_URL --build-arg REACT_APP_SENTRY_DSN --build-arg REACT_APP_SENTRY_ENVIRONMENT .'
+            sh 'docker build -t ${imageName} ${buildArgs} .'
           }
       }
       stage('Deploy Application') {
           steps {
-             sh 'docker stop oval-website || true && docker rm oval-website || true'
-             sh 'docker run -d -p 127.0.0.1:3006:3000 --name oval-website ${imageName}'
-             sh 'docker system prune -a -f || true'
-          }
-      }
-      stage('Cleanup Build') {
-          steps {
-             sh 'docker system prune -a -f || true'
+             sh 'docker stop web-ui || true && docker rm web-ui || true'
+             sh 'docker run -d -p 127.0.0.1:4002:3000 --name web-ui --env-file ~/env/oval/web-ui.env ${imageName}'
           }
       }
   }
 }
-
-

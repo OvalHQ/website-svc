@@ -3,6 +3,7 @@ FROM node:18
 WORKDIR /usr/src/app
 COPY ./application/ .
 
+RUN rm .env || true
 RUN touch .env
 
 ARG NEXT_PUBLIC_API_BASE_URL
