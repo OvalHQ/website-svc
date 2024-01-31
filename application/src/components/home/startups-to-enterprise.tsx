@@ -25,14 +25,16 @@ const StartupsToEnterprise = () => {
         {data.map((data, index) => {
           return (
             <Pane key={index} className="startups-to-enterprise--card">
-              <Pane position="relative" height="220px" borderRadius={20}>
+              <Pane position="relative" borderRadius={20}>
                 <Image
                   style={{
                     borderRadius: 20,
                   }}
                   alt="description img"
                   src={`/images/general/${data.img}`}
-                  fill
+                  // fill
+                  height={220}
+                  width={360}
                   //   width={'100%'}
                 />
               </Pane>

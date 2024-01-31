@@ -7,11 +7,16 @@ export const MainLayoutWrapper = styled(Pane)`
   display: flex;
   flex-direction: column;
 
+  p,
+  a,
+  span {
+    font-family: Neue Haas Grotesk Display Pro !important;
+  }
+
   .main-content {
     overflow-y: auto;
     height: calc(100vh - 57px);
   }
 `;
-
 
 export default MainLayoutWrapper;

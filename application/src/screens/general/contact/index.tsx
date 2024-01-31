@@ -13,13 +13,21 @@ import {
 } from "@/utils/constants";
 import { useEffect, useState } from "react";
 import { AirtableAPI } from "@/service/airtable/api";
+import Modal from "@/components/modal/modal";
+import Image from "next/image";
+
+import CheckMark from "../../../../public/images/checkmark.svg";
+import Link from "next/link";
+import { useOutsideClick } from "@/utils/hooks/useOutsideClikc";
 import { useRouter, useSearchParams } from "next/navigation";
 
 const ContactScreen = () => {
   const searchParams = useSearchParams();
-  const presetEmail = searchParams.get("email") || ""
+  const presetEmail = searchParams.get("email") || "";
 
   const [isLoading, setIsLoading] = useState(false);
+
+  const [showSuccessModal, setShowSuccessModal] = useState(false);
   const validationSchema = yup.object().shape({
     name: yup.string().required(ValidationMessages.required),
     business_name: yup.string().required(ValidationMessages.required),
@@ -64,8 +72,9 @@ const ContactScreen = () => {
       };
       const response = await AirtableAPI.createContactRecord(payload);
       toaster.success("Message sent!");
+      setShowSuccessModal(true);
       resetForm();
-    } catch (e) {
+    } catch (error) {
       toaster.danger("Message failed to send, kindly try again");
     } finally {
       setIsLoading(false);
@@ -97,6 +106,11 @@ const ContactScreen = () => {
       consent: "",
     },
     onSubmit: handleSendContactUs,
+  });
+
+  const ref = useOutsideClick(() => {
+    console.log("Clicked outside of MyComponent");
+    setShowSuccessModal(false);
   });
 
   return (
@@ -486,6 +500,47 @@ const ContactScreen = () => {
           </div>
         </div>
       </Pane>
+
+      {showSuccessModal && (
+        <Modal
+          showModal={showSuccessModal}
+          handleClose={() => setShowSuccessModal(false)}
+        >
+          <div
+            className="text-black flex flex-col justify-center items-center  pt-6 pb-3"
+            ref={ref}
+          >
+            <div
+              className="flex justify-center items-center p-2 border  rounded-full "
+              style={{
+                border:
+                  "linear-gradient(133.84deg, rgba(34, 118, 255, 0.25) 14.05%, rgba(34, 118, 255, 0) 115.45%)",
+              }}
+            >
+              <Image
+                alt="checkmark icons"
+                src={CheckMark}
+                height={120}
+                width={120}
+              />
+            </div>
+
+            <p className="font-semibold text-[24px] mt-10">
+              Submitted Successfully
+            </p>
+            <p className="mt-3 text-black opacity-50 w-[360px] text-center text-sm">
+              Your enquiries has been sent to our team and you will get a
+              response shortly.
+            </p>
+
+            <button className="w-full mt-8 h-11 bg-[#2276FF] rounded-xl">
+              <Link href="/" className="text-white text-sm" passHref>
+                <p>Back to home</p>
+              </Link>
+            </button>
+          </div>
+        </Modal>
+      )}
     </MainLayout>
   );
 };

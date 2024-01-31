@@ -78,7 +78,7 @@ const WhyGraph = () => {
                 Tunde Adewole
               </Text>
               <Text fontSize={12} color="black" opacity={0.5}>
-                CTO, Bridgecard
+                CEO, Bridgecard
               </Text>
             </Pane>
           </Pane>
