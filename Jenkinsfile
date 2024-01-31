@@ -21,7 +21,7 @@ pipeline {
       stage('Deploy Application') {
           steps {
              sh 'docker stop web-ui || true && docker rm web-ui || true'
-             sh 'docker run -d -p 127.0.0.1:4002:3000 --name web-ui --env-file ~/env/oval/web-ui.env ${imageName}'
+             sh 'docker run -d -p 127.0.0.1:4003:3000 --name web-ui --env-file ~/env/oval/web-ui.env ${imageName}'
           }
       }
   }
