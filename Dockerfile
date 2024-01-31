@@ -3,7 +3,6 @@ FROM node:18
 WORKDIR /usr/src/app
 COPY ./application/ .
 
-RUN rm -rf .next || true
 RUN rm .env || true
 RUN touch .env
 
@@ -19,7 +18,8 @@ RUN echo NEXT_PUBLIC_AIRTABLE_TABLE_ID=$NEXT_PUBLIC_AIRTABLE_TABLE_ID >> .env
 
 RUN npm install
 RUN npm run build
+RUN npm install -g serve
 
 EXPOSE 3000
 
-CMD ["npm", "run", "dev"]
+CMD ["serve", "-s", "out", "-p", "3000"]
