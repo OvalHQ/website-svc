@@ -1,5 +1,6 @@
 "use client";
 
+import { Suspense } from 'react'
 import MainLayout from "@/components/layout/main";
 import { Pane, Spinner, toaster } from "evergreen-ui";
 import * as yup from "yup";
@@ -115,6 +116,7 @@ const ContactScreen = () => {
 
   return (
     <MainLayout>
+      <Suspense>
       <Pane className="md:mt-28 md:mb-48 text-[#000]">
         <div className="md:w-[60%] md:mx-auto">
           <div className="flex flex-col justify-center mt-[150px] items-center md:text-center md:mb-20">
@@ -541,6 +543,7 @@ const ContactScreen = () => {
           </div>
         </Modal>
       )}
+      </Suspense>
     </MainLayout>
   );
 };
