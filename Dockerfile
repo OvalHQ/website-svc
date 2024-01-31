@@ -3,6 +3,7 @@ FROM node:18
 WORKDIR /usr/src/app
 COPY ./application/ .
 
+RUN rm -rf .next || true
 RUN rm .env || true
 RUN touch .env
 
