@@ -17,9 +17,9 @@ RUN echo NEXT_PUBLIC_AIRTABLE_BASE_ID=$NEXT_PUBLIC_AIRTABLE_BASE_ID >> .env
 RUN echo NEXT_PUBLIC_AIRTABLE_TABLE_ID=$NEXT_PUBLIC_AIRTABLE_TABLE_ID >> .env
 
 RUN npm install
-#RUN npm run build
-RUN npm install -g serve
+RUN npm run build
+#RUN npm install -g serve
 
 EXPOSE 3000
-CMD ["npm", "run", "dev"]
+CMD ["npm", "run", "start"]
 #CMD ["serve", "-s", "out", "-p", "3000"]
