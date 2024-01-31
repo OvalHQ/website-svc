@@ -75,7 +75,6 @@ const ContactScreen = () => {
       setShowSuccessModal(true);
       resetForm();
     } catch (error) {
-      console.log('ERROR ->', error)
       toaster.danger("Message failed to send, kindly try again");
     } finally {
       setIsLoading(false);
