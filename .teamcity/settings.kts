@@ -1,6 +1,7 @@
 import jetbrains.buildServer.configs.kotlin.*
 import jetbrains.buildServer.configs.kotlin.buildFeatures.perfmon
 import jetbrains.buildServer.configs.kotlin.buildSteps.dockerCommand
+import jetbrains.buildServer.configs.kotlin.buildSteps.script
 import jetbrains.buildServer.configs.kotlin.triggers.vcs
 
 /*
@@ -49,6 +50,11 @@ object Build : BuildType({
                     path = "Dockerfile"
                 }
             }
+        }
+        script {
+            name = "Sing Output"
+            id = "Sing_Output"
+            scriptContent = """echo "Hello World""""
         }
     }
 
