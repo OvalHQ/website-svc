@@ -109,7 +109,9 @@ const SolidFoundation = () => {
                 paddingY={5}
                 paddingX={35}
               >
-                <Link href={"/contact"}>Get Started</Link>
+                <Link href={"https://dashboard.useoval.com/signup"}>
+                  Get Started
+                </Link>
               </Button>
             </Pane>
             <Pane marginTop="auto" flex={1} paddingRight="40px">
