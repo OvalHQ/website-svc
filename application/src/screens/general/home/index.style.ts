@@ -10,6 +10,7 @@ const HomePageScreenWrapper = styled(Pane)`
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  overflow-x: hidden;
 
   h1,
   h2,
@@ -143,11 +144,6 @@ const HomePageScreenWrapper = styled(Pane)`
         border-radius: 50%;
 
         border: 1px solid #414141;
-        // border-image: linear-gradient(
-        //   133.84deg,
-        //   rgb(255 255 255) 14.05%,
-        //   rgb(255 255 255 / 0%) 115.45%
-        // );
       }
 
       &:hover {
@@ -173,11 +169,9 @@ const HomePageScreenWrapper = styled(Pane)`
       .card {
         width: 300px;
       }
-    }
-    @media (min-width: 1201px) {
-      .card {
-        width: 388px;
-        height: 393px;
+
+      .grid-container {
+        padding: 0;
       }
     }
 
@@ -193,6 +187,12 @@ const HomePageScreenWrapper = styled(Pane)`
         width: 350px;
       }
     }
+
+    @media (max-width: 370px) {
+      .card {
+        width: 320px;
+      }
+    }
   }
 
   .money-movement {
@@ -206,6 +206,9 @@ const HomePageScreenWrapper = styled(Pane)`
     align-items: center;
     @media (max-width: 908px) {
       padding: 80px 2rem;
+    }
+    @media (max-width: 370px) {
+      padding: 60px 1rem;
     }
   }
 
