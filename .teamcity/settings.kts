@@ -28,8 +28,8 @@ To debug in IntelliJ Idea, open the 'Maven Projects' tool window (View
 version = "2023.11"
 
 project {
-
     buildType(Build)
+    buildType(Deploy)
 }
 
 object Build : BuildType({
@@ -55,13 +55,25 @@ object Build : BuildType({
     triggers {
         vcs {
             branchFilter = "staging"
-
             enforceCleanCheckout = true
         }
     }
 
     features {
         perfmon {
+        }
+    }
+})
+
+
+object Deploy : BuildType({
+    name = "Deploy"
+
+    publishArtifacts = PublishMode.SUCCESSFUL
+
+    steps {
+        script {
+            scriptContent = "echo 'Hello world!'"
         }
     }
 })
