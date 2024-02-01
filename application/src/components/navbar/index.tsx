@@ -266,7 +266,7 @@ const Navbar = () => {
           <Link href="https://dashboard.useoval.com/login">
             <p className="text-black w-[40px] text-sm font-medium">Log in</p>
           </Link>
-          <Link href="/contact">
+          <Link href="https://dashboard.useoval.com/signup">
             <button className="rounded-xl py-4 px-5 w-full block mt-auto text-xs font-light bg-[#2276FF] hover:opacity-80 text-white">
               Create an account
             </button>
@@ -301,7 +301,7 @@ const Navbar = () => {
               transition={{ duration: 0.6 }}
             >
               <div
-                className={`fixed z-100 left-0 right-0 top-20 z-10 bg-[#E2FDFF] h-[calc(100vh-3rem)] w-full py-4 pb-12 px-12 flex flex-col gap-2 justify-around `}
+                className={`fixed z-100 left-0 right-0 top-20 z-10 bg-[#E2FDFF] h-[calc(100vh-3rem)] w-full pb-16 px-12 flex flex-col gap-2 justify-around `}
               >
                 <div>
                   <h3 className="font-bold text-black mb-3">Products</h3>
@@ -395,7 +395,7 @@ const Navbar = () => {
                   </div>
                 </div>
 
-                <Link href="/contact">
+                <Link href="https://dashboard.useoval.com/signup">
                   <button className="rounded-xl py-3 w-full block mt-auto text-xs font-extralight bg-[#2276FF] hover:opacity-80 text-white">
                     Create an account
                   </button>

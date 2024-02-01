@@ -35,7 +35,9 @@ const Hero = () => {
                 paddingX={35}
                 fontFamily={"Neue Haas Grotesk Display Pro"}
               >
-                <Link href={"/contact"}>Get Started</Link>
+                <Link href={"https://dashboard.useoval.com/signup"}>
+                  Get Started
+                </Link>
               </Button>
               <Button
                 className="cta-secondary"
