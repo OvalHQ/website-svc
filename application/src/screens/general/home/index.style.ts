@@ -23,7 +23,7 @@ const HomePageScreenWrapper = styled(Pane)`
     &:hover {
       opacity: 0.8;
       color: white;
-      background: black;
+      background: black !important;
     }
   }
 

@@ -119,7 +119,9 @@ const CorporateCards = () => {
                 paddingX={35}
                 fontFamily={"Neue Haas Grotesk Display Pro"}
               >
-                <Link href={"/contact"}>Get Started</Link>
+                <Link href={"https://dashboard.useoval.com/signup"}>
+                  Get Started
+                </Link>
               </Button>
             </Pane>
             <Pane marginTop="auto" flex={1} paddingRight="35px">
