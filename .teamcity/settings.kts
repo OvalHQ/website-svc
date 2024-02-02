@@ -69,8 +69,6 @@ object WebsiteUi_Build : BuildType({
 
     triggers {
         vcs {
-            branchFilter = "staging"
-
             enforceCleanCheckout = true
         }
     }
