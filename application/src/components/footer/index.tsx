@@ -135,7 +135,7 @@ const Footer = () => {
           <Text color="white">Stay updated with us</Text>
           <Pane display="flex" gap={45}>
             <Link
-              href="https://www.linkedin.com/company/rapidpay-africa/"
+              href="https://www.linkedin.com/company/usegraph/"
               target="_blank"
               className="hover:scale-105"
             >
