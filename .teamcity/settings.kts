@@ -45,7 +45,7 @@ object WebsiteUi_Build : BuildType({
 
     steps {
         dockerCommand {
-            id = "DockerCommand"
+            name = "Build"
             commandType = build {
                 source = file {
                     path = "Dockerfile"
@@ -53,9 +53,16 @@ object WebsiteUi_Build : BuildType({
             }
         }
         script {
-            name = "Sing Output"
-            id = "Sing_Output"
-            scriptContent = """echo "Hello World""""
+            name = "Test"
+            scriptContent = """echo "Test World"""
+        }
+        script {
+            name = "Deploy"
+            scriptContent = """echo "Deploy World"""
+        }
+        script {
+            name = "Cleanup"
+            scriptContent = """echo "Cleanup World"""
         }
     }
 
