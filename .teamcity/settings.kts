@@ -54,15 +54,15 @@ object WebsiteUi_Build : BuildType({
         }
         script {
             name = "Test"
-            scriptContent = """echo "Test World"""
+            scriptContent = """echo "Test World""""
         }
         script {
             name = "Deploy"
-            scriptContent = """echo "Deploy World"""
+            scriptContent = """echo "Deploy World""""
         }
         script {
             name = "Cleanup"
-            scriptContent = """echo "Cleanup World"""
+            scriptContent = """echo "Cleanup World""""
         }
     }
 
