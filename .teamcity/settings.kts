@@ -49,6 +49,7 @@ object WebsiteUi_Build : BuildType({
             commandType = build {
                 source = file {
                     path = "Dockerfile"
+                    name = "oval-website-ui"
                 }
             }
         }
