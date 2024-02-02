@@ -135,7 +135,7 @@ const Footer = () => {
           <Text color="white">Stay updated with us</Text>
           <Pane display="flex" gap={45}>
             <Link
-              href="https://www.linkedin.com/company/rapidpay-africa/"
+              href="https://www.linkedin.com/company/usegraph/"
               target="_blank"
               className="hover:scale-105"
             >
@@ -208,7 +208,7 @@ const Footer = () => {
             </Text>
           </Link>
           <Link
-            href="https://drive.google.com/file/d/1wqDKrvKDqlNXxCQPPEYxzeXzXQIf-lcl/view"
+            href="https://drive.google.com/file/d/1x69m717IP2P4WV880ULFQbrkewgguAQ8/view?usp=sharing"
             target="_blank"
             style={{
               textDecoration: "none",

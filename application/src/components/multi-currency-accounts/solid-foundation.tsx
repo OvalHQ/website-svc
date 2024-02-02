@@ -96,23 +96,23 @@ const SolidFoundation = () => {
                   </Text>
                 </Pane>
               </Pane>
-              <Button
-                className="cta-primary"
-                type="submit"
-                size="large"
-                color="#ffffff"
-                background="black"
-                borderRadius={10}
-                fontSize={13}
-                fontWeight={400}
-                height={"auto"}
-                paddingY={5}
-                paddingX={35}
-              >
-                <Link href={"https://dashboard.useoval.com/signup"}>
+              <Link href={"https://dashboard.useoval.com/signup"} passHref>
+                <Button
+                  className="cta-primary"
+                  type="submit"
+                  size="large"
+                  color="#ffffff"
+                  background="black"
+                  borderRadius={10}
+                  fontSize={13}
+                  fontWeight={400}
+                  height={"auto"}
+                  paddingY={5}
+                  paddingX={35}
+                >
                   Get Started
-                </Link>
-              </Button>
+                </Button>
+              </Link>
             </Pane>
             <Pane marginTop="auto" flex={1} paddingRight="40px">
               <Pane position="relative">

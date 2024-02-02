@@ -21,24 +21,24 @@ const Hero = () => {
               USD, Canadian Dollar, Euro, Pound and more.
             </p>
             <Pane marginTop={50} marginBottom={90}>
-              <Button
-                className="cta-primary"
-                type="submit"
-                size="large"
-                color="#ffffff"
-                background="black"
-                borderRadius={10}
-                fontSize={13}
-                fontWeight={400}
-                height={"auto"}
-                paddingY={5}
-                paddingX={35}
-                fontFamily={"Neue Haas Grotesk Display Pro"}
-              >
-                <Link href={"https://dashboard.useoval.com/signup"}>
+              <Link href={"https://dashboard.useoval.com/signup"} passHref>
+                <Button
+                  className="cta-primary"
+                  type="submit"
+                  size="large"
+                  color="#ffffff"
+                  background="black"
+                  borderRadius={10}
+                  fontSize={13}
+                  fontWeight={400}
+                  height={"auto"}
+                  paddingY={5}
+                  paddingX={35}
+                  fontFamily={"Neue Haas Grotesk Display Pro"}
+                >
                   Get Started
-                </Link>
-              </Button>
+                </Button>
+              </Link>
               <Button
                 className="cta"
                 marginLeft={10}

@@ -23,22 +23,22 @@ const Hero = () => {
             </p>
 
             <div className="mt-[50px] sm:mt-[30px] mb-[70px] sm:mb-[120px]">
-              <Button
-                type="submit"
-                size="large"
-                color="#000000"
-                borderRadius={10}
-                fontSize={15}
-                fontWeight={500}
-                height={"auto"}
-                paddingY={5}
-                paddingX={35}
-                fontFamily={"Neue Haas Grotesk Display Pro"}
-              >
-                <Link href={"https://dashboard.useoval.com/signup"}>
+              <Link href={"https://dashboard.useoval.com/signup"} passHref>
+                <Button
+                  type="submit"
+                  size="large"
+                  color="#000000"
+                  borderRadius={10}
+                  fontSize={15}
+                  fontWeight={500}
+                  height={"auto"}
+                  paddingY={5}
+                  paddingX={35}
+                  fontFamily={"Neue Haas Grotesk Display Pro"}
+                >
                   Get Started
-                </Link>
-              </Button>
+                </Button>
+              </Link>
               <Button
                 className="cta-secondary"
                 marginLeft={10}
