@@ -4,51 +4,53 @@ import React from "react";
 
 const StartupsToEnterprise = () => {
   return (
-    <Pane className="startups-to-enterprise">
-      <Heading
-        fontSize="3rem"
-        lineHeight={"50px"}
-        fontWeight={700}
-        textAlign="center"
-        color="black"
-        maxWidth={"700px"}
-        marginY={30}
-      >
-        From startups to enterprises and businesses of all sizes.
-      </Heading>
-      <p className="text-black font-[500] text-center">
-        We help you streamline and simplify your financial operations toward
-        driving business growth
-      </p>
+    <div className="max-w-[1440px]">
+      <Pane className="startups-to-enterprise">
+        <Heading
+          fontSize="3rem"
+          lineHeight={"50px"}
+          fontWeight={700}
+          textAlign="center"
+          color="black"
+          maxWidth={"700px"}
+          marginY={30}
+        >
+          From startups to enterprises and businesses of all sizes.
+        </Heading>
+        <p className="text-black font-[500] text-center">
+          We help you streamline and simplify your financial operations toward
+          driving business growth
+        </p>
 
-      <Pane className="grid-container" marginTop={"50px"}>
-        {data.map((data, index) => {
-          return (
-            <Pane key={index} className="startups-to-enterprise--card">
-              <Pane position="relative" borderRadius={20}>
-                <Image
-                  style={{
-                    borderRadius: 20,
-                  }}
-                  alt="description img"
-                  src={`/images/general/${data.img}`}
-                  // fill
-                  height={220}
-                  width={360}
-                  //   width={'100%'}
-                />
+        <Pane className="grid-container" marginTop={"50px"}>
+          {data.map((data, index) => {
+            return (
+              <Pane key={index} className="startups-to-enterprise--card">
+                <Pane position="relative" borderRadius={20}>
+                  <Image
+                    style={{
+                      borderRadius: 20,
+                    }}
+                    alt="description img"
+                    src={`/images/general/${data.img}`}
+                    // fill
+                    height={220}
+                    width={360}
+                    //   width={'100%'}
+                  />
+                </Pane>
+                <h3 className="font-bold text-xl tracking-[-1px] leading-5 text-black pb-[10px] pt-[10px]">
+                  {data.title}
+                </h3>
+                <p className="text-[17px] text-black opacity-95">
+                  {data.description}
+                </p>
               </Pane>
-              <h3 className="font-bold text-xl tracking-[-1px] leading-5 text-black pb-[10px] pt-[10px]">
-                {data.title}
-              </h3>
-              <p className="text-[17px] text-black opacity-95">
-                {data.description}
-              </p>
-            </Pane>
-          );
-        })}
+            );
+          })}
+        </Pane>
       </Pane>
-    </Pane>
+    </div>
   );
 };
 

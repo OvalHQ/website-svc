@@ -2,11 +2,8 @@
 
 import AboutUsScreen from "@/screens/general/about-us";
 
-
 const AboutUsPage = () => {
-  return (
-    <AboutUsScreen/>
-  )
+  return <AboutUsScreen />;
 };
 
 export default AboutUsPage;

@@ -71,7 +71,7 @@ const Navbar = () => {
               display="flex"
               justifyContent="center"
               alignItems="end"
-              gap="3px"
+              gap="5px"
             >
               <p className="text-black text-sm font-medium">Products</p>
               <Image

@@ -27,9 +27,13 @@ const HomePageScreenWrapper = styled(Pane)`
     }
   }
 
-  .hero {
+  .layout {
     background: ${Colors.light.secondary};
-    min-height: 70vh;
+    width: 100%;
+  }
+
+  .hero {
+    margin: 0 auto;
     width: 100%;
     display: flex;
     justify-content: center;
@@ -89,7 +93,6 @@ const HomePageScreenWrapper = styled(Pane)`
     position: relative;
     background: black;
     width: 100%;
-    min-height: 100vh;
     padding-top: 170px;
     padding-bottom: 170px;
     display: flex;
@@ -199,11 +202,16 @@ const HomePageScreenWrapper = styled(Pane)`
     position: relative;
     background: white;
     width: 100%;
-    min-height: 70vh;
+    max-width: 1440px;
     padding: 120px 6rem;
     display: flex;
     flex-direction: column;
     align-items: center;
+
+    @media (min-width: 1440px) {
+      padding-left: 0;
+      padding-right: 0;
+    }
     @media (max-width: 908px) {
       padding: 80px 2rem;
     }
@@ -213,14 +221,13 @@ const HomePageScreenWrapper = styled(Pane)`
   }
 
   .why-graph {
+    display: block;
+    margin: auto;
     position: relative;
-    background: #d1f89880;
     width: 100%;
-    min-height: 70vh;
+    max-width: 1440px;
     padding: 140px 6rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+
     @media (max-width: 908px) {
       padding: 80px 2rem;
     }
@@ -229,6 +236,7 @@ const HomePageScreenWrapper = styled(Pane)`
   .startups-to-enterprise {
     background: white;
     width: 100%;
+    max-width: 1440px;
     padding: 130px 100px;
     display: flex;
     flex-direction: column;
@@ -268,7 +276,7 @@ const HomePageScreenWrapper = styled(Pane)`
     position: relative;
     background: white;
     width: 100%;
-    min-height: 50vh;
+    max-width: 1440px;
     padding: 60px 1rem;
     display: flex;
     flex-direction: column;
@@ -285,7 +293,7 @@ const HomePageScreenWrapper = styled(Pane)`
     position: relative;
     background: white;
     width: 100%;
-    min-height: 50vh;
+    max-width: 1440px;
     padding: 130px 7rem;
     display: flex;
     flex-direction: column;
