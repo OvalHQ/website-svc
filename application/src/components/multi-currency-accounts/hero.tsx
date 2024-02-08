@@ -7,7 +7,7 @@ import MultiCurrencyHeroImg from "../../../public/images/general/multi-currency-
 
 const Hero = () => {
   return (
-    <>
+    <div className="layout">
       <Pane className="hero">
         <Pane className="hero-left">
           <div className="pr-5">
@@ -77,7 +77,7 @@ const Hero = () => {
           />
         </Pane>
       </Pane>
-    </>
+    </div>
   );
 };
 

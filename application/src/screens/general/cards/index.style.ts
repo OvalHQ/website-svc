@@ -10,6 +10,7 @@ const CardsPageScreenWrapper = styled(Pane)`
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  overflow-x: hidden;
 
   h2,
   h3,
@@ -19,24 +20,31 @@ const CardsPageScreenWrapper = styled(Pane)`
   }
 
   .cta-secondary {
+    transition: all ease-in-out 0.3s;
     &:hover {
       opacity: 0.8;
       color: black;
-      background: tansparent;
+      background: transparent;
     }
   }
   .cta-primary {
+    transition: all ease-in-out 0.3s;
     &:hover {
       opacity: 0.8;
       color: white;
-      background: black;
+      background: black !important;
     }
   }
 
-  .hero {
+  .layout {
     background: ${Colors.light.primary};
-    min-height: 90vh;
     width: 100%;
+  }
+
+  .hero {
+    margin: 0 auto;
+    width: 100%;
+    min-height: 90vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -54,7 +62,6 @@ const CardsPageScreenWrapper = styled(Pane)`
     }
     .hero-right {
       flex: 1;
-      margin-left: -300px;
     }
 
     @media (max-width: 1100px) {
@@ -96,7 +103,6 @@ const CardsPageScreenWrapper = styled(Pane)`
   .cards-for-businesses {
     background: #e2fdff;
     width: 100%;
-    min-height: 80vh;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -107,7 +113,6 @@ const CardsPageScreenWrapper = styled(Pane)`
   .corporate-cards {
     background: white;
     width: 100%;
-    min-height: 80vh;
     display: flex;
     flex-direction: column;
     align-items: center;

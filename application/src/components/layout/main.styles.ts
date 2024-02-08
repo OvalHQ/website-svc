@@ -7,8 +7,9 @@ export const MainLayoutWrapper = styled(Pane)`
   display: flex;
   flex-direction: column;
 
+  h1,
+  h2,
   p,
-  a,
   span {
     font-family: Neue Haas Grotesk Display Pro !important;
   }

@@ -1,8 +1,4 @@
-import {
-  Pane,
-  Spinner,
-  toaster,
-} from "evergreen-ui";
+import { Pane, Spinner, toaster } from "evergreen-ui";
 import Image from "next/image";
 import React, { useState } from "react";
 import * as yup from "yup";
@@ -31,7 +27,7 @@ const SimplifyOperations = () => {
       // };
       // const response = await AirtableAPI.createGetStartedRecord(payload);
       // toaster.success("Success!");
-      router.push(`/contact?&email=${values.email}`)
+      router.push(`/contact?&email=${values.email}`);
       resetForm();
     } catch (e) {
       toaster.danger("Error: Please try again!");

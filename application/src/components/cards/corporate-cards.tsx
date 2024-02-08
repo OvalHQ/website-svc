@@ -10,7 +10,7 @@ const CorporateCards = () => {
   return (
     <Pane className="corporate-cards">
       <div className="flex gap-[30px] w-full flex-col md:flex-row">
-        <div className="rounded-2xl flex-1 bg-[#D1F89840] pl-4 py-5 sm:py-[60px] sm:pl-[5rem]">
+        <div className="rounded-2xl flex-1 bg-[#D1F89840] pl-4 py-5 sm:py-[60px] sm:pl-[5rem] max-w-[1440px] mx-auto">
           <div className="flex w-full flex-col lg:flex-row gap-y-14">
             <Pane maxWidth={"500px"}>
               <h2 className="my-4 mt-5 lg:mt-14 text-[40px] md:text-[50px] text-black font-semibold leading-[40px] md:leading-[50px] max-w-[400px] md:max-w-[700px] ">

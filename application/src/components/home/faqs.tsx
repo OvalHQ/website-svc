@@ -49,19 +49,21 @@ const Faqs = () => {
                 <Paragraph fontSize={"20px"} fontWeight={600} color="black">
                   {faq.question}
                 </Paragraph>
-                {openedId === index ? (
-                  <MinusIcon
-                    color={Colors.dark.primary}
-                    size={25}
-                    fontWeight={200}
-                  />
-                ) : (
-                  <PlusIcon
-                    color={Colors.dark.primary}
-                    size={25}
-                    fontWeight={200}
-                  />
-                )}
+                <div className="w-7 h-7 text-[#2276FF]">
+                  {openedId === index ? (
+                    <MinusIcon
+                      color={Colors.dark.primary}
+                      size={25}
+                      fontWeight={200}
+                    />
+                  ) : (
+                    <PlusIcon
+                      color={Colors.dark.primary}
+                      size={25}
+                      fontWeight={200}
+                    />
+                  )}
+                </div>
               </Pane>
 
               <AnimatePresence initial={false}>
