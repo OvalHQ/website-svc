@@ -32,10 +32,15 @@ const MultiCurrencyAccountsScreenWrapper = styled(Pane)`
     }
   }
 
-  .hero {
+  .layout {
     background: ${Colors.light.secondary};
+    width: 100%;
+  }
+  .hero {
+    max-width: 1440px;
     min-height: 90vh;
     width: 100%;
+    margin: 0 auto;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -84,18 +89,15 @@ const MultiCurrencyAccountsScreenWrapper = styled(Pane)`
   .spend-globally {
     background: white;
     width: 100%;
-    min-height: 80vh;
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-top: 170px;
-    padding-bottom: 30px;
+    padding: 170px 0;
   }
 
   .solid-foundation {
     background: ${Colors.dark.secondary};
     width: 100%;
-    min-height: 80vh;
     display: flex;
     flex-direction: column;
     align-items: center;
