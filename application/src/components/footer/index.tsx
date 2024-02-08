@@ -4,7 +4,7 @@ import FooterWrapper from "./index.style";
 import Image from "next/image";
 import Link from "next/link";
 
-import GraphLogo from "../../../public/images/graph-logo-full-white.png";
+import GraphLogo from "../../../public/images/graph-logo-full-white.svg";
 
 const Footer = () => {
   return (
