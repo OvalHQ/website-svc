@@ -119,9 +119,9 @@ const ContactScreen = () => {
         <Pane className="md:mt-28 md:mb-48 text-[#000]">
           <div className="md:w-[60%] md:mx-auto">
             <div className="flex flex-col justify-center mt-[150px] items-center md:text-center md:mb-20">
-              <h3 className="font-semibold leading-[28px] text-[28px] w-[270px] md:w-auto text-center md:text-3xl mb-5">
+              <h1 className="font-semibold leading-[28px] text-[28px] w-[270px] md:w-auto text-center md:text-3xl mb-5">
                 Contact our Sales team to get started
-              </h3>
+              </h1>
               <p className="opacity-[0.5] text-sm md:text-base  md:w-auto text-center ">
                 For further enquiries, Please contact us.
               </p>

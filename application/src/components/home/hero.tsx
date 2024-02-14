@@ -13,9 +13,9 @@ const Hero = () => {
         <Pane className="hero-left">
           <div className="ml-auto  lg:w-[680px]">
             <Pane>
-              <h2 className="my-4 mt-5 lg:mt-20 text-[70px]  text-black font-semibold leading-[40px] md:leading-[80px] max-w-[400px] md:max-w-[700px]">
+              <h1 className="my-4 mt-5 lg:mt-20 text-[70px]  text-black font-semibold leading-[40px] md:leading-[80px] max-w-[400px] md:max-w-[700px]">
                 Cash management and corporate spending platform
-              </h2>
+              </h1>
               <p className=" text-[18px] leading-[30px] max-w-[450px] font-medium text-black mt-[1.5rem] ">
                 Experience seamless access to corporate cards, multi-currency
                 accounts, and global payouts, all in one account.
