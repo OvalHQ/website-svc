@@ -3,7 +3,8 @@ import type { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "Contact us | Graph ",
-  description: "",
+  description:
+    "Experience seamless access to corporate cards, multi-currency accounts, and global payouts, all in one account.",
 };
 const ContactPage = () => {
   return <ContactScreen />;
