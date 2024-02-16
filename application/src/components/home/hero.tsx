@@ -13,7 +13,7 @@ const Hero = () => {
         <Pane className="hero-left">
           <div className="ml-auto  lg:w-[680px]">
             <Pane>
-              <h1 className="my-4 mt-5 lg:mt-20 text-[70px]  text-black font-semibold leading-[40px] md:leading-[80px] max-w-[400px] md:max-w-[700px]">
+              <h1 className="my-4 mt-5 lg:mt-20 text-[40px] sm:text-[70px] text-black font-semibold leading-[40px] md:leading-[80px] max-w-[400px] md:max-w-[700px]">
                 Cash management and corporate spending platform
               </h1>
               <p className=" text-[18px] leading-[30px] max-w-[450px] font-medium text-black mt-[1.5rem] ">
