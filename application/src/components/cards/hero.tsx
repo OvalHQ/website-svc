@@ -13,7 +13,7 @@ const Hero = () => {
             {/* <div className="ml-auto"> */}
             <Pane>
               <h2 className="text-white mt-8 lg:mt-8 text-[60px] font-semibold leading-[40px] md:leading-[70px] max-w-[400px] md:max-w-[700px] ">
-                Business Cards,
+                Corporate Cards,
               </h2>
               <h2 className="text-white mb-5 lg:mb-8 text-[60px] font-semibold leading-[40px] md:leading-[70px] max-w-[400px] md:max-w-[700px] ">
                 Simplified
