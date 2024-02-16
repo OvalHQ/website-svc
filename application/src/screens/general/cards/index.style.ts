@@ -20,17 +20,19 @@ const CardsPageScreenWrapper = styled(Pane)`
   }
 
   .cta-secondary {
+    transition: all ease-in-out 0.3s;
     &:hover {
       opacity: 0.8;
       color: black;
-      background: tansparent;
+      background: transparent;
     }
   }
   .cta-primary {
+    transition: all ease-in-out 0.3s;
     &:hover {
       opacity: 0.8;
       color: white;
-      background: black;
+      background: black !important;
     }
   }
 
@@ -42,20 +44,12 @@ const CardsPageScreenWrapper = styled(Pane)`
   .hero {
     margin: 0 auto;
     width: 100%;
+    min-height: 90vh;
     display: flex;
     justify-content: center;
     align-items: center;
     padding-left: 5rem;
     padding-bottom: 10px;
-    padding-top: 50px;
-
-    margin: 0 auto;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding-left: 5rem;
-    padding-bottom: 30px;
     padding-top: 50px;
 
     .hero-left {
