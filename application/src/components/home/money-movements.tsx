@@ -72,7 +72,7 @@ const MoneyMovement = () => {
           </div>
           <div className="flex  flex-col lg:flex-row justify-around">
             <div className="max-w-[650px] pl-[30px]  md:pl-[4rem] ">
-              <h1
+              <h2
                 className={`${
                   active === ACTIVE_STATE_ENUM.MULTI
                     ? "text-black"
@@ -82,7 +82,7 @@ const MoneyMovement = () => {
                 {active === ACTIVE_STATE_ENUM.MULTI
                   ? "Introducing Faster Money Movement Beyond Banks."
                   : "Empower Your Team. Spend & Manage Globally"}
-              </h1>
+              </h2>
               <Paragraph
                 fontSize={"16px"}
                 marginY={40}

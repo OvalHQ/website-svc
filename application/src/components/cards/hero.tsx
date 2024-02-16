@@ -12,13 +12,12 @@ const Hero = () => {
           <Pane className="hero-left">
             <div className="ml-auto">
               <Pane>
-                <h2 className="text-white mt-8 lg:mt-8 text-[60px] font-semibold leading-[40px] md:leading-[70px] max-w-[400px] md:max-w-[700px] ">
+                <h1 className="text-white mt-8 lg:mt-8 text-[60px] font-semibold leading-[40px] md:leading-[70px] max-w-[400px] md:max-w-[700px] ">
                   Corporate Cards,
-                </h2>
+                </h1>
                 <h2 className="text-white mb-5 lg:mb-8 text-[60px] font-semibold leading-[40px] md:leading-[70px] max-w-[400px] md:max-w-[700px] ">
                   Simplified
                 </h2>
-
                 <p className=" text-[16px] leading-[30px] max-w-[400px] text-white mt-[1.5rem] ">
                   Issue cards to employees in seconds, control spend in one
                   click, and make unlimited purchases.

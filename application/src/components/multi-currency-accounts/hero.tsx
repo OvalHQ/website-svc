@@ -11,9 +11,9 @@ const Hero = () => {
       <Pane className="hero">
         <Pane className="hero-left">
           <div className="pr-5">
-            <h2 className="text-black mb-4 lg:mb-8 text-[45px] md:text-[70px] font-semibold leading-[45px] md:leading-[70px] max-w-[400px] md:max-w-[500px] ">
+            <h1 className="text-black mb-4 lg:mb-8 text-[45px] md:text-[70px] font-semibold leading-[45px] md:leading-[70px] max-w-[400px] md:max-w-[500px] ">
               The best place to manage your operating cash
-            </h2>
+            </h1>
 
             <p className=" text-[18px] font-medium leading-[30px] max-w-[480px] text-black mt-[1.5rem] ">
               Manage payments and operate globally in any location with Multi

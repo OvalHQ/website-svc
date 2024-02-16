@@ -43,9 +43,9 @@ const AboutUsScreen = () => {
           </Pane>
         </Pane>
         <Pane className="relative md:w-[70%] w-[90%] mx-auto z-10">
-          <p className="md:font-medium md:text-2xl md:mb-8 mb-5 text-sm">
+          <h1 className="md:font-medium md:text-2xl md:mb-8 mb-5 text-sm">
             About Us
-          </p>
+          </h1>
           <h2 className="font-semibold md:w-[934px] md:text-[70px] text-4xl leading-[1]">
             We are empowering the next generation of founders with the financial
             tools they need to scale their business globally.
