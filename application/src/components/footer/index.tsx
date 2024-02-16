@@ -132,7 +132,7 @@ const Footer = () => {
           </div>
         </Pane>
         <div className="my-[60px] md:my-[30px] w-full flex justify-start md:justify-between flex-wrap">
-          <p className="hidden md:block text-sm md:text-white md:w-[300px]">
+          <p className="hidden md:block text-sm text-white md:w-[300px]">
             Graph is a financial technology company, and not a bank. Banking
             services are provided by {"Graph's"} partner banks.
           </p>
@@ -196,7 +196,7 @@ const Footer = () => {
           </div>
         </div>
         <div className="my-[30px] w-full flex gap-y-4 flex-col md:flex-row items-center justify-between pt-[20px] border-t border-[#ffffff3d] ">
-          <p className="block md:hidden my-3 text-sm md:text-white md:w-[300px] text-center ">
+          <p className="block md:hidden my-3 text-sm text-white md:w-[300px] text-center ">
             Graph is a financial technology company, and not a bank. Banking
             services are provided by {"Graph's"} partner banks.
           </p>
