@@ -34,12 +34,12 @@ const Footer = () => {
                   Products
                 </p>
                 <Link
-                  href="/cards"
+                  href="/corporate-cards"
                   style={{
                     textDecoration: "none",
                   }}
                 >
-                  <Text color="white">Cards</Text>
+                  <Text color="white">Corporate Cards</Text>
                 </Link>
                 <Link
                   href="/multi-currency-accounts"

@@ -26,7 +26,7 @@ const Navbar = () => {
         }   sm:bg-white py-8 sm:py-[10px] px-10 sm:px-[40px] md:px-[80px] w-full flex items-center justify-between`}
       >
         <Link href={"/"}>
-          {pathname === "/cards" ? (
+          {pathname === "/corporate-cards" ? (
             <>
               {menuOpened ? (
                 <LogoWithText alt="Graph logo" height={30} width={195} />
@@ -68,7 +68,9 @@ const Navbar = () => {
         </div>
         <div
           className={`block sm:hidden ${
-            pathname === "/cards" && !menuOpened ? "text-white" : "text-black"
+            pathname === "/corporate-cards" && !menuOpened
+              ? "text-white"
+              : "text-black"
           }  cursor-pointer hover:scale-125 ml-auto  `}
           onClick={() => {
             setMenuOpened((prev) => !prev);
@@ -103,7 +105,7 @@ const Navbar = () => {
                     <h3 className="font-bold text-black">Business Banking</h3>
 
                     <Link
-                      href="/cards"
+                      href="/corporate-cards"
                       style={{
                         textDecoration: "none",
                         display: "flex",
@@ -118,7 +120,7 @@ const Navbar = () => {
                         alt="card icon"
                         src={"/images/general/card-icon.svg"}
                       />
-                      <p className="text-black font-normal">Cards</p>
+                      <p className="text-black font-normal">Corporate Cards</p>
                     </Link>
 
                     <Link
