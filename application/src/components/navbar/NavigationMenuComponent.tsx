@@ -27,7 +27,7 @@ const NavigationMenuComponent = () => {
 
               <ListItem
                 className="flex justify-center flex-col w-auto"
-                href="/cards"
+                href="/corporate-cards"
               >
                 <div className="flex gap-3 my-auto">
                   <Image
@@ -36,7 +36,7 @@ const NavigationMenuComponent = () => {
                     alt="card icon"
                     src={"/images/general/card-icon.svg"}
                   />
-                  <p>Cards</p>
+                  <p>Corporate Cards</p>
                 </div>
               </ListItem>
               <ListItem

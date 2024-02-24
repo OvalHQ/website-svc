@@ -30,7 +30,7 @@ const MoneyMovement = () => {
           }}
           className=" flex-1 py-[60px] rounded-2xl transition ease-in-out duration-1000 "
         >
-          <div className="flex justify-end gap-3 pr-[30px]  pl-[30px]  md:pl-[4rem]">
+          <div className="flex justify-end gap-3 pr-2  pl-2 sm:px-[30px] md:pl-[4rem]">
             {/* <Pane> */}
             <Text
               borderRadius={"20px"}
@@ -48,7 +48,7 @@ const MoneyMovement = () => {
               cursor="pointer"
               onClick={() => setActive(ACTIVE_STATE_ENUM.CARDS)}
             >
-              Cards
+              Corporate Cards
             </Text>
             <Text
               borderRadius={"20px"}
@@ -207,7 +207,7 @@ const MoneyMovement = () => {
                   href={
                     active === ACTIVE_STATE_ENUM.MULTI
                       ? "/multi-currency-accounts"
-                      : "/cards"
+                      : "/corporate-cards"
                   }
                 >
                   Learn more
