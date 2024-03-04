@@ -12,6 +12,11 @@ const CustomScript = () => {
         strategy="lazyOnload"
         onLoad={() => {}}
       />
+      <Script
+        src="//code.tidio.co/09pwgg3nfu2jwkjg9swhajo8mdggspj7.js"
+        strategy="lazyOnload"
+        onLoad={() => {}}
+      />
       <Script strategy="lazyOnload" id="googletagmanager">
         {`     
  window.dataLayer = window.dataLayer || [];
