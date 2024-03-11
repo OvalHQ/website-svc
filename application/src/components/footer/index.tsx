@@ -34,12 +34,12 @@ const Footer = () => {
                   Products
                 </p>
                 <Link
-                  href="/corporate-cards"
+                  href="/cards"
                   style={{
                     textDecoration: "none",
                   }}
                 >
-                  <Text color="white">Corporate Cards</Text>
+                  <Text color="white">Cards</Text>
                 </Link>
                 <Link
                   href="/multi-currency-accounts"
@@ -203,8 +203,8 @@ const Footer = () => {
           <p className="hidden md:block text-xs text-white">© 2024 Graph</p>
           <Pane display="flex" gap={20}>
             <Link
-              href="https://drive.google.com/file/d/11KrnNbj5qnbsJImBhLytEbghGc8tCs3y/view"
-              target="_blank"
+              href=""
+              // target="_blank"
               style={{
                 textDecoration: "none",
               }}
