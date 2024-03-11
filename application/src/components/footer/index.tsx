@@ -204,7 +204,7 @@ const Footer = () => {
           <Pane display="flex" gap={20}>
             <Link
               href=""
-              target="_blank"
+              // target="_blank"
               style={{
                 textDecoration: "none",
               }}
