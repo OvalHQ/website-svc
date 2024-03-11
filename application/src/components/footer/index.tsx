@@ -203,8 +203,8 @@ const Footer = () => {
           <p className="hidden md:block text-xs text-white">© 2024 Graph</p>
           <Pane display="flex" gap={20}>
             <Link
-              href=""
-              // target="_blank"
+              href="https://drive.google.com/file/d/11KrnNbj5qnbsJImBhLytEbghGc8tCs3y/view"
+              target="_blank"
               style={{
                 textDecoration: "none",
               }}
