@@ -123,9 +123,9 @@ const MediumCard = ({ article, noOfCards }: TPropMediumCard) => {
   return (
     <div
       className={` ${noOfCards === 2 ? "max-w-[600px]" : ""} ${
-        noOfCards > 2 ? "max-w-[400px]" : ""
+        noOfCards > 2 ? "max-w-[400px]  h-[520px]" : " h-[560px]"
       }
-        rounded-lg h-[560px] flex flex-col`}
+        rounded-lg flex flex-col`}
     >
       <div className="relative rounded-md mb-3">
         <Image
@@ -137,16 +137,14 @@ const MediumCard = ({ article, noOfCards }: TPropMediumCard) => {
         />
       </div>
       <div
-        className={`border border-[#0000001c] drop-shadow-md shadow-sm border-t-0 px-4 pb-1 rounded-2xl -mt-8 pt-8  ${
-          noOfCards === 2
-            ? "max-w-[600px]"
-            : "max-w-[400px] flex-1 flex flex-col justify-between"
+        className={`border border-[#0000001c] drop-shadow-md shadow-sm border-t-0 px-4 pb-1 rounded-2xl -mt-8 pt-8 flex-1 flex flex-col justify-between ${
+          noOfCards === 2 ? "max-w-[600px]" : "max-w-[400px] "
         }`}
       >
         <h3 className="font-bold text-[24px] leading-[25px] tracking-[-1px] text-black pb-[10px] pt-[10px]">
           {truncateString(article.title, 50)}
         </h3>
-        <div>
+        <div className="flex flex-col flex-1 justify-between">
           <p className="text-[15px] leading-[25px] text-black opacity-70 mt-3">
             {description}
           </p>
