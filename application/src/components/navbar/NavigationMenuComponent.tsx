@@ -63,10 +63,7 @@ const NavigationMenuComponent = () => {
               <ListItem className="flex  p-2 " href="/about-us">
                 <p>About Us</p>
               </ListItem>
-              <ListItem
-                className="flex  p-2 "
-                href="https://usegraph.medium.com/"
-              >
+              <ListItem className="flex  p-2 " href="/blog">
                 <p>Blog</p>
               </ListItem>
             </ul>
