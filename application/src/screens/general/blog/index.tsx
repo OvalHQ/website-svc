@@ -5,7 +5,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { useEffect, useState } from "react";
 import { IArticle } from "./type";
-import { truncateString } from "@/lib/utils";
+import { formatDate, truncateString } from "@/lib/utils";
 import Spinner from "@/components/primitives/logo/spinner";
 import { Pane } from "evergreen-ui";
 import PatternBG from "../../../../public/images/general/pattern-bg-blue.svg";
@@ -26,25 +26,24 @@ const BlogsScreen = () => {
   return (
     <MainLayout>
       <div className="">
-        <div className="relative h-[430px] md:p-[50px] md:py-[110px] py-12 rounded-2xl bg-[#E2FDFF] flex flex-col justify-center items-center w-full">
+        <div className="relative h-[430px] md:p-[50px] md:py-[110px] py-12 rounded-2xl bg-[#E2FDFF] flex flex-col justify-center items-center w-full overflow-y-hidden">
           <h1 className="mt-6 font-semibold text-[40px] md:text-[70px] text-center">
             Graph Blog
           </h1>
-          <p className="opacity-60">
+          <p className="opacity-60 text-center">
             Announcements, articles and stories, to inspire and inform
           </p>
-          <Pane className="h-[100%]" position="absolute" left={0} zIndex={1}>
+          <div className="absolute left-0 z-[1] h-[100%] mt-[150px] sm:mt-0">
             <Image
               style={{
                 transform: "scaleX(-1)",
                 // opacity: 0.9,
                 height: "100%",
               }}
-              className=""
               alt="background-layer"
               src={PatternBG}
             />
-          </Pane>
+          </div>
           <Pane position="absolute" right={0} zIndex={1}>
             <Image
               style={{
@@ -58,31 +57,32 @@ const BlogsScreen = () => {
           </Pane>
         </div>
         {/* </Pane> */}
+        <div className="max-w-[1440px] mx-auto">
+          {loadingArticles && (
+            <div className="flex justify-center items-center h-[400px]">
+              <Spinner className="size-10" />
+            </div>
+          )}
+          {articles && articles.length > 0 && (
+            <div
+              className={`grid place-items-center grid-col-1 ${
+                articles.length > 2
+                  ? "md:grid-cols-3 sm:grid-cols-2 gap-3"
+                  : "md:grid-cols-2  gap-5"
+              } py-12 px-8 mt-20 md:px-20`}
+            >
+              {/* <MediumCard noOfCards ={3} article={articles[0]} /> */}
 
-        {loadingArticles && (
-          <div className="flex justify-center items-center h-[400px]">
-            <Spinner className="size-10" />
-          </div>
-        )}
-        {articles && articles.length > 0 && (
-          <div
-            className={`grid place-items-center grid-col-1 ${
-              articles.length > 2
-                ? "md:grid-cols-3 sm:grid-cols-2 gap-3"
-                : "md:grid-cols-2  gap-5"
-            } py-12 px-8 mt-20 md:px-20`}
-          >
-            {/* <MediumCard noOfCards ={3} article={articles[0]} /> */}
-
-            {articles?.map((article, index) => (
-              <MediumCard
-                noOfCards={articles.length}
-                article={article}
-                key={index}
-              />
-            ))}
-          </div>
-        )}
+              {articles?.map((article, index) => (
+                <MediumCard
+                  noOfCards={articles.length}
+                  article={article}
+                  key={index}
+                />
+              ))}
+            </div>
+          )}
+        </div>
       </div>
     </MainLayout>
   );
@@ -117,13 +117,21 @@ const MediumCard = ({ article, noOfCards }: TPropMediumCard) => {
   // Execute the regular expression on the HTML string
   const description = strippedContent;
 
+  const imgRegex = /<img.*?src="(.*?)"/;
+  const imgMatch = article?.description.match(imgRegex);
+
+  // Extract the src string if a match is found
+  const imgSrc = imgMatch ? imgMatch[1] : null;
+
   const parts = article.guid.split("/");
   const id = parts[parts.length - 1];
+  const stringWithHyphens =
+    article.title.toLowerCase().replace(/\s+/g, "-") + "-" + id;
 
   return (
     <div
       className={` ${noOfCards === 2 ? "max-w-[600px]" : ""} ${
-        noOfCards > 2 ? "max-w-[400px]  h-[520px]" : " h-[560px]"
+        noOfCards > 2 ? "max-w-[400px]  md:h-[520px]" : " md:h-[560px]"
       }
         rounded-lg flex flex-col`}
     >
@@ -131,7 +139,9 @@ const MediumCard = ({ article, noOfCards }: TPropMediumCard) => {
         <Image
           className={`rounded-t-2xl w-full`}
           alt="description img"
-          src={article.thumbnail || "/images/general/startups-img.png"}
+          src={
+            article.thumbnail || imgSrc || "/images/general/startups-img.png"
+          }
           height={220}
           width={400}
         />
@@ -151,12 +161,12 @@ const MediumCard = ({ article, noOfCards }: TPropMediumCard) => {
           <div className="my-3 flex justify-between items-center mt-auto">
             <Link
               className="hover:opacity-90 text-sm text-[#2276FF]"
-              href={`/blog/${id}`}
+              href={`/blog/${stringWithHyphens}`}
             >
               READ MORE
             </Link>
             <p className="text-black opacity-90 text-xs my-3 ">
-              {new Date(article.pubDate).toLocaleDateString()}
+              {formatDate(article.pubDate)}
             </p>
           </div>
         </div>
