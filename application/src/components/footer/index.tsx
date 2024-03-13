@@ -70,7 +70,8 @@ const Footer = () => {
                 </Link>
 
                 <Link
-                  href={"/blog"}
+                  href={"https://usegraph.medium.com/ "}
+                  // href={"/blog"}
                   style={{
                     textDecoration: "none",
                   }}
