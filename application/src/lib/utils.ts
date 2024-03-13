@@ -14,3 +14,33 @@ export const truncateString = (str: string, num: number = 20): string => {
   // Return str truncated with '...' concatenated to the end of str.
   return str.slice(0, num) + "...";
 };
+
+export function formatDateToSpecificForm(dateString: string): string {
+  const date = new Date(dateString);
+
+  // Define months array for conversion
+  const months: string[] = [
+    "Jan",
+    "Feb",
+    "Mar",
+    "Apr",
+    "May",
+    "Jun",
+    "Jul",
+    "Aug",
+    "Sep",
+    "Oct",
+    "Nov",
+    "Dec",
+  ];
+
+  // Get month, day, and year components
+  const month: string = months[date.getMonth()];
+  const day: number = date.getDate();
+  const year: number = date.getFullYear();
+
+  // Construct the formatted date string
+  const formattedDate: string = `${month} ${day}, ${year}`;
+
+  return formattedDate;
+}
