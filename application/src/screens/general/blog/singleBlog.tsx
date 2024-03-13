@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import MainLayout from "@/components/layout/main";
 import Image from "next/image";
 import PatternBG from "../../../../public/images/general/pattern-bg-single-blog.svg";
+import MediumBanner from "../../../../public/images/general/mediumBanner.svg";
 import LogoWhiteFull from "../../../../public/images/graph-logo-full-white.svg";
 import { mediumArticleLink } from "@/utils/constants";
 import Spinner from "@/components/primitives/logo/spinner";
@@ -22,18 +23,22 @@ const SingleBlogScreen = () => {
   const [article, setArticle] = useState<IArticle[] | [] | null>(null);
   const [loadingArticles, setLoadingArticles] = useState(true);
   const [imgUrl, setImgUrl] = useState("");
-  const { id } = useParams();
+  const { blogTitle } = useParams();
 
   useEffect(() => {
-    if (id) {
+    if (blogTitle) {
+      const title = blogTitle as string;
       setLoadingArticles(true);
+
       fetch(mediumArticleLink)
         .then((res) => res.json())
         .then((data) => {
+          const parts = title.split("-");
+          const id = parts[parts.length - 1];
+
           const article = data.items.filter((obj: IArticle) =>
             obj.guid.includes(id as string)
           );
-
           // Regular expression to match the first img src string
           const regex = /<img.*?src="(.*?)"/;
           const match = article[0]?.description.match(regex);
@@ -49,7 +54,7 @@ const SingleBlogScreen = () => {
         })
         .finally(() => setLoadingArticles(false));
     }
-  }, [id]);
+  }, [blogTitle]);
 
   return (
     <MainLayout>
@@ -66,7 +71,16 @@ const SingleBlogScreen = () => {
             }}
           />
         ) : ( */}
-        <div className="w-full h-[500px] md:h-[680px] relative bg-black flex justify-center items-center mt-[80px] md:mt-0 overflow-hidden">
+        <div className="mt-[80px] sm:mt-0">
+          <Image
+            alt="background-layer"
+            src={MediumBanner}
+            style={{
+              width: "100%",
+            }}
+          />
+        </div>
+        {/* <div className="w-full h-[500px] md:h-[680px] relative bg-black flex justify-center items-center mt-[80px] md:mt-0 overflow-hidden">
           <div className="absolute -b-1 left-0 z-[1] h-full opacity-50 md:opacity-100">
             <Image
               alt="background-layer"
@@ -88,7 +102,7 @@ const SingleBlogScreen = () => {
               Finance OS for Businesses
             </p>
           </div>
-        </div>
+        </div> */}
         <div className="block mx-auto max-w-[1440px]">
           {loadingArticles ? (
             <div className="flex justify-center items-center h-[400px]">
