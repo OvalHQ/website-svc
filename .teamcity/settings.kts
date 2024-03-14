@@ -113,7 +113,7 @@ object StagingPipeline : BuildType({
             name = "Push"
             id = "Push"
             commandType = push {
-                namesAndTags = "web-ui:latest"
+                namesAndTags = "graph.staging/web-ui:latest"
             }
         }
         script {
