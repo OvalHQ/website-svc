@@ -26,6 +26,7 @@ const BlogsScreen = () => {
   return (
     <MainLayout>
       <div className="">
+        <div className="h-[80px] sm:hidden w-full"></div>
         <div className="relative h-[430px] md:p-[50px] md:py-[110px] py-12 rounded-2xl bg-[#E2FDFF] flex flex-col justify-center items-center w-full overflow-y-hidden">
           <h1 className="mt-6 font-semibold text-[40px] md:text-[70px] text-center">
             Graph Blog
@@ -33,7 +34,7 @@ const BlogsScreen = () => {
           <p className="opacity-60 text-center">
             Announcements, articles and stories, to inspire and inform
           </p>
-          <div className="absolute left-0 z-[1] h-[100%] mt-[150px] sm:mt-0">
+          <div className="absolute left-0 z-[1] h-[100%] ">
             <Image
               style={{
                 transform: "scaleX(-1)",

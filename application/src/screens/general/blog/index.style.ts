@@ -9,11 +9,12 @@ const BlogScreenWrapper = styled(Pane)`
 
     p {
       margin: 20px 0;
-      font-size: 17px;
+      font-size: 20px;
     }
     strong {
       font-size: 20px;
-      padding-right: 10px;
+      padding-right: 8px;
+      font-weight: 500;
     }
     a {
       text-decoration: underline;
