@@ -106,7 +106,7 @@ object StagingPipeline : BuildType({
                 source = file {
                     path = "Dockerfile"
                 }
-                namesAndTags = "graph.staging/web-ui"
+                namesAndTags = "graph.staging/web-ui:latest"
             }
         }
         dockerCommand {
