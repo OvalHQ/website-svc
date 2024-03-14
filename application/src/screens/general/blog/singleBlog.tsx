@@ -150,6 +150,9 @@ const SingleBlogScreen = () => {
                           </div>
                         </div>
                         <div className="flex-1">
+                          <p className="font-bold text-[30px] leading-[30px]  md:text-[45px]  md:leading-[50px] mb-8 tracking-[-1px] text-black pb-[10px] pt-[10px]">
+                            {article[0].title}
+                          </p>
                           <div
                             className="custom-blog"
                             dangerouslySetInnerHTML={{
