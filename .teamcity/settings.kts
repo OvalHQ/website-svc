@@ -90,7 +90,7 @@ object StagingPipeline : BuildType({
         root(DslContext.settingsRoot)
 
         cleanCheckout = true
-        branchFilter = "+:main"
+        branchFilter = "+:<default>"
     }
 
     steps {
@@ -125,7 +125,7 @@ object StagingPipeline : BuildType({
 
     triggers {
         vcs {
-            branchFilter = "+:main"
+            branchFilter = "+:<default>"
         }
     }
 
