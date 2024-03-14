@@ -106,14 +106,14 @@ object StagingPipeline : BuildType({
                 source = file {
                     path = "Dockerfile"
                 }
-                namesAndTags = "graph.staging/web-ui:latest"
+                namesAndTags = "418553830250.dkr.ecr.us-east-1.amazonaws.com/graph.staging/web-ui:latest"
             }
         }
         dockerCommand {
             name = "Push"
             id = "Push"
             commandType = push {
-                namesAndTags = "graph.staging/web-ui:latest"
+                namesAndTags = "418553830250.dkr.ecr.us-east-1.amazonaws.com/graph.staging/web-ui:latest"
             }
         }
         script {
