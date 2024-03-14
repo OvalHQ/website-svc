@@ -57,7 +57,7 @@ object ProductionPipeline : BuildType({
                 source = file {
                     path = "Dockerfile"
                 }
-                namesAndTags = "oval/web-ui"
+                namesAndTags = "graph.prod/web-ui"
             }
         }
         script {
@@ -106,7 +106,7 @@ object StagingPipeline : BuildType({
                 source = file {
                     path = "Dockerfile"
                 }
-                namesAndTags = "oval/web-ui"
+                namesAndTags = "graph.staging/web-ui"
             }
         }
         dockerCommand {
