@@ -113,7 +113,7 @@ object StagingPipeline : BuildType({
             name = "Push"
             id = "Push"
             commandType = push {
-                namesAndTags = "418553830250.dkr.ecr.us-east-1.amazonaws.com/graph.staging/web-ui:latest"
+                namesAndTags = "graph.staging/web-ui:latest"
             }
         }
         script {
