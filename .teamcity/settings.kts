@@ -3,6 +3,7 @@ import jetbrains.buildServer.configs.kotlin.buildFeatures.dockerSupport
 import jetbrains.buildServer.configs.kotlin.buildFeatures.perfmon
 import jetbrains.buildServer.configs.kotlin.buildSteps.dockerCommand
 import jetbrains.buildServer.configs.kotlin.buildSteps.script
+import jetbrains.buildServer.configs.kotlin.triggers.finishBuildTrigger
 import jetbrains.buildServer.configs.kotlin.triggers.vcs
 
 /*
@@ -71,6 +72,12 @@ object ProductionPipeline : BuildType({
     triggers {
         vcs {
             branchFilter = "+:<default>"
+        }
+        finishBuildTrigger {
+            buildType = "${StagingPipeline.id}"
+            successfulOnly = true
+
+            enforceCleanCheckout = true
         }
     }
 
