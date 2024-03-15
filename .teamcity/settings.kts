@@ -70,9 +70,6 @@ object ProductionPipeline : BuildType({
     }
 
     triggers {
-        vcs {
-            branchFilter = "+:<default>"
-        }
         finishBuildTrigger {
             buildType = "${StagingPipeline.id}"
             successfulOnly = true
