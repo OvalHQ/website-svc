@@ -44,6 +44,10 @@ object ProductionPipeline : BuildType({
     maxRunningBuilds = 1
     publishArtifacts = PublishMode.SUCCESSFUL
 
+    params {
+        param("ecr_base", "418553830250.dkr.ecr.us-east-1.amazonaws.com/graph.prod")
+    }
+
     vcs {
         root(DslContext.settingsRoot)
 
@@ -52,6 +56,11 @@ object ProductionPipeline : BuildType({
     }
 
     steps {
+        script {
+            name = "Test"
+            id = "Test"
+            scriptContent = """echo "Test World""""
+        }
         dockerCommand {
             name = "Build"
             id = "DockerCommand"
@@ -59,13 +68,8 @@ object ProductionPipeline : BuildType({
                 source = file {
                     path = "Dockerfile"
                 }
-                namesAndTags = "graph.prod/web-ui"
+                namesAndTags = "%ecr_base%/web-ui:latest"
             }
-        }
-        script {
-            name = "Test"
-            id = "Test"
-            scriptContent = """echo "Test World""""
         }
     }
 
@@ -80,6 +84,11 @@ object ProductionPipeline : BuildType({
 
     features {
         perfmon {
+        }
+        dockerSupport {
+            loginToRegistry = on {
+                dockerRegistryId = "PROJECT_EXT_3"
+            }
         }
     }
 })
