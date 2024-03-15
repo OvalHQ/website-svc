@@ -87,6 +87,10 @@ object StagingPipeline : BuildType({
     maxRunningBuilds = 1
     publishArtifacts = PublishMode.SUCCESSFUL
 
+    params {
+        param("ecr_base", "418553830250.dkr.ecr.us-east-1.amazonaws.com/graph.staging")
+    }
+
     vcs {
         root(DslContext.settingsRoot)
 
@@ -107,14 +111,14 @@ object StagingPipeline : BuildType({
                 source = file {
                     path = "Dockerfile"
                 }
-                namesAndTags = "418553830250.dkr.ecr.us-east-1.amazonaws.com/graph.staging/web-ui:latest"
+                namesAndTags = "%ecr_base%/web-ui:latest"
             }
         }
         dockerCommand {
             name = "Push"
             id = "Push"
             commandType = push {
-                namesAndTags = "418553830250.dkr.ecr.us-east-1.amazonaws.com/graph.staging/web-ui:latest"
+                namesAndTags = "%ecr_base%/web-ui:latest"
             }
         }
         script {
