@@ -121,7 +121,6 @@ object StagingPipeline : BuildType({
     publishArtifacts = PublishMode.SUCCESSFUL
 
     params {
-        param("commit_sha", "%build.vcs.number%")
         param("ecr_base", "418553830250.dkr.ecr.us-east-1.amazonaws.com/graph.staging")
     }
 
@@ -133,6 +132,16 @@ object StagingPipeline : BuildType({
     }
 
     steps {
+        script {
+            name = "Setup"
+            id = "Setup"
+            scriptContent = """
+                BUILD_NUMBER=%build.number%
+                GIT_HASH=%build.vcs.number%
+                GIT_HASH_SHORT=${GIT_HASH:0:7}
+                echo "##teamcity[buildNumber '$BUILD_NUMBER.${GIT_HASH_SHORT}']"
+            """.trimIndent()
+        }
         script {
             name = "Test"
             id = "Test"
