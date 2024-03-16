@@ -139,8 +139,9 @@ object StagingPipeline : BuildType({
                 #!/bin/bash
                 BUILD_NUMBER=%build.number%
                 GIT_HASH=%build.vcs.number%
-                GIT_HASH_SHORT=${'$'}{GIT_HASH:0:10}
-                echo "##teamcity[buildNumber '${'$'}{BUILD_NUMBER}.${'$'}{GIT_HASH_SHORT}']"
+                GIT_COMMIT_SHA=${'$'}{GIT_HASH:0:8}
+                echo "##teamcity[setParameter name='git_commit_sha' value='${'$'}{GIT_COMMIT_SHA}']"
+                echo "##teamcity[buildNumber '${'$'}{BUILD_NUMBER}.${'$'}{GIT_COMMIT_SHA}']"
             """.trimIndent()
         }
         script {
