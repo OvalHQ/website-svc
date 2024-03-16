@@ -86,12 +86,10 @@ object ProductionPipeline : BuildType({
                 namesAndTags = "%ecr_base%/web-ui:latest"
             }
         }
-        dockerCommand {
-            name = "Push"
-            id = "Push"
-            commandType = push {
-                namesAndTags = "%ecr_base%/web-ui:latest"
-            }
+        script {
+            name = "Deploy"
+            id = "Deploy"
+            scriptContent = """echo "Deploy application""""
         }
     }
 
