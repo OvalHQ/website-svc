@@ -139,7 +139,7 @@ object StagingPipeline : BuildType({
                 BUILD_NUMBER=%build.number%
                 GIT_HASH=%build.vcs.number%
                 GIT_HASH_SHORT=${GIT_HASH:0:7}
-                echo "##teamcity[buildNumber '$BUILD_NUMBER.${GIT_HASH_SHORT}']"
+                echo "##teamcity[buildNumber '${BUILD_NUMBER}.${GIT_HASH_SHORT}']"
             """.trimIndent()
         }
         script {
