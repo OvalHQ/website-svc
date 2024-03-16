@@ -136,6 +136,7 @@ object StagingPipeline : BuildType({
             name = "Setup"
             id = "Setup"
             scriptContent = """
+                #!/bin/bash
                 BUILD_NUMBER=%build.number%
                 GIT_HASH=%build.vcs.number%
                 GIT_HASH_SHORT=${'$'}{GIT_HASH:0:10}
