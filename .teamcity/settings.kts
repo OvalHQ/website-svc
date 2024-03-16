@@ -121,6 +121,7 @@ object StagingPipeline : BuildType({
     publishArtifacts = PublishMode.SUCCESSFUL
 
     params {
+        param("git_commit_sha", "")
         param("ecr_base", "418553830250.dkr.ecr.us-east-1.amazonaws.com/graph.staging")
     }
 
