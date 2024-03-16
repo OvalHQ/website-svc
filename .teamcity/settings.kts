@@ -163,14 +163,20 @@ object StagingPipeline : BuildType({
                 source = file {
                     path = "Dockerfile"
                 }
-                namesAndTags = "%ecr_base%/web-ui:latest"
+                namesAndTags = """
+                    %ecr_base%/web-ui:%git_commit_sha%
+                    %ecr_base%/web-ui:latest
+                """.trimIndent()
             }
         }
         dockerCommand {
             name = "Push"
             id = "Push"
             commandType = push {
-                namesAndTags = "%ecr_base%/web-ui:latest"
+                namesAndTags = """
+                    %ecr_base%/web-ui:%git_commit_sha%
+                    %ecr_base%/web-ui:latest
+                """.trimIndent()
             }
         }
         script {
