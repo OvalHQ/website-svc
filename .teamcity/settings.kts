@@ -133,6 +133,16 @@ object StagingPipeline : BuildType({
 
     steps {
         script {
+            name = "Setup"
+            id = "Setup"
+            scriptContent = """
+                BUILD_NUMBER=%build.number%
+                GIT_HASH=%build.vcs.number%
+                GIT_HASH_SHORT=${'$'}{GIT_HASH:0:7}
+                echo "##teamcity[buildNumber '${'$'}BUILD_NUMBER.${'$'}{GIT_HASH_SHORT}']"
+            """.trimIndent()
+        }
+        script {
             name = "Test"
             id = "Test"
             workingDir = "application"
@@ -165,16 +175,6 @@ object StagingPipeline : BuildType({
             name = "Deploy"
             id = "Deploy"
             scriptContent = """echo "Deploy application""""
-        }
-        script {
-            name = "Setup"
-            id = "Setup"
-            scriptContent = """
-                BUILD_NUMBER=%build.number%
-                GIT_HASH=%build.vcs.number%
-                GIT_HASH_SHORT=${'$'}{GIT_HASH:0:7}
-                echo "##teamcity[buildNumber '${'$'}BUILD_NUMBER.${'$'}{GIT_HASH_SHORT}']"
-            """.trimIndent()
         }
     }
 
