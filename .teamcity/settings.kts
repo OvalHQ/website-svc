@@ -1,6 +1,7 @@
 import jetbrains.buildServer.configs.kotlin.*
 import jetbrains.buildServer.configs.kotlin.buildFeatures.dockerSupport
 import jetbrains.buildServer.configs.kotlin.buildFeatures.perfmon
+import jetbrains.buildServer.configs.kotlin.buildSteps.ScriptBuildStep
 import jetbrains.buildServer.configs.kotlin.buildSteps.dockerCommand
 import jetbrains.buildServer.configs.kotlin.buildSteps.script
 import jetbrains.buildServer.configs.kotlin.triggers.finishBuildTrigger
@@ -115,7 +116,14 @@ object StagingPipeline : BuildType({
         script {
             name = "Test"
             id = "Test"
-            scriptContent = """echo "Test World""""
+            workingDir = "application"
+            scriptContent = """
+                npm install
+                npm run test
+            """.trimIndent()
+            dockerImage = "node:18"
+            dockerImagePlatform = ScriptBuildStep.ImagePlatform.Linux
+            dockerPull = true
         }
         dockerCommand {
             name = "Build"
