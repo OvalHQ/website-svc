@@ -60,7 +60,14 @@ object ProductionPipeline : BuildType({
         script {
             name = "Test"
             id = "Test"
-            scriptContent = """echo "Test World""""
+            workingDir = "application"
+            scriptContent = """
+                npm install
+                npm run test
+            """.trimIndent()
+            dockerImage = "node:18"
+            dockerImagePlatform = ScriptBuildStep.ImagePlatform.Linux
+            dockerPull = true
         }
         dockerCommand {
             name = "Build"
