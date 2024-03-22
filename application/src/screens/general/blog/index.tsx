@@ -20,6 +20,9 @@ const BlogsScreen = () => {
     fetch(mediumArticleLink)
       .then((res) => res.json())
       .then((data) => setArticles(data.items))
+      .catch((err) => {
+        console.log(err);
+      })
       .finally(() => setLoadingArticles(false));
   }, []);
 
@@ -126,8 +129,9 @@ const MediumCard = ({ article, noOfCards }: TPropMediumCard) => {
 
   const parts = article.guid.split("/");
   const id = parts[parts.length - 1];
-  const stringWithHyphens =
-    article.title.toLowerCase().replace(/\s+/g, "-") + "-" + id;
+  const stringWithSpaces = article.title.toLowerCase().replace(/—+|-+/g, " ");
+
+  const stringWithHyphens = stringWithSpaces.replace(/\s+/g, "-") + "-" + id;
 
   return (
     <div
