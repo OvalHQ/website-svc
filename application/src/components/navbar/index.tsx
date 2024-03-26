@@ -166,6 +166,16 @@ const Navbar = () => {
                         Blog
                       </p>
                     </Link>
+                    <Link
+                      href={"/legal"}
+                      style={{
+                        textDecoration: "none",
+                      }}
+                    >
+                      <p className="text-black font-normal cursor-not-allowed">
+                        Legal
+                      </p>
+                    </Link>
                   </div>
                 </div>
                 <div>

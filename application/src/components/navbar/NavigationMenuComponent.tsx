@@ -66,6 +66,9 @@ const NavigationMenuComponent = () => {
               <ListItem className="flex  p-2 " href="/blog">
                 <p>Blog</p>
               </ListItem>
+              <ListItem className="flex  p-2 " href="/legal">
+                <p>Legal</p>
+              </ListItem>
             </ul>
           </NavigationMenuContent>
         </NavigationMenuItem>
