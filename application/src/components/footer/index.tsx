@@ -77,6 +77,15 @@ const Footer = () => {
                 >
                   <Text color="white">Blog</Text>
                 </Link>
+
+                <Link
+                  href={"/legal"}
+                  style={{
+                    textDecoration: "none",
+                  }}
+                >
+                  <Text color="white">Legal</Text>
+                </Link>
               </Pane>
             </Pane>
             <Pane display="flex" flexDirection="column" gap={30} flex={1}>
@@ -210,7 +219,7 @@ const Footer = () => {
               }}
             >
               <Text color="white" textDecoration="none">
-                Terms of use
+                Terms of Use
               </Text>
             </Link>
             <Link
@@ -221,7 +230,7 @@ const Footer = () => {
               }}
             >
               <Text color="white" textDecoration="none">
-                Privacy policy
+                Privacy Policy
               </Text>
             </Link>
             <Link
@@ -231,7 +240,7 @@ const Footer = () => {
               }}
             >
               <Text color="white" textDecoration="none">
-                AML policy
+                AML Policy
               </Text>
             </Link>
           </Pane>

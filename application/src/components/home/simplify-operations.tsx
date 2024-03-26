@@ -54,7 +54,7 @@ const SimplifyOperations = () => {
   });
 
   return (
-    <Pane className="simplify-operations text-black">
+    <Pane className="simplify-operations text-black overflow-hidden">
       <div className="relative md:h-[500px] md:p-[50px] md:py-[110px] py-12 rounded-2xl bg-[#C0D7FF] flex justify-center items-center w-full  ">
         <Pane zIndex={5}>
           <h2 className=" text-[34px] -tracking-[1px] leading-[40px] max-w-[400px] md:text-[65px] md:leading-[70px] font-semibold text-center text-black md:max-w-[700px]">
@@ -77,8 +77,8 @@ const SimplifyOperations = () => {
                 onBlur={handleBlur("email")}
                 value={values.email}
               />
-              {touched.email && errors.email && (
-                <div className="text-xs mt-1 tracking-wider text-red-500">
+              {errors.email && (
+                <div className="text-xs mt-2 tracking-wider text-center text-red-500">
                   {errors.email}
                 </div>
               )}
